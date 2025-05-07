@@ -1,0 +1,338 @@
+.scene {
+	width: 112px;
+	height:auto;
+	margin-left: 0px;
+	margin-top: 50px;
+	perspective: 400px;
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: translateZ(-50px);
+	transition: transform 1s;
+	animation: spinCube 8s infinite ease-in-out;
+}
+
+.dvd {
+	width: 100px;
+	height: 150px;
+	top:0px;
+}
+
+.cd,
+.cdflat,
+.cdback,
+.dvd {
+	transform: translateZ(-100px);
+	animation: none;
+	left:10px;
+}
+
+.cdflat {
+	left:6px;
+}
+
+.mem {
+	animation: spinMemCube 8s infinite ease-in-out;
+}
+
+.scene:hover > .cd {
+	animation: spinCDCase 8s infinite ease-in-out;
+	left:0px;
+	transition: 0.75s;
+}
+
+.scene:hover > .cdflat {
+	animation: spinCDCaseFlat 8s infinite ease-in-out;
+	left:0px;
+	transition: 0.75s;
+}
+
+.scene:hover > .cdback {
+	animation: spinCDCaseBack 8s infinite ease-in-out;
+	left:0px;
+	transition: 0.75s;
+}
+
+.scene:hover > .dvd {
+	animation: spinCDCase 8s infinite ease-in-out;
+	left:0px;
+	transition: 0.75s;
+}
+
+.box_flat {
+	position: relative;
+	transform: translateZ(-50px);
+	animation: spinFlat 8s infinite ease-in-out;
+}
+
+@keyframes spinCube {
+	0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+	50% { transform: translateZ(-100px) rotateX(0deg) rotateY(180deg);}
+	100% { transform: translateZ(-100px) rotateX(0deg) rotateY(360deg); }
+}
+
+
+@keyframes spinMemCube {
+	0%   { transform: translateZ(-100px) rotateX(-30deg) rotateY(-10deg) rotateZ(0deg); }
+	25% { transform: translateZ(-100px) rotateX(-10deg) rotateY(-10deg) rotateZ(0deg); }
+	50% { transform: translateZ(-100px) rotateX(-30deg) rotateY(15deg) rotateZ(0deg); }
+	75% { transform: translateZ(-100px) rotateX(-10deg) rotateY(15deg) rotateZ(0deg); }
+	100% { transform: translateZ(-100px) rotateX(-30deg) rotateY(-10deg) rotateZ(0deg); }
+
+}
+
+@keyframes spinMemCubeWIP {
+	0% { transform: translateZ(-100px) rotateX(-20deg) rotateY(0deg) rotateZ(0deg); }
+	25% { transform: translateZ(-100px) rotateX(-20deg) rotateY(180deg) rotateZ(1deg);}
+	50% { transform: translateZ(-100px) rotateX(-20deg) rotateY(180deg) rotateZ(1deg);}
+	100% { transform: translateZ(-100px) rotateX(-20deg) rotateY(360deg) rotateZ(0deg); }
+}
+
+@keyframes spinFlat {
+	0% { transform: translateZ(-100px) rotateX(0deg) rotateY(  0deg); }
+	25% { transform: translateZ(-100px) rotateX(0deg) rotateY(20deg);}
+	50% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);}
+	75% { transform: translateZ(-100px) rotateX(0deg) rotateY(-20deg); }
+	100% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+}
+
+@keyframes spinCDCase {
+	0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+	50% { transform: translateZ(-100px) rotateX(0deg) rotateY(60deg);}
+	100% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+}
+
+@keyframes spinCDCaseFlat {
+	0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+	50% { transform: translateZ(-100px) rotateX(0deg) rotateY(20deg);}
+	100% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+}
+
+@keyframes spinCDCaseBack {
+	0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+	50% { transform: translateZ(-100px) rotateX(0deg) rotateY(180deg);}
+	100% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg); }
+}
+
+.box__face {
+	position: absolute;
+	border: 0px solid black;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.box .box__face--front,
+.box .box__face--back,
+.box .box__face--obi,
+.box .box__face--obiside,
+.box .box__face--cd0,
+.box .box__face--cd,
+.box .box__face--cd2,
+.box .box__face--cd3,
+.box .box__face--casefront,
+.box .box__face--caseback,
+.box .box__face--left,
+.box .box__face--right {
+	width: 100px;
+	height: 100px;
+}
+
+.box .box__face--casefront,
+.box .box__face--caseback {
+	width: 110px;
+	left:-10px;
+}
+
+.box .box__face--caseback {
+	left:-9px;
+}
+
+.box .box__face--obi {
+	width:12px;
+	left:-10px;
+}
+
+.box .box__face--cd,
+.box .box__face--cd2,
+.box .box__face--cd3,
+.box .box__face--cd0 {
+	left:0px;
+	transition: 0.5s;
+}
+
+.dvd .box__face--cd,
+.dvd .box__face--cd2,
+.dvd .box__face--cd3,
+.box .box__face--cd0 {
+	left:0px;
+	top:20px;
+	transition: 0.5s;
+}
+
+.box:hover > .box__face--cd {
+	transition: left 0.5s ease 0s;
+	left:50px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.box:hover > .box__face--cd2 {
+	transition: left 0.5s ease 0s;
+	left:75px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.box:hover > .box__face--cd3 {
+	transition: left 0.5s ease 0s;
+	left:100px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.dvd:hover > .box__face--cd {
+	transition: left 0.5s ease 0s;
+	left:50px;
+	top:0px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.dvd:hover > .box__face--cd2 {
+	transition: left 0.5s ease 0s;
+	left:50px;
+	top:50px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.dvd:hover > .box__face--cd3 {
+	transition: left 0.5s ease 0s;
+	left:75px;
+	top:20px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.dvd:hover > .box__face--cd0 {
+	transition: left 0.5s ease 0s;
+	left:50px;
+	top:20px;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.box .box__face--right,
+.box .box__face--left,
+.box .box__face--obiside {
+	width: 8px;
+	left: 100px;
+}
+
+.box_flat .box__face--front,
+.box_flat .box__face--back {
+	width: 100px;
+	height: 100px;
+}
+
+.mem .box__face--memfront,
+.mem .box__face--memback,
+.mem .box__face--memleft,
+.mem .box__face--memright,
+.mem .box__face--memtop {
+	width: 50px;
+	height: 50px;
+}
+
+.box_flat .box__face--right,
+.box_flat .box__face--left {
+	width: 10px;
+	height: 100px;
+	left: 100px;
+}
+
+.dvd .box__face--front,
+.dvd .box__face--back {
+	width: 100px;
+	height: 150px;
+}
+
+.dvd .box__face--right,
+.dvd .box__face--left {
+	width: 10px;
+	height: 150px;
+	left: 100px;
+}
+
+.dvd .box__face--obiside {
+	height:150px;
+	left:110px;
+}
+
+
+.box__face--front  { transform: rotateY(  0deg) translateZ( 5px); }
+.box__face--casefront  { transform: rotateY(  0deg) translateZ( 5px) translateX( 1px); }
+.box__face--obi  { transform: rotateY(  0deg) translateZ( 6px); }
+.box__face--cd  { transform: rotateY(  0deg) translateZ( 0px); }
+.box__face--cd2  { transform: rotateY(  0deg) translateZ( 0px); }
+.box__face--cd3  { transform: rotateY(  0deg) translateZ( 0px); }
+.box__face--cd0  { transform: rotateY(  0deg) translateZ( 0px); }
+.box__face--back   { transform: rotateY(180deg) translateZ( 3px); }
+.box__face--caseback   { transform: rotateY(180deg) translateZ( 3px); }
+
+.box__face--memfront  {  transform: rotateY(  0deg) translateZ( 25px); }
+.box__face--memleft  { transform: rotateY(  270deg) translateZ( 25px); }
+.box__face--memright  { transform: rotateY(  90deg) translateZ( 25px); }
+.box__face--memtop  { transform: rotateY(  0deg) rotateX( 90deg) rotateZ( 0deg) translateZ( 25px); }
+.box__face--memback  {  transform: rotateY(  -180deg) translateZ( 25px); }
+
+.box__face--right  { transform: rotateY( 90deg) translateZ(-5px); }
+.dvd .box__face--right  { transform: rotateY( 90deg) translateZ(-5px); }
+
+.box__face--left   { transform: rotateY(-90deg) translateZ(105px); }
+
+.box__face--obiside   { transform: rotateY(-90deg) translateZ(114px) translateX(2px); }
+.cd .box__face--left   { transform: rotateY(-90deg) translateZ(113px) translateX(1px); }
+.cdback .box__face--left   { transform: rotateY(-90deg) translateZ(113px) translateX(1px); }
+
+.box__face--front,
+.box__face--casefront,
+.box__face--caseback,
+.box__face--cd,
+.box__face--cd2,
+.box__face--cd3,
+.box__face--cd0,
+.box__face--obi,
+.box__face--obiside,
+.box__face--back,
+.box__face--right,
+.box__face--left,
+.box__face--memfront,
+.box__face--memleft,
+.box__face--memright,
+.box__face--memback,
+.box__face--memtop {
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}

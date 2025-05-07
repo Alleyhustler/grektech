@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from laytonloztew.neocities.org/mrprospector by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:58:12 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Layton's Land</title>
+		<link rel="icon" href="images/icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="style62d3.css?ver=23.04.19.0"/>
+		<link rel="stylesheet" type="text/css" href="manda5d7b.css?ver=21.12.19.0"/>
+		<script src='screenshotsa79d.js?ver=22.06.26.0'></script>
+		<style>
+		.game-screenshot {
+box-shadow: 1px 1px 3px black;
+width: 140px;
+margin-top:12px;
+margin-bottom:12px;
+}
+
+.fwimg {
+width:180px;
+}
+
+th {background-color:rgba(0, 0, 0, 0.5);}
+td {background-color:rgba(0, 0, 0, 0.3);}
+.g {color:rgb(50,50,50);}
+		</style>
+	</head>
+	<body>
+		<link rel="preload" href="images/background.png" as="image">
+		<div class="wrapper">
+			<!-- LEFT SIDEBAR -->
+			<div class="sidenav">
+				<div class="skipnav"><a href="#main">Skip to content</a></div>
+				<div style="height:0.4vh;"></div>
+				<div style="height:85%;margin-top:10px;">
+					<img src="images/art/laytonloztew.png" style="width:100px;height:127px;opacity:0.4;"/>
+					LaytonLoztew
+					<div style="height:2.5vh;">
+					</div>
+					<!-- MODAL -->
+	<div id="modal01" class="w3-modal no-select">
+		<div class="w3-modal-content w3-animate-zoom">
+
+			<img id="img01" style="vertical-align:middle;" onclick="hideModal()">
+
+			<div id="imagecontrols" style="vertical-align:middle;display:inline-block;width:32px;height:475px;">
+				<img id="exitmodalicon" style="width:32px;" src="images/other/cancel.png" onclick="hideModal()">
+				<a id="imglink" href="#"><img style="width:32px;" src="images/other/resize.png"></a>
+			</div>
+
+			<div id="infodiv" style="width:100%;margin:auto;">
+				<p>
+				<span id="modaltext"></span><br/>
+				<span id="modaltext2"></span><br/>
+				<img id="img02" style="width:24px;height:28px" src="images/other/blank.png"><br/>
+				<span id="modaltext3"></span>
+				</p>
+			</div>
+		</div>
+		<div style="height:85%;margin-top:10px;">
+			<img src="images/art/laytonloztew.png" style="width:100px;height:127px;opacity:0.4;" draggable="false"/>
+			GrekTech
+			<div style="height:2.5vh;">
+			</div>
+			<div class="nav-active">
+			Home</div>
+			<a href="projects.html"><div class="nav-button">
+				<div class="navicon-div">
+					<img class="navicon" src="images/memcard/navicon_proj.png"/>
+					<img src="images/memcard/shadow.png" />
+				</div>
+			Ancient </div></a>
+			<a href="memcard.html"><div class="nav-button">
+				<div class="navicon-div">
+					<img class="navicon" src="images/memcard/navicon_memcard.png"/>
+					<img src="images/memcard/shadow.png" />
+				</div>
+			Ancinet Coin Card</div></a>
+			<a href="ynhd.html"><div class="nav-button">
+				<div class="navicon-div" style="bottom:3px;">
+					<img class="navicon" src="images/memcard/navicon_ynhd.png"/>
+					<img src="images/memcard/shadow.png" />
+				</div>
+			<span style="bottom:100px;">Solana endless</span></div></a>
+		</div>
+
+			</div>
+			<div id="main">
+				<div style="height:1vh;"></div>
+				<div class="content-block">
+					<div class="inline-navblock">
+						<a class="navlink" href="index.html">Home</a>
+					</div>
+					>
+					<div class="inline-navblock">
+						<a class="navlink" href="projects.html">Projects</a>
+					</div>
+					>
+					<div class="inline-navblock">
+						<a class="navlink">Mr Prospector</a>
+					</div>
+				</div>
+				<div style="height:2vh;">
+				</div>
+				<div style="height:2vh;">
+				</div>
+				
+				<div id="about" class="content-block feature-block">
+					<p>Item Names from <a href="https://gamefaqs.gamespot.com/ps/575722-mr-prospector-horiate-kun/faqs/80854/intro">GameFaqs Guide by ZeoKnight</a></p>
+				</div>
+				
+				<div id="chestloot" class="content-block feature-block">
+					<h2>Chest Loot</h2>
+					<p>Loot is chosen when a chest appears</p>
+					<p>As a fallback, if no items are eligible then it will give you Item #40 (Insipid Cola)</p>
+					<p>"Chest" I believe is the type of chest, 0 = Blue, 1 = Bronze, 2 = Silver, 3 = Gold. 4 also seems to be Gold.</p>
+					<p>See bottom for <a href="#specialreq">Special Requirements</a> (NOTE: Needs further testing!)</p>
+				</div>
+				
+				<table style="margin:auto;border:1px solid black;font-size:17px;">
+				<tr><th>ID</th><th>Item Name</th><th>Can Loot?</th><th>Chest</th><th>Level Req</th><th>Special Req</th></tr>
+<tr><td>1</td><td>Small Air Tank</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>2</td><td>Hard Mousse</td><td>YES</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>3</td><td>Hunting Cap</td><td>YES</td><td>0</td><td>25</td><td>0</td></tr>
+<tr><td>4</td><td>Ear Pick</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>5</td><td>Wet T-shirt</td><td>YES</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>6</td><td>Toe Shoes</td><td>YES</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>7</td><td>Blue Contact Lens</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>8</td><td>Penlight</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>9</td><td>Two of Hearts</td><td>YES</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>10</td><td>1 Gahas Banknote</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>11</td><td>Wrestler Mask</td><td>YES</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>12</td><td>Toy Shovel</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>13</td><td>Glistening Poncho</td><td>YES</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>14</td><td>Dirty Work Gloves</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>15</td><td>Dry-cell Battery</td><td>YES</td><td>0</td><td>45</td><td>0</td></tr>
+<tr><td>16</td><td>Empty Plastic Bottle</td><td>YES</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>17</td><td>Geroyon</td><td>YES</td><td>0</td><td>4</td><td>0</td></tr>
+<tr><td>18</td><td>Knit Cap</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>19</td><td>Tattered Helmet</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr class="g"><td>20</td><td>Overalls</td><td>NO</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>21</td><td>Silver Earrings</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>22</td><td>Marble</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>23</td><td>Short Rope Ladder</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>24</td><td>Three of Hearts</td><td>YES</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>25</td><td>Medicine Capsules</td><td>YES</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>26</td><td>Regular Pickaxe</td><td>YES</td><td>0</td><td>9</td><td>0</td></tr>
+<tr><td>27</td><td>Sexy Leotard</td><td>YES</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>28</td><td>Cantera</td><td>YES</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>29</td><td>Frying Pan</td><td>YES</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>30</td><td>Tarzan Loincloth</td><td>YES</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>31</td><td>Trendy Wristwatch</td><td>YES</td><td>0</td><td>4</td><td>0</td></tr>
+<tr><td>32</td><td>Hamburger</td><td>YES</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>33</td><td>Silk Hat</td><td>YES</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>34</td><td>Yellow Hair Color</td><td>YES</td><td>0</td><td>4</td><td>0</td></tr>
+<tr><td>35</td><td>Nice Hoodie</td><td>YES</td><td>0</td><td>22</td><td>0</td></tr>
+<tr><td>36</td><td>Maneki-neko</td><td>YES</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>37</td><td>Plastic Rake</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>38</td><td>Loose Socks</td><td>YES</td><td>0</td><td>39</td><td>0</td></tr>
+<tr><td>39</td><td>Four of Hearts</td><td>YES</td><td>0</td><td>12</td><td>0</td></tr>
+<tr><td>40</td><td>Insipid Cola</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr class="g"><td>41</td><td>Digdiggy</td><td>NO</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>42</td><td>Medicinal Herb</td><td>YES</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>43</td><td>Medium Air Tank</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>44</td><td>Heavy Helmet</td><td>YES</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>45</td><td>Spoon</td><td>YES</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>46</td><td>1-gil Copper Coin</td><td>YES</td><td>0</td><td>60</td><td>0</td></tr>
+<tr><td>47</td><td>Tattered Exploration Outfit</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>48</td><td>Sieve for Zaru Soba</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>49</td><td>Bathhouse Bucket</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>50</td><td>School-commute Raincoat</td><td>YES</td><td>0</td><td>4</td><td>0</td></tr>
+<tr><td>51</td><td>Candle</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>52</td><td>Invigorating Green Juice</td><td>YES</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>53</td><td>Alps Natural Spring Water</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>54</td><td>Broken Abacus</td><td>YES</td><td>0</td><td>50</td><td>0</td></tr>
+<tr><td>55</td><td>Banana Shake</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>56</td><td>Mexican Hat</td><td>YES</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>57</td><td>Five of Hearts</td><td>YES</td><td>0</td><td>16</td><td>0</td></tr>
+<tr><td>58</td><td>Authentic Red Wine</td><td>YES</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>59</td><td>Katou-kun's Gym Uniform</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>60</td><td>Iron Shovel</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>61</td><td>Tattered Shoes</td><td>YES</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>62</td><td>Ammonite</td><td>YES</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>63</td><td>Shogi Piece</td><td>YES</td><td>0</td><td>4</td><td>0</td></tr>
+<tr><td>64</td><td>Vintage Jeans</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>65</td><td>Cool Sunglasses</td><td>YES</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>66</td><td>Stick</td><td>YES</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>67</td><td>Straw Hat</td><td>YES</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>68</td><td>Six of Hearts</td><td>YES</td><td>0</td><td>20</td><td>0</td></tr>
+<tr><td>69</td><td>Health Sandals</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>70</td><td>Relay-race Sash</td><td>YES</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>71</td><td>French Fries</td><td>YES</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>72</td><td>Light Blue Bat</td><td>YES</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>73</td><td>Seven of Hearts</td><td>YES</td><td>1</td><td>24</td><td>0</td></tr>
+<tr><td>74</td><td>Nurse's White Coat</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>75</td><td>Cowboy Hat</td><td>YES</td><td>1</td><td>14</td><td>0</td></tr>
+<tr><td>76</td><td>Medium Rope Ladder</td><td>YES</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>77</td><td>Regular Work Gloves</td><td>YES</td><td>1</td><td>13</td><td>0</td></tr>
+<tr><td>78</td><td>Popular Yoyo</td><td>YES</td><td>1</td><td>6</td><td>0</td></tr>
+<tr><td>79</td><td>Vampire's Cape</td><td>YES</td><td>1</td><td>24</td><td>0</td></tr>
+<tr><td>80</td><td>Seafood Pizza</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>81</td><td>Orange Juice</td><td>YES</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>82</td><td>Large Air Tank</td><td>YES</td><td>1</td><td>18</td><td>0</td></tr>
+<tr><td>83</td><td>Crappy Game's Demo</td><td>YES</td><td>1</td><td>25</td><td>0</td></tr>
+<tr><td>84</td><td>10% Discount Coupon</td><td>YES</td><td>1</td><td>21</td><td>0</td></tr>
+<tr><td>85</td><td>Red-thong Geta</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>86</td><td>Steel Mousse</td><td>YES</td><td>1</td><td>15</td><td>0</td></tr>
+<tr><td>87</td><td>Mosquito Coil</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>88</td><td>Green Hair Color</td><td>YES</td><td>1</td><td>12</td><td>0</td></tr>
+<tr><td>89</td><td>Duplication Machine</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>90</td><td>Yokozuna's Ceremonial Apron</td><td>YES</td><td>1</td><td>63</td><td>0</td></tr>
+<tr><td>91</td><td>Plastic Helmet</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>92</td><td>Eight of Hearts</td><td>YES</td><td>1</td><td>28</td><td>0</td></tr>
+<tr><td>93</td><td>Songstress Pipinera</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>94</td><td>Brain-boosting Red Juice</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>95</td><td>Soccer Ball</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>96</td><td>London Punk</td><td>YES</td><td>1</td><td>9</td><td>0</td></tr>
+<tr><td>97</td><td>Green Contact Lenses</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>98</td><td>A Paper with 'Heisei' Written on it</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>99</td><td>Blind-date Photo of Black Cat</td><td>YES</td><td>1</td><td>27</td><td>0</td></tr>
+<tr><td>100</td><td>Good Cantera</td><td>YES</td><td>1</td><td>42</td><td>0</td></tr>
+<tr><td>101</td><td>Bagel Sandwich</td><td>YES</td><td>1</td><td>6</td><td>0</td></tr>
+<tr><td>102</td><td>Montsuki Hakama</td><td>YES</td><td>1</td><td>12</td><td>0</td></tr>
+<tr><td>103</td><td>Hula Hoop</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>104</td><td>10 Gahas Banknote</td><td>YES</td><td>1</td><td>21</td><td>0</td></tr>
+<tr><td>105</td><td>Evolution Machine</td><td>YES</td><td>1</td><td>4</td><td>0</td></tr>
+<tr><td>106</td><td>Trendy Shoes</td><td>YES</td><td>1</td><td>12</td><td>0</td></tr>
+<tr><td>107</td><td>Chocolate Cake</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>108</td><td>Paper Tattoo</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>109</td><td>Blue Hair Color</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>110</td><td>Graduate Cap</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>111</td><td>Nostalgic LCD Game</td><td>YES</td><td>1</td><td>40</td><td>0</td></tr>
+<tr><td>112</td><td>Koshien Stadium's Soil</td><td>YES</td><td>1</td><td>16</td><td>0</td></tr>
+<tr><td>113</td><td>Cup Ramen</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>114</td><td>Good Air Tank</td><td>YES</td><td>1</td><td>24</td><td>0</td></tr>
+<tr><td>115</td><td>Prima's Tutu</td><td>YES</td><td>1</td><td>20</td><td>0</td></tr>
+<tr><td>116</td><td>Antidote Herb</td><td>YES</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>117</td><td>Blue Sports Shoes</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>118</td><td>Exploration Outfit</td><td>YES</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>119</td><td>Baseball Cap</td><td>YES</td><td>1</td><td>29</td><td>0</td></tr>
+<tr><td>120</td><td>Menko</td><td>YES</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>121</td><td>Nine of Hearts</td><td>YES</td><td>1</td><td>32</td><td>0</td></tr>
+<tr><td>122</td><td>Shovel</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>123</td><td>Ghost-busting Monkey</td><td>YES</td><td>1</td><td>25</td><td>0</td></tr>
+<tr><td>124</td><td>Dynamite</td><td>YES</td><td>1</td><td>9</td><td>0</td></tr>
+<tr><td>125</td><td>Banana Peel</td><td>YES</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>126</td><td>Girl's Sailor Uniform</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>127</td><td>Steel Pickaxe</td><td>YES</td><td>1</td><td>16</td><td>0</td></tr>
+<tr><td>128</td><td>Ten of Hearts</td><td>YES</td><td>1</td><td>36</td><td>0</td></tr>
+<tr><td>129</td><td>Camouflage Clothing</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>130</td><td>Mom-made Onigiri</td><td>YES</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>131</td><td>Workout Tire</td><td>YES</td><td>1</td><td>4</td><td>0</td></tr>
+<tr><td>132</td><td>Luck-boosting Yellow Juice</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>133</td><td>Boy's Gakuran Uniform</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>134</td><td>Pointed Hat</td><td>YES</td><td>1</td><td>20</td><td>0</td></tr>
+<tr><td>135</td><td>Hamsterbo</td><td>YES</td><td>1</td><td>17</td><td>0</td></tr>
+<tr><td>136</td><td>Flashlight</td><td>YES</td><td>1</td><td>13</td><td>0</td></tr>
+<tr><td>137</td><td>Long Rope Ladder</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>138</td><td>Blossoming Earrings</td><td>YES</td><td>1</td><td>5</td><td>0</td></tr>
+<tr><td>139</td><td>Rubber Sole</td><td>YES</td><td>1</td><td>15</td><td>0</td></tr>
+<tr><td>140</td><td>Sacred Beast Figurine</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>141</td><td>Elementary School PHS</td><td>YES</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>142</td><td>10-gil Silver Coin</td><td>YES</td><td>1</td><td>10</td><td>0</td></tr>
+<tr><td>143</td><td>Roller Blade</td><td>YES</td><td>1</td><td>15</td><td>0</td></tr>
+<tr><td>144</td><td>Santa Clothes</td><td>YES</td><td>1</td><td>25</td><td>0</td></tr>
+<tr class="g"><td>145</td><td>Miss Snake</td><td>NO</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>146</td><td>Santa Hat</td><td>YES</td><td>2</td><td>25</td><td>0</td></tr>
+<tr><td>147</td><td>Iron Helmet</td><td>YES</td><td>2</td><td>18</td><td>0</td></tr>
+<tr><td>148</td><td>Rabbit Contact Lenses</td><td>YES</td><td>2</td><td>6</td><td>0</td></tr>
+<tr><td>149</td><td>Iron Geta</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>150</td><td>Calorie Friend</td><td>YES</td><td>2</td><td>5</td><td>0</td></tr>
+<tr><td>151</td><td>100 Gahas Banknote</td><td>YES</td><td>2</td><td>30</td><td>0</td></tr>
+<tr><td>152</td><td>Old Man Set</td><td>YES</td><td>2</td><td>50</td><td>0</td></tr>
+<tr><td>153</td><td>Jack of Hearts</td><td>YES</td><td>2</td><td>40</td><td>0</td></tr>
+<tr><td>154</td><td>Work Gloves with Warts</td><td>YES</td><td>2</td><td>10</td><td>0</td></tr>
+<tr><td>155</td><td>Great Air Tank</td><td>YES</td><td>2</td><td>32</td><td>0</td></tr>
+<tr><td>156</td><td>Great Pickaxe</td><td>YES</td><td>2</td><td>25</td><td>0</td></tr>
+<tr><td>157</td><td>Phantom Demon Figurine</td><td>YES</td><td>2</td><td>30</td><td>0</td></tr>
+<tr><td>158</td><td>Video Game Magazine</td><td>YES</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>159</td><td>Flipper-kun</td><td>YES</td><td>2</td><td>10</td><td>0</td></tr>
+<tr><td>160</td><td>Chonmage</td><td>YES</td><td>2</td><td>10</td><td>0</td></tr>
+<tr><td>161</td><td>Makeup Band Costume</td><td>YES</td><td>2</td><td>9</td><td>0</td></tr>
+<tr><td>162</td><td>Gold-plated Wristwatch</td><td>YES</td><td>2</td><td>25</td><td>0</td></tr>
+<tr><td>163</td><td>Japan Representative's Jersey</td><td>YES</td><td>2</td><td>15</td><td>0</td></tr>
+<tr><td>164</td><td>Blue Strategy Book</td><td>YES</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>165</td><td>Extra Long Rope Ladder</td><td>YES</td><td>2</td><td>18</td><td>0</td></tr>
+<tr><td>166</td><td>Playmate</td><td>YES</td><td>2</td><td>15</td><td>0</td></tr>
+<tr><td>167</td><td>Fried Chicken</td><td>YES</td><td>2</td><td>12</td><td>0</td></tr>
+<tr><td>168</td><td>Santa Boots</td><td>YES</td><td>2</td><td>15</td><td>0</td></tr>
+<tr><td>169</td><td>Bus-stop Sign</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>170</td><td>Graduation Certificate</td><td>YES</td><td>2</td><td>27</td><td>0</td></tr>
+<tr><td>171</td><td>Tulip Hat</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>172</td><td>Magic Spoon</td><td>YES</td><td>2</td><td>10</td><td>0</td></tr>
+<tr><td>173</td><td>Guitar Pick</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>174</td><td>Platform Boots</td><td>YES</td><td>2</td><td>20</td><td>0</td></tr>
+<tr><td>175</td><td>Prep School's Emblem</td><td>YES</td><td>2</td><td>25</td><td>0</td></tr>
+<tr><td>176</td><td>Enka Singer's Costume</td><td>YES</td><td>2</td><td>5</td><td>0</td></tr>
+<tr><td>177</td><td>Peach Hair Color</td><td>YES</td><td>2</td><td>15</td><td>0</td></tr>
+<tr><td>178</td><td>Doughnut</td><td>YES</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>179</td><td>The Secret of the Pyramid</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>180</td><td>Good Exploration Outfit</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>181</td><td>Queen of Hearts</td><td>YES</td><td>2</td><td>40</td><td>0</td></tr>
+<tr><td>182</td><td>Egg-shaped Chocolate</td><td>YES</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>183</td><td>Sanshiro's Judo Uniform</td><td>YES</td><td>2</td><td>35</td><td>0</td></tr>
+<tr class="g"><td>184</td><td>Elixir</td><td>NO</td><td>2</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>185</td><td>Pure Silver Rosary</td><td>NO</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>186</td><td>Elephant's Ear Pick</td><td>YES</td><td>2</td><td>16</td><td>0</td></tr>
+<tr><td>187</td><td>Saigou-san's Geta</td><td>YES</td><td>2</td><td>15</td><td>0</td></tr>
+<tr><td>188</td><td>Nutritional Drink</td><td>YES</td><td>2</td><td>5</td><td>0</td></tr>
+<tr><td>189</td><td>Black CD-ROM</td><td>YES</td><td>2</td><td>12</td><td>0</td></tr>
+<tr><td>190</td><td>100-gil Gold Coin</td><td>YES</td><td>2</td><td>32</td><td>0</td></tr>
+<tr><td>191</td><td>Tokugawa's Ancient Scroll</td><td>YES</td><td>2</td><td>30</td><td>0</td></tr>
+<tr><td>192</td><td>Bathhouse Bucket (Plastic)</td><td>YES</td><td>2</td><td>28</td><td>0</td></tr>
+<tr><td>193</td><td>Blind-date Photo of Polar Bear</td><td>YES</td><td>2</td><td>10</td><td>0</td></tr>
+<tr><td>194</td><td>Tacky Sunglasses</td><td>YES</td><td>2</td><td>10</td><td>0</td></tr>
+<tr><td>195</td><td>Sea King Gold</td><td>YES</td><td>2</td><td>20</td><td>0</td></tr>
+<tr class="g"><td>196</td><td>Yellow Strategy Book</td><td>NO</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>197</td><td>Italian-made Suit</td><td>YES</td><td>2</td><td>15</td><td>0</td></tr>
+<tr><td>198</td><td>Pickaxe of Strength</td><td>YES</td><td>2</td><td>30</td><td>0</td></tr>
+<tr><td>199</td><td>Afro Hair</td><td>YES</td><td>3</td><td>34</td><td>0</td></tr>
+<tr><td>200</td><td>Rizu-chan</td><td>YES</td><td>3</td><td>20</td><td>0</td></tr>
+<tr><td>201</td><td>Iga's Ninja Costume</td><td>YES</td><td>3</td><td>40</td><td>0</td></tr>
+<tr><td>202</td><td>Fierce Gold Figurine</td><td>YES</td><td>3</td><td>27</td><td>0</td></tr>
+<tr><td>203</td><td>Magic Mousse</td><td>YES</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>204</td><td>King of Hearts</td><td>YES</td><td>3</td><td>43</td><td>0</td></tr>
+<tr><td>205</td><td>Mysterious Pickaxe</td><td>YES</td><td>3</td><td>35</td><td>0</td></tr>
+<tr class="g"><td>206</td><td>Wooden Bear</td><td>NO</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>207</td><td>Wing Boots</td><td>YES</td><td>3</td><td>37</td><td>0</td></tr>
+<tr><td>208</td><td>Nobunaga's Straw Sandals</td><td>YES</td><td>3</td><td>30</td><td>0</td></tr>
+<tr><td>209</td><td>Nessie's Egg</td><td>YES</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>210</td><td>Prospector's Photo</td><td>YES</td><td>3</td><td>40</td><td>0</td></tr>
+<tr><td>211</td><td>Chinese Baby Panda</td><td>YES</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>212</td><td>Mysterious Floppy Disk</td><td>YES</td><td>3</td><td>20</td><td>0</td></tr>
+<tr><td>213</td><td>Red Apple</td><td>YES</td><td>3</td><td>10</td><td>0</td></tr>
+<tr><td>214</td><td>Convenience Store Bentou</td><td>YES</td><td>3</td><td>25</td><td>0</td></tr>
+<tr class="g"><td>215</td><td>Red Strategy Book</td><td>NO</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>216</td><td>Red High Heels</td><td>YES</td><td>3</td><td>20</td><td>0</td></tr>
+<tr><td>217</td><td>Cyber Wristwatch</td><td>YES</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>218</td><td>Surprise Lucky Bag</td><td>YES</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>219</td><td>White Cat Mobile Phone</td><td>YES</td><td>3</td><td>3</td><td>0</td></tr>
+<tr><td>220</td><td>Space Suit</td><td>YES</td><td>3</td><td>55</td><td>0</td></tr>
+<tr><td>221</td><td>Ultimate Air Tank</td><td>YES</td><td>3</td><td>40</td><td>0</td></tr>
+<tr><td>222</td><td>Woodman</td><td>YES</td><td>3</td><td>60</td><td>0</td></tr>
+<tr><td>223</td><td>Thoughtful Year-end Gift</td><td>YES</td><td>3</td><td>10</td><td>0</td></tr>
+<tr><td>224</td><td>Chibi Dragon</td><td>YES</td><td>3</td><td>26</td><td>0</td></tr>
+<tr><td>225</td><td>Mouse Plush Toy</td><td>YES</td><td>3</td><td>30</td><td>0</td></tr>
+<tr><td>226</td><td>Hi-tech Sports Shoes</td><td>YES</td><td>3</td><td>10</td><td>0</td></tr>
+<tr><td>227</td><td>Phoenix</td><td>YES</td><td>3</td><td>65</td><td>0</td></tr>
+<tr><td>228</td><td>Bunny Girl's Ears</td><td>YES</td><td>3</td><td>22</td><td>0</td></tr>
+<tr><td>229</td><td>Night Demon Figurine</td><td>YES</td><td>3</td><td>38</td><td>0</td></tr>
+<tr><td>230</td><td>Newly-released Game Console</td><td>YES</td><td>3</td><td>10</td><td>0</td></tr>
+<tr class="g"><td>231</td><td>Ace of Hearts</td><td>NO</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>232</td><td>Super Luxury Brand Bag</td><td>YES</td><td>3</td><td>10</td><td>0</td></tr>
+<tr><td>233</td><td>Fatty Tuna Sushi</td><td>YES</td><td>3</td><td>1</td><td>0</td></tr>
+<tr class="g"><td>234</td><td>Electric Pickaxe</td><td>NO</td><td>3</td><td>50</td><td>0</td></tr>
+<tr><td>235</td><td>Eternal Rope Ladder</td><td>YES</td><td>4</td><td>55</td><td>9</td></tr>
+<tr><td>236</td><td>New Year's Eve Dress</td><td>YES</td><td>4</td><td>50</td><td>1</td></tr>
+<tr><td>237</td><td>The Latest Computer</td><td>YES</td><td>4</td><td>50</td><td>3</td></tr>
+<tr><td>238</td><td>Electric Mouse Costume</td><td>YES</td><td>4</td><td>50</td><td>10</td></tr>
+<tr><td>239</td><td>Rare Air Tank</td><td>YES</td><td>4</td><td>45</td><td>2</td></tr>
+<tr><td>240</td><td>Champion Mare's Horseshoe</td><td>YES</td><td>4</td><td>45</td><td>11</td></tr>
+<tr><td>241</td><td>Valuable Trading Card</td><td>YES</td><td>4</td><td>48</td><td>13</td></tr>
+<tr><td>242</td><td>Embarrassing Photo</td><td>YES</td><td>4</td><td>50</td><td>12</td></tr>
+<tr class="g"><td>243</td><td>Robo 2001</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>244</td><td>Enka Singer's Charm</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>245</td><td>Magic Pickaxe</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>246</td><td>Mystical Pendant</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>247</td><td>Earrings of Science</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>248</td><td>Necklace of Creation</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>249</td><td>Bracelet of Philosophy</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>250</td><td>Brooch of Wisdom</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>251</td><td>Ring of Devotion</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+<tr class="g"><td>252</td><td>Tiara of Willpower</td><td>NO</td><td>4</td><td>0</td><td>0</td></tr>
+				</table>
+				<div style="height:4vh;">
+				</div>
+				<div id="specialreq" class="content-block feature-block">
+					<h2>Special Requirements</h2>
+					<table style="margin:auto;border:1px solid black;font-size:17px;">
+				<tr><th>ID</th><th>Item</th><th>Requirement</th></tr>
+<tr><td>1</td><td>New Year's Eve Dress</td><td>Play for 5 hours or more (current session, not total. Timer starts on title screen)</td></tr>
+<tr><td>2</td><td>Rare Air Tank</td><td>Play for 5 minutes or more</td></tr>
+<tr><td>3</td><td>The Latest Computer</td><td>After paying the fee to enter the mine, the amount of money you have is divisible by 100 (money gained in the mine doesn't change this, it writes down your amount when you enter)</td></tr>
+<tr><td>4</td><td>-</td><td>After paying the fee to enter the mine, the amount of money you have is divisible by 1000</td></tr>
+<tr><td>5</td><td>-</td><td>After paying the fee to enter the mine, the last 3 digits of the money you have is 777</td></tr>
+<tr><td>6</td><td>-</td><td>DEF = 100</td></tr>
+<tr><td>7</td><td>-</td><td>SPD = 200</td></tr>
+<tr><td>8</td><td>-</td><td>INT = 333</td></tr>
+<tr><td>9</td><td>Eternal Rope Ladder</td><td>No ladder equipped (it checks your ladder height is 0)</td></tr>
+<tr><td>10</td><td>Electric Mouse Costume</td><td>Current pet is Rizu-chan</td></tr>
+<tr><td>11</td><td>Champion Mare's Horseshoe</td><td>Current pet is Playmate</td></tr>
+<tr><td>12</td><td>Embarrassing Photo</td><td>Have no equipment on (no clothing, no items, no dig tool, no ladder)</td></tr>
+<tr><td>13</td><td>Valuable Trading Card</td><td>(no special requirement)</td></tr>
+				</table>
+				</div>
+				<div style="height:4vh;">
+				</div>
+				<div id="levelup" class="content-block feature-block">
+					<h2>Level Up Stats</h2>
+					<p>XP is amount of XP needed to reach that level. Actual XP is XP * 256</p>
+					<p>Stats are base stats, before equipment/costume/pet bonuses. Ladder Height isn't included in the table below but has 0 base stat for every level.</p>
+					<p>Mine 1 gives 13 Actual XP for brighter rocks, 15 for darker rocks</p>
+					<p>Levels 94 and 95 have an unusual amount of XP needed</p>
+				</div>
+				
+				<table style="margin:auto;border:1px solid black;font-size:17px;width:95%">
+				<tr><th>Level</th><th colspan="2">XP</th><th colspan="2">Actual XP</th><th colspan="2">SPD</th><th colspan="2">DEF</th><th colspan="2">INT</th><th colspan="2">LNG</th><th colspan="2">POW</th></tr>
+				<tr><td>1</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td></td><td>4</td><td></td><td>2</td><td></td><td>2</td><td></td><td>4</td><td></td></tr>
+<tr><td>2</td><td>1</td><td>+1</td><td>256</td><td>+256</td><td>5</td><td>+2</td><td>6</td><td>+2</td><td>3</td><td>+1</td><td>2</td><td class="g">-</td><td>6</td><td>+2</td></tr>
+<tr><td>3</td><td>3</td><td>+2</td><td>768</td><td>+512</td><td>7</td><td>+2</td><td>8</td><td>+2</td><td>4</td><td>+1</td><td>2</td><td class="g">-</td><td>7</td><td>+1</td></tr>
+<tr><td>4</td><td>5</td><td>+2</td><td>1280</td><td>+512</td><td>8</td><td>+1</td><td>9</td><td>+1</td><td>5</td><td>+1</td><td>2</td><td class="g">-</td><td>9</td><td>+2</td></tr>
+<tr><td>5</td><td>8</td><td>+3</td><td>2048</td><td>+768</td><td>10</td><td>+2</td><td>12</td><td>+3</td><td>6</td><td>+1</td><td>2</td><td class="g">-</td><td>10</td><td>+1</td></tr>
+<tr><td>6</td><td>12</td><td>+4</td><td>3072</td><td>+1024</td><td>12</td><td>+2</td><td>15</td><td>+3</td><td>8</td><td>+2</td><td>2</td><td class="g">-</td><td>13</td><td>+3</td></tr>
+<tr><td>7</td><td>17</td><td>+5</td><td>4352</td><td>+1280</td><td>13</td><td>+1</td><td>17</td><td>+2</td><td>8</td><td class="g">-</td><td>2</td><td class="g">-</td><td>15</td><td>+2</td></tr>
+<tr><td>8</td><td>23</td><td>+6</td><td>5888</td><td>+1536</td><td>14</td><td>+1</td><td>20</td><td>+3</td><td>10</td><td>+2</td><td>2</td><td class="g">-</td><td>16</td><td>+1</td></tr>
+<tr><td>9</td><td>30</td><td>+7</td><td>7680</td><td>+1792</td><td>17</td><td>+3</td><td>23</td><td>+3</td><td>12</td><td>+2</td><td>3</td><td>+1</td><td>19</td><td>+3</td></tr>
+<tr><td>10</td><td>38</td><td>+8</td><td>9728</td><td>+2048</td><td>20</td><td>+3</td><td>25</td><td>+2</td><td>14</td><td>+2</td><td>3</td><td class="g">-</td><td>20</td><td>+1</td></tr>
+<tr><td>11</td><td>47</td><td>+9</td><td>12032</td><td>+2304</td><td>22</td><td>+2</td><td>28</td><td>+3</td><td>14</td><td class="g">-</td><td>3</td><td class="g">-</td><td>22</td><td>+2</td></tr>
+<tr><td>12</td><td>57</td><td>+10</td><td>14592</td><td>+2560</td><td>25</td><td>+3</td><td>31</td><td>+3</td><td>16</td><td>+2</td><td>3</td><td class="g">-</td><td>25</td><td>+3</td></tr>
+<tr><td>13</td><td>68</td><td>+11</td><td>17408</td><td>+2816</td><td>26</td><td>+1</td><td>35</td><td>+4</td><td>17</td><td>+1</td><td>3</td><td class="g">-</td><td>27</td><td>+2</td></tr>
+<tr><td>14</td><td>80</td><td>+12</td><td>20480</td><td>+3072</td><td>28</td><td>+2</td><td>36</td><td>+1</td><td>18</td><td>+1</td><td>3</td><td class="g">-</td><td>28</td><td>+1</td></tr>
+<tr><td>15</td><td>94</td><td>+14</td><td>24064</td><td>+3584</td><td>31</td><td>+3</td><td>38</td><td>+2</td><td>20</td><td>+2</td><td>3</td><td class="g">-</td><td>31</td><td>+3</td></tr>
+<tr><td>16</td><td>110</td><td>+16</td><td>28160</td><td>+4096</td><td>33</td><td>+2</td><td>40</td><td>+2</td><td>21</td><td>+1</td><td>4</td><td>+1</td><td>32</td><td>+1</td></tr>
+<tr><td>17</td><td>129</td><td>+19</td><td>33024</td><td>+4864</td><td>34</td><td>+1</td><td>43</td><td>+3</td><td>22</td><td>+1</td><td>4</td><td class="g">-</td><td>35</td><td>+3</td></tr>
+<tr><td>18</td><td>151</td><td>+22</td><td>38656</td><td>+5632</td><td>36</td><td>+2</td><td>48</td><td>+5</td><td>24</td><td>+2</td><td>4</td><td class="g">-</td><td>37</td><td>+2</td></tr>
+<tr><td>19</td><td>177</td><td>+26</td><td>45312</td><td>+6656</td><td>38</td><td>+2</td><td>53</td><td>+5</td><td>26</td><td>+2</td><td>4</td><td class="g">-</td><td>40</td><td>+3</td></tr>
+<tr><td>20</td><td>207</td><td>+30</td><td>52992</td><td>+7680</td><td>42</td><td>+4</td><td>57</td><td>+4</td><td>27</td><td>+1</td><td>4</td><td class="g">-</td><td>42</td><td>+2</td></tr>
+<tr><td>21</td><td>241</td><td>+34</td><td>61696</td><td>+8704</td><td>43</td><td>+1</td><td>60</td><td>+3</td><td>28</td><td>+1</td><td>4</td><td class="g">-</td><td>46</td><td>+4</td></tr>
+<tr><td>22</td><td>279</td><td>+38</td><td>71424</td><td>+9728</td><td>46</td><td>+3</td><td>64</td><td>+4</td><td>30</td><td>+2</td><td>4</td><td class="g">-</td><td>49</td><td>+3</td></tr>
+<tr><td>23</td><td>321</td><td>+42</td><td>82176</td><td>+10752</td><td>47</td><td>+1</td><td>67</td><td>+3</td><td>31</td><td>+1</td><td>4</td><td class="g">-</td><td>51</td><td>+2</td></tr>
+<tr><td>24</td><td>368</td><td>+47</td><td>94208</td><td>+12032</td><td>49</td><td>+2</td><td>70</td><td>+3</td><td>32</td><td>+1</td><td>5</td><td>+1</td><td>53</td><td>+2</td></tr>
+<tr><td>25</td><td>420</td><td>+52</td><td>107520</td><td>+13312</td><td>51</td><td>+2</td><td>75</td><td>+5</td><td>35</td><td>+3</td><td>5</td><td class="g">-</td><td>57</td><td>+4</td></tr>
+<tr><td>26</td><td>477</td><td>+57</td><td>122112</td><td>+14592</td><td>52</td><td>+1</td><td>77</td><td>+2</td><td>36</td><td>+1</td><td>5</td><td class="g">-</td><td>59</td><td>+2</td></tr>
+<tr><td>27</td><td>540</td><td>+63</td><td>138240</td><td>+16128</td><td>54</td><td>+2</td><td>80</td><td>+3</td><td>36</td><td class="g">-</td><td>5</td><td class="g">-</td><td>62</td><td>+3</td></tr>
+<tr><td>28</td><td>609</td><td>+69</td><td>155904</td><td>+17664</td><td>58</td><td>+4</td><td>83</td><td>+3</td><td>38</td><td>+2</td><td>5</td><td class="g">-</td><td>65</td><td>+3</td></tr>
+<tr><td>29</td><td>684</td><td>+75</td><td>175104</td><td>+19200</td><td>59</td><td>+1</td><td>87</td><td>+4</td><td>40</td><td>+2</td><td>5</td><td class="g">-</td><td>67</td><td>+2</td></tr>
+<tr><td>30</td><td>766</td><td>+82</td><td>196096</td><td>+20992</td><td>60</td><td>+1</td><td>90</td><td>+3</td><td>41</td><td>+1</td><td>5</td><td class="g">-</td><td>70</td><td>+3</td></tr>
+<tr><td>31</td><td>856</td><td>+90</td><td>219136</td><td>+23040</td><td>63</td><td>+3</td><td>91</td><td>+1</td><td>44</td><td>+3</td><td>6</td><td>+1</td><td>73</td><td>+3</td></tr>
+<tr><td>32</td><td>955</td><td>+99</td><td>244480</td><td>+25344</td><td>64</td><td>+1</td><td>97</td><td>+6</td><td>46</td><td>+2</td><td>6</td><td class="g">-</td><td>76</td><td>+3</td></tr>
+<tr><td>33</td><td>1065</td><td>+110</td><td>272640</td><td>+28160</td><td>65</td><td>+1</td><td>97</td><td class="g">-</td><td>47</td><td>+1</td><td>6</td><td class="g">-</td><td>78</td><td>+2</td></tr>
+<tr><td>34</td><td>1187</td><td>+122</td><td>303872</td><td>+31232</td><td>68</td><td>+3</td><td>101</td><td>+4</td><td>50</td><td>+3</td><td>6</td><td class="g">-</td><td>80</td><td>+2</td></tr>
+<tr><td>35</td><td>1325</td><td>+138</td><td>339200</td><td>+35328</td><td>70</td><td>+2</td><td>105</td><td>+4</td><td>51</td><td>+1</td><td>6</td><td class="g">-</td><td>83</td><td>+3</td></tr>
+<tr><td>36</td><td>1484</td><td>+159</td><td>379904</td><td>+40704</td><td>72</td><td>+2</td><td>106</td><td>+1</td><td>53</td><td>+2</td><td>6</td><td class="g">-</td><td>85</td><td>+2</td></tr>
+<tr><td>37</td><td>1669</td><td>+185</td><td>427264</td><td>+47360</td><td>74</td><td>+2</td><td>110</td><td>+4</td><td>56</td><td>+3</td><td>6</td><td class="g">-</td><td>88</td><td>+3</td></tr>
+<tr><td>38</td><td>1899</td><td>+230</td><td>486144</td><td>+58880</td><td>75</td><td>+1</td><td>111</td><td>+1</td><td>57</td><td>+1</td><td>6</td><td class="g">-</td><td>91</td><td>+3</td></tr>
+<tr><td>39</td><td>2184</td><td>+285</td><td>559104</td><td>+72960</td><td>77</td><td>+2</td><td>115</td><td>+4</td><td>59</td><td>+2</td><td>7</td><td>+1</td><td>94</td><td>+3</td></tr>
+<tr><td>40</td><td>2499</td><td>+315</td><td>639744</td><td>+80640</td><td>79</td><td>+2</td><td>117</td><td>+2</td><td>62</td><td>+3</td><td>7</td><td class="g">-</td><td>98</td><td>+4</td></tr>
+<tr><td>41</td><td>2906</td><td>+407</td><td>743936</td><td>+104192</td><td>80</td><td>+1</td><td>121</td><td>+4</td><td>64</td><td>+2</td><td>7</td><td class="g">-</td><td>101</td><td>+3</td></tr>
+<tr><td>42</td><td>3405</td><td>+499</td><td>871680</td><td>+127744</td><td>82</td><td>+2</td><td>122</td><td>+1</td><td>65</td><td>+1</td><td>7</td><td class="g">-</td><td>104</td><td>+3</td></tr>
+<tr><td>43</td><td>3935</td><td>+530</td><td>1007360</td><td>+135680</td><td>85</td><td>+3</td><td>126</td><td>+4</td><td>67</td><td>+2</td><td>7</td><td class="g">-</td><td>108</td><td>+4</td></tr>
+<tr><td>44</td><td>4511</td><td>+576</td><td>1154816</td><td>+147456</td><td>88</td><td>+3</td><td>128</td><td>+2</td><td>70</td><td>+3</td><td>8</td><td>+1</td><td>111</td><td>+3</td></tr>
+<tr><td>45</td><td>5150</td><td>+639</td><td>1318400</td><td>+163584</td><td>89</td><td>+1</td><td>130</td><td>+2</td><td>71</td><td>+1</td><td>8</td><td class="g">-</td><td>114</td><td>+3</td></tr>
+<tr><td>46</td><td>5795</td><td>+645</td><td>1483520</td><td>+165120</td><td>92</td><td>+3</td><td>133</td><td>+3</td><td>74</td><td>+3</td><td>8</td><td class="g">-</td><td>119</td><td>+5</td></tr>
+<tr><td>47</td><td>6507</td><td>+712</td><td>1665792</td><td>+182272</td><td>94</td><td>+2</td><td>135</td><td>+2</td><td>76</td><td>+2</td><td>8</td><td class="g">-</td><td>123</td><td>+4</td></tr>
+<tr><td>48</td><td>7299</td><td>+792</td><td>1868544</td><td>+202752</td><td>96</td><td>+2</td><td>137</td><td>+2</td><td>79</td><td>+3</td><td>8</td><td class="g">-</td><td>126</td><td>+3</td></tr>
+<tr><td>49</td><td>8187</td><td>+888</td><td>2095872</td><td>+227328</td><td>98</td><td>+2</td><td>139</td><td>+2</td><td>81</td><td>+2</td><td>8</td><td class="g">-</td><td>130</td><td>+4</td></tr>
+<tr><td>50</td><td>9109</td><td>+922</td><td>2331904</td><td>+236032</td><td>100</td><td>+2</td><td>142</td><td>+3</td><td>83</td><td>+2</td><td>8</td><td class="g">-</td><td>135</td><td>+5</td></tr>
+<tr><td>51</td><td>10331</td><td>+1222</td><td>2644736</td><td>+312832</td><td>102</td><td>+2</td><td>145</td><td>+3</td><td>85</td><td>+2</td><td>9</td><td>+1</td><td>139</td><td>+4</td></tr>
+<tr><td>52</td><td>11637</td><td>+1306</td><td>2979072</td><td>+334336</td><td>104</td><td>+2</td><td>147</td><td>+2</td><td>87</td><td>+2</td><td>9</td><td class="g">-</td><td>141</td><td>+2</td></tr>
+<tr><td>53</td><td>13141</td><td>+1504</td><td>3364096</td><td>+385024</td><td>105</td><td>+1</td><td>148</td><td>+1</td><td>90</td><td>+3</td><td>9</td><td class="g">-</td><td>144</td><td>+3</td></tr>
+<tr><td>54</td><td>14882</td><td>+1741</td><td>3809792</td><td>+445696</td><td>108</td><td>+3</td><td>150</td><td>+2</td><td>92</td><td>+2</td><td>9</td><td class="g">-</td><td>147</td><td>+3</td></tr>
+<tr><td>55</td><td>16907</td><td>+2025</td><td>4328192</td><td>+518400</td><td>111</td><td>+3</td><td>152</td><td>+2</td><td>94</td><td>+2</td><td>9</td><td class="g">-</td><td>150</td><td>+3</td></tr>
+<tr><td>56</td><td>19272</td><td>+2365</td><td>4933632</td><td>+605440</td><td>114</td><td>+3</td><td>153</td><td>+1</td><td>95</td><td>+1</td><td>10</td><td>+1</td><td>153</td><td>+3</td></tr>
+<tr><td>57</td><td>22045</td><td>+2773</td><td>5643520</td><td>+709888</td><td>116</td><td>+2</td><td>156</td><td>+3</td><td>97</td><td>+2</td><td>10</td><td class="g">-</td><td>156</td><td>+3</td></tr>
+<tr><td>58</td><td>25307</td><td>+3262</td><td>6478592</td><td>+835072</td><td>119</td><td>+3</td><td>158</td><td>+2</td><td>99</td><td>+2</td><td>10</td><td class="g">-</td><td>159</td><td>+3</td></tr>
+<tr><td>59</td><td>29155</td><td>+3848</td><td>7463680</td><td>+985088</td><td>120</td><td>+1</td><td>160</td><td>+2</td><td>100</td><td>+1</td><td>10</td><td class="g">-</td><td>162</td><td>+3</td></tr>
+<tr><td>60</td><td>33635</td><td>+4480</td><td>8610560</td><td>+1146880</td><td>122</td><td>+2</td><td>162</td><td>+2</td><td>101</td><td>+1</td><td>10</td><td class="g">-</td><td>165</td><td>+3</td></tr>
+<tr><td>61</td><td>38797</td><td>+5162</td><td>9932032</td><td>+1321472</td><td>124</td><td>+2</td><td>164</td><td>+2</td><td>103</td><td>+2</td><td>10</td><td class="g">-</td><td>167</td><td>+2</td></tr>
+<tr><td>62</td><td>44695</td><td>+5898</td><td>11441920</td><td>+1509888</td><td>126</td><td>+2</td><td>165</td><td>+1</td><td>107</td><td>+4</td><td>10</td><td class="g">-</td><td>169</td><td>+2</td></tr>
+<tr><td>63</td><td>51387</td><td>+6692</td><td>13155072</td><td>+1713152</td><td>127</td><td>+1</td><td>166</td><td>+1</td><td>112</td><td>+5</td><td>11</td><td>+1</td><td>172</td><td>+3</td></tr>
+<tr><td>64</td><td>58936</td><td>+7549</td><td>15087616</td><td>+1932544</td><td>129</td><td>+2</td><td>167</td><td>+1</td><td>117</td><td>+5</td><td>11</td><td class="g">-</td><td>174</td><td>+2</td></tr>
+<tr><td>65</td><td>67410</td><td>+8474</td><td>17256960</td><td>+2169344</td><td>131</td><td>+2</td><td>169</td><td>+2</td><td>121</td><td>+4</td><td>11</td><td class="g">-</td><td>177</td><td>+3</td></tr>
+<tr><td>66</td><td>76883</td><td>+9473</td><td>19682048</td><td>+2425088</td><td>132</td><td>+1</td><td>170</td><td>+1</td><td>125</td><td>+4</td><td>11</td><td class="g">-</td><td>179</td><td>+2</td></tr>
+<tr><td>67</td><td>87434</td><td>+10551</td><td>22383104</td><td>+2701056</td><td>138</td><td>+6</td><td>171</td><td>+1</td><td>127</td><td>+2</td><td>11</td><td class="g">-</td><td>181</td><td>+2</td></tr>
+<tr><td>68</td><td>99149</td><td>+11715</td><td>25382144</td><td>+2999040</td><td>141</td><td>+3</td><td>173</td><td>+2</td><td>129</td><td>+2</td><td>11</td><td class="g">-</td><td>183</td><td>+2</td></tr>
+<tr><td>69</td><td>112121</td><td>+12972</td><td>28702976</td><td>+3320832</td><td>143</td><td>+2</td><td>174</td><td>+1</td><td>133</td><td>+4</td><td>11</td><td class="g">-</td><td>186</td><td>+3</td></tr>
+<tr><td>70</td><td>126450</td><td>+14329</td><td>32371200</td><td>+3668224</td><td>145</td><td>+2</td><td>175</td><td>+1</td><td>135</td><td>+2</td><td>12</td><td>+1</td><td>189</td><td>+3</td></tr>
+<tr><td>71</td><td>142244</td><td>+15794</td><td>36414464</td><td>+4043264</td><td>148</td><td>+3</td><td>176</td><td>+1</td><td>139</td><td>+4</td><td>12</td><td class="g">-</td><td>191</td><td>+2</td></tr>
+<tr><td>72</td><td>159620</td><td>+17376</td><td>40862720</td><td>+4448256</td><td>150</td><td>+2</td><td>178</td><td>+2</td><td>142</td><td>+3</td><td>12</td><td class="g">-</td><td>193</td><td>+2</td></tr>
+<tr><td>73</td><td>178704</td><td>+19084</td><td>45748224</td><td>+4885504</td><td>152</td><td>+2</td><td>180</td><td>+2</td><td>145</td><td>+3</td><td>12</td><td class="g">-</td><td>195</td><td>+2</td></tr>
+<tr><td>74</td><td>199598</td><td>+20894</td><td>51097088</td><td>+5348864</td><td>153</td><td>+1</td><td>182</td><td>+2</td><td>147</td><td>+2</td><td>12</td><td class="g">-</td><td>197</td><td>+2</td></tr>
+<tr><td>75</td><td>222410</td><td>+22812</td><td>56936960</td><td>+5839872</td><td>156</td><td>+3</td><td>183</td><td>+1</td><td>150</td><td>+3</td><td>12</td><td class="g">-</td><td>199</td><td>+2</td></tr>
+<tr><td>76</td><td>247255</td><td>+24845</td><td>63297280</td><td>+6360320</td><td>158</td><td>+2</td><td>185</td><td>+2</td><td>153</td><td>+3</td><td>12</td><td class="g">-</td><td>201</td><td>+2</td></tr>
+<tr><td>77</td><td>274254</td><td>+26999</td><td>70209024</td><td>+6911744</td><td>160</td><td>+2</td><td>186</td><td>+1</td><td>156</td><td>+3</td><td>13</td><td>+1</td><td>202</td><td>+1</td></tr>
+<tr><td>78</td><td>303536</td><td>+29282</td><td>77705216</td><td>+7496192</td><td>162</td><td>+2</td><td>188</td><td>+2</td><td>159</td><td>+3</td><td>13</td><td class="g">-</td><td>204</td><td>+2</td></tr>
+<tr><td>79</td><td>335237</td><td>+31701</td><td>85820672</td><td>+8115456</td><td>164</td><td>+2</td><td>190</td><td>+2</td><td>162</td><td>+3</td><td>13</td><td class="g">-</td><td>205</td><td>+1</td></tr>
+<tr><td>80</td><td>369502</td><td>+34265</td><td>94592512</td><td>+8771840</td><td>165</td><td>+1</td><td>191</td><td>+1</td><td>165</td><td>+3</td><td>13</td><td class="g">-</td><td>207</td><td>+2</td></tr>
+<tr><td>81</td><td>406484</td><td>+36982</td><td>104059904</td><td>+9467392</td><td>167</td><td>+2</td><td>192</td><td>+1</td><td>169</td><td>+4</td><td>13</td><td class="g">-</td><td>209</td><td>+2</td></tr>
+<tr><td>82</td><td>446346</td><td>+39862</td><td>114264576</td><td>+10204672</td><td>169</td><td>+2</td><td>194</td><td>+2</td><td>170</td><td>+1</td><td>13</td><td class="g">-</td><td>210</td><td>+1</td></tr>
+<tr><td>83</td><td>489260</td><td>+42914</td><td>125250560</td><td>+10985984</td><td>170</td><td>+1</td><td>195</td><td>+1</td><td>172</td><td>+2</td><td>13</td><td class="g">-</td><td>212</td><td>+2</td></tr>
+<tr><td>84</td><td>535409</td><td>+46149</td><td>137064704</td><td>+11814144</td><td>172</td><td>+2</td><td>196</td><td>+1</td><td>175</td><td>+3</td><td>14</td><td>+1</td><td>213</td><td>+1</td></tr>
+<tr><td>85</td><td>584987</td><td>+49578</td><td>149756672</td><td>+12691968</td><td>175</td><td>+3</td><td>197</td><td>+1</td><td>178</td><td>+3</td><td>14</td><td class="g">-</td><td>214</td><td>+1</td></tr>
+<tr><td>86</td><td>638199</td><td>+53212</td><td>163378944</td><td>+13622272</td><td>177</td><td>+2</td><td>199</td><td>+2</td><td>180</td><td>+2</td><td>14</td><td class="g">-</td><td>215</td><td>+1</td></tr>
+<tr><td>87</td><td>695263</td><td>+57064</td><td>177987328</td><td>+14608384</td><td>179</td><td>+2</td><td>200</td><td>+1</td><td>182</td><td>+2</td><td>14</td><td class="g">-</td><td>216</td><td>+1</td></tr>
+<tr><td>88</td><td>756325</td><td>+61062</td><td>193619200</td><td>+15631872</td><td>182</td><td>+3</td><td>201</td><td>+1</td><td>185</td><td>+3</td><td>14</td><td class="g">-</td><td>217</td><td>+1</td></tr>
+<tr><td>89</td><td>821544</td><td>+65219</td><td>210315264</td><td>+16696064</td><td>184</td><td>+2</td><td>202</td><td>+1</td><td>187</td><td>+2</td><td>14</td><td class="g">-</td><td>219</td><td>+2</td></tr>
+<tr><td>90</td><td>891086</td><td>+69542</td><td>228118016</td><td>+17802752</td><td>186</td><td>+2</td><td>204</td><td>+2</td><td>189</td><td>+2</td><td>14</td><td class="g">-</td><td>220</td><td>+1</td></tr>
+<tr><td>91</td><td>965123</td><td>+74037</td><td>247071488</td><td>+18953472</td><td>188</td><td>+2</td><td>205</td><td>+1</td><td>194</td><td>+5</td><td>15</td><td>+1</td><td>221</td><td>+1</td></tr>
+<tr><td>92</td><td>1043834</td><td>+78711</td><td>267221504</td><td>+20150016</td><td>190</td><td>+2</td><td>206</td><td>+1</td><td>195</td><td>+1</td><td>15</td><td class="g">-</td><td>223</td><td>+2</td></tr>
+<tr><td>93</td><td>1127405</td><td>+83571</td><td>288615680</td><td>+21394176</td><td>193</td><td>+3</td><td>208</td><td>+2</td><td>199</td><td>+4</td><td>15</td><td class="g">-</td><td>225</td><td>+2</td></tr>
+<tr><td>94</td><td>1246030</td><td>+118625</td><td>318983680</td><td>+30368000</td><td>196</td><td>+3</td><td>209</td><td>+1</td><td>201</td><td>+2</td><td>15</td><td class="g">-</td><td>226</td><td>+1</td></tr>
+<tr><td>95</td><td>1309911</td><td>+63881</td><td>335337216</td><td>+16353536</td><td>199</td><td>+3</td><td>210</td><td>+1</td><td>205</td><td>+4</td><td>15</td><td class="g">-</td><td>227</td><td>+1</td></tr>
+<tr><td>96</td><td>1409258</td><td>+99347</td><td>360770048</td><td>+25432832</td><td>201</td><td>+2</td><td>212</td><td>+2</td><td>211</td><td>+6</td><td>15</td><td class="g">-</td><td>229</td><td>+2</td></tr>
+<tr><td>97</td><td>1514289</td><td>+105031</td><td>387657984</td><td>+26887936</td><td>203</td><td>+2</td><td>214</td><td>+2</td><td>215</td><td>+4</td><td>16</td><td>+1</td><td>230</td><td>+1</td></tr>
+<tr><td>98</td><td>1625231</td><td>+110942</td><td>416059136</td><td>+28401152</td><td>205</td><td>+2</td><td>216</td><td>+2</td><td>217</td><td>+2</td><td>16</td><td class="g">-</td><td>231</td><td>+1</td></tr>
+<tr><td>99</td><td>1742320</td><td>+117089</td><td>446033920</td><td>+29974784</td><td>208</td><td>+3</td><td>218</td><td>+2</td><td>221</td><td>+4</td><td>17</td><td>+1</td><td>233</td><td>+2</td></tr>
+<tr><th>Level</th><th colspan="2">XP</th><th colspan="2">Actual XP</th><th colspan="2">SPD</th><th colspan="2">DEF</th><th colspan="2">INT</th><th colspan="2">LNG</th><th colspan="2">POW</th></tr>
+				</table>
+				<div style="height:4vh;">
+				</div>
+				<div id="monster" class="content-block feature-block">
+					<h2>Monster Data</h2>
+					<p>(WIP)</p>
+					<img src="images/mrprospector/enemy_types.png"/>
+				</div>
+				<table style="margin:auto;border:1px solid black;font-size:17px;width:95%">
+				<tr><th>ID</th><th>Behavior</th><th>Graphic</th><th>Color</th><th>???</th><th>???</th><th>Stat Type</th><th>Stat Req.</th><th>Oxygen Lost</th><th>Defeat Bonus</th><th>XP</th><th>Oxygen Gain</th></tr>
+				<tr><td>1</td><td>1</td><td>0</td><td>0</td><td>64</td><td>32</td><td>INT</td><td>20</td><td>8000</td><td>EXP</td><td>110</td><td></td></tr>
+<tr><td>2</td><td>1</td><td>0</td><td>1</td><td>96</td><td>32</td><td>INT</td><td>65</td><td>15000</td><td>EXP</td><td>345</td><td></td></tr>
+<tr><td>3</td><td>1</td><td>0</td><td>2</td><td>128</td><td>32</td><td>INT</td><td>159</td><td>23000</td><td>EXP</td><td>850</td><td></td></tr>
+<tr><td>4</td><td>1</td><td>1</td><td>1</td><td>64</td><td>32</td><td>INT</td><td>33</td><td>11000</td><td>EXP</td><td>165</td><td></td></tr>
+<tr><td>5</td><td>1</td><td>1</td><td>2</td><td>96</td><td>32</td><td>INT</td><td>89</td><td>19000</td><td>EXP</td><td>475</td><td></td></tr>
+<tr><td>6</td><td>1</td><td>1</td><td>3</td><td>128</td><td>32</td><td>INT</td><td>200</td><td>29000</td><td>EXP</td><td>1000</td><td></td></tr>
+<tr><td>7</td><td>1</td><td>2</td><td>0</td><td>64</td><td>32</td><td>INT</td><td>48</td><td>16000</td><td>EXP</td><td>235</td><td></td></tr>
+<tr><td>8</td><td>1</td><td>2</td><td>1</td><td>96</td><td>32</td><td>INT</td><td>125</td><td>21000</td><td>EXP</td><td>675</td><td></td></tr>
+<tr><td>9</td><td>1</td><td>2</td><td>2</td><td>128</td><td>32</td><td>INT</td><td>250</td><td>33000</td><td>EXP</td><td>1200</td><td></td></tr>
+<tr><td>10</td><td>2</td><td>5</td><td>0</td><td>64</td><td>0</td><td>POW</td><td>29</td><td>6000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>11</td><td>2</td><td>5</td><td>3</td><td>96</td><td>0</td><td>POW</td><td>102</td><td>16000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>12</td><td>2</td><td>5</td><td>5</td><td>128</td><td>0</td><td>POW</td><td>205</td><td>23000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>13</td><td>2</td><td>8</td><td>2</td><td>64</td><td>0</td><td>POW</td><td>48</td><td>8000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>14</td><td>2</td><td>8</td><td>3</td><td>96</td><td>0</td><td>POW</td><td>137</td><td>22000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>15</td><td>2</td><td>8</td><td>5</td><td>128</td><td>0</td><td>POW</td><td>250</td><td>19000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>16</td><td>2</td><td>11</td><td>1</td><td>64</td><td>0</td><td>POW</td><td>71</td><td>11000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>17</td><td>2</td><td>11</td><td>2</td><td>96</td><td>0</td><td>POW</td><td>185</td><td>21000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>18</td><td>2</td><td>11</td><td>3</td><td>128</td><td>0</td><td>POW</td><td>44</td><td>33000</td><td>MONEY</td><td>0</td><td></td></tr>
+<tr><td>19</td><td>3</td><td>4</td><td>0</td><td>64</td><td>0</td><td>SPD</td><td>7</td><td>6000</td><td>EXP</td><td>38</td><td></td></tr>
+<tr><td>20</td><td>3</td><td>4</td><td>3</td><td>96</td><td>0</td><td>SPD</td><td>60</td><td>16000</td><td>EXP</td><td>165</td><td></td></tr>
+<tr><td>21</td><td>3</td><td>4</td><td>4</td><td>128</td><td>0</td><td>SPD</td><td>170</td><td>32000</td><td>EXP</td><td>475</td><td></td></tr>
+<tr><td>22</td><td>3</td><td>7</td><td>2</td><td>64</td><td>0</td><td>SPD</td><td>23</td><td>8000</td><td>EXP</td><td>60</td><td></td></tr>
+<tr><td>23</td><td>3</td><td>7</td><td>3</td><td>96</td><td>0</td><td>SPD</td><td>85</td><td>22000</td><td>EXP</td><td>235</td><td></td></tr>
+<tr><td>24</td><td>3</td><td>7</td><td>4</td><td>128</td><td>0</td><td>SPD</td><td>205</td><td>35000</td><td>EXP</td><td>675</td><td></td></tr>
+<tr><td>25</td><td>3</td><td>6</td><td>3</td><td>64</td><td>0</td><td>SPD</td><td>40</td><td>11000</td><td>EXP</td><td>110</td><td></td></tr>
+<tr><td>26</td><td>3</td><td>6</td><td>4</td><td>96</td><td>0</td><td>SPD</td><td>120</td><td>29000</td><td>EXP</td><td>345</td><td></td></tr>
+<tr><td>27</td><td>3</td><td>6</td><td>5</td><td>128</td><td>0</td><td>SPD</td><td>250</td><td>39000</td><td>EXP</td><td>850</td><td></td></tr>
+<tr><td>28</td><td>4</td><td>3</td><td>1</td><td>64</td><td>0</td><td>DEF</td><td>23</td><td>6000</td><td>AIR</td><td>3</td><td>2000</td></tr>
+<tr><td>29</td><td>4</td><td>3</td><td>2</td><td>96</td><td>0</td><td>DEF</td><td>92</td><td>16000</td><td>AIR</td><td>6</td><td>5333.33</td></tr>
+<tr><td>30</td><td>4</td><td>3</td><td>3</td><td>128</td><td>0</td><td>DEF</td><td>195</td><td>32000</td><td>AIR</td><td>11</td><td>10666.67</td></tr>
+<tr><td>31</td><td>4</td><td>10</td><td>1</td><td>64</td><td>0</td><td>DEF</td><td>39</td><td>8000</td><td>AIR</td><td>4</td><td>2666.67</td></tr>
+<tr><td>32</td><td>4</td><td>10</td><td>3</td><td>96</td><td>0</td><td>DEF</td><td>126</td><td>22000</td><td>AIR</td><td>7</td><td>7333.33</td></tr>
+<tr><td>33</td><td>4</td><td>10</td><td>5</td><td>128</td><td>0</td><td>DEF</td><td>230</td><td>35000</td><td>AIR</td><td>13</td><td>11666.67</td></tr>
+<tr><td>34</td><td>4</td><td>9</td><td>0</td><td>64</td><td>0</td><td>DEF</td><td>64</td><td>11000</td><td>AIR</td><td>5</td><td>3666.67</td></tr>
+<tr><td>35</td><td>4</td><td>9</td><td>1</td><td>96</td><td>0</td><td>DEF</td><td>165</td><td>29000</td><td>AIR</td><td>9</td><td>9666.67</td></tr>
+<tr><td>36</td><td>4</td><td>9</td><td>5</td><td>128</td><td>0</td><td>DEF</td><td>270</td><td>39000</td><td>AIR</td><td>15</td><td>13000</td></tr>
+<tr><td>37</td><td>5</td><td>12</td><td>0</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>38</td><td>0</td><td>12</td><td>1</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>39</td><td>0</td><td>12</td><td>2</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>40</td><td>0</td><td>12</td><td>3</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>41</td><td>0</td><td>12</td><td>4</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>42</td><td>0</td><td>12</td><td>5</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>43</td><td>0</td><td>12</td><td>6</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>44</td><td>0</td><td>12</td><td>7</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>45</td><td>0</td><td>12</td><td>8</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>46</td><td>0</td><td>12</td><td>9</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>47</td><td>0</td><td>12</td><td>10</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+<tr><td>48</td><td>6</td><td>12</td><td>0</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td></td></tr>
+				<!--<tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>64</td><td>32</td><td>INT</td><td>20</td><td>8</td><td>1</td><td>110</td><td>64</td><td>0</td></tr>
+<tr><td>2</td><td>1</td><td>0</td><td>0</td><td>1</td><td>96</td><td>32</td><td>INT</td><td>65</td><td>15</td><td>1</td><td>345</td><td>64</td><td>0</td></tr>
+<tr><td>3</td><td>1</td><td>0</td><td>0</td><td>2</td><td>128</td><td>32</td><td>INT</td><td>159</td><td>23</td><td>1</td><td>850</td><td>64</td><td>0</td></tr>
+<tr><td>4</td><td>1</td><td>1</td><td>0</td><td>1</td><td>64</td><td>32</td><td>INT</td><td>33</td><td>11</td><td>1</td><td>165</td><td>64</td><td>0</td></tr>
+<tr><td>5</td><td>1</td><td>1</td><td>0</td><td>2</td><td>96</td><td>32</td><td>INT</td><td>89</td><td>19</td><td>1</td><td>475</td><td>64</td><td>0</td></tr>
+<tr><td>6</td><td>1</td><td>1</td><td>0</td><td>3</td><td>128</td><td>32</td><td>INT</td><td>200</td><td>29</td><td>1</td><td>1000</td><td>64</td><td>0</td></tr>
+<tr><td>7</td><td>1</td><td>2</td><td>0</td><td>0</td><td>64</td><td>32</td><td>INT</td><td>48</td><td>16</td><td>1</td><td>235</td><td>64</td><td>0</td></tr>
+<tr><td>8</td><td>1</td><td>2</td><td>0</td><td>1</td><td>96</td><td>32</td><td>INT</td><td>125</td><td>21</td><td>1</td><td>675</td><td>64</td><td>0</td></tr>
+<tr><td>9</td><td>1</td><td>2</td><td>0</td><td>2</td><td>128</td><td>32</td><td>INT</td><td>250</td><td>33</td><td>1</td><td>1200</td><td>64</td><td>0</td></tr>
+<tr><td>10</td><td>2</td><td>5</td><td>0</td><td>0</td><td>64</td><td>0</td><td>POW</td><td>29</td><td>6</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>11</td><td>2</td><td>5</td><td>0</td><td>3</td><td>96</td><td>0</td><td>POW</td><td>102</td><td>16</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>12</td><td>2</td><td>5</td><td>0</td><td>5</td><td>128</td><td>0</td><td>POW</td><td>205</td><td>23</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>13</td><td>2</td><td>8</td><td>0</td><td>2</td><td>64</td><td>0</td><td>POW</td><td>48</td><td>8</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>14</td><td>2</td><td>8</td><td>0</td><td>3</td><td>96</td><td>0</td><td>POW</td><td>137</td><td>22</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>15</td><td>2</td><td>8</td><td>0</td><td>5</td><td>128</td><td>0</td><td>POW</td><td>250</td><td>19</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>16</td><td>2</td><td>11</td><td>0</td><td>1</td><td>64</td><td>0</td><td>POW</td><td>71</td><td>11</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>17</td><td>2</td><td>11</td><td>0</td><td>2</td><td>96</td><td>0</td><td>POW</td><td>185</td><td>21</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>18</td><td>2</td><td>11</td><td>0</td><td>3</td><td>128</td><td>0</td><td>POW</td><td>44</td><td>33</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>19</td><td>3</td><td>4</td><td>0</td><td>0</td><td>64</td><td>0</td><td>SPD</td><td>7</td><td>6</td><td>1</td><td>38</td><td>0</td><td>2</td></tr>
+<tr><td>20</td><td>3</td><td>4</td><td>0</td><td>3</td><td>96</td><td>0</td><td>SPD</td><td>60</td><td>16</td><td>1</td><td>165</td><td>0</td><td>2</td></tr>
+<tr><td>21</td><td>3</td><td>4</td><td>0</td><td>4</td><td>128</td><td>0</td><td>SPD</td><td>170</td><td>32</td><td>1</td><td>475</td><td>0</td><td>2</td></tr>
+<tr><td>22</td><td>3</td><td>7</td><td>0</td><td>2</td><td>64</td><td>0</td><td>SPD</td><td>23</td><td>8</td><td>1</td><td>60</td><td>0</td><td>2</td></tr>
+<tr><td>23</td><td>3</td><td>7</td><td>0</td><td>3</td><td>96</td><td>0</td><td>SPD</td><td>85</td><td>22</td><td>1</td><td>235</td><td>0</td><td>2</td></tr>
+<tr><td>24</td><td>3</td><td>7</td><td>0</td><td>4</td><td>128</td><td>0</td><td>SPD</td><td>205</td><td>35</td><td>1</td><td>675</td><td>0</td><td>2</td></tr>
+<tr><td>25</td><td>3</td><td>6</td><td>0</td><td>3</td><td>64</td><td>0</td><td>SPD</td><td>40</td><td>11</td><td>1</td><td>110</td><td>0</td><td>2</td></tr>
+<tr><td>26</td><td>3</td><td>6</td><td>0</td><td>4</td><td>96</td><td>0</td><td>SPD</td><td>120</td><td>29</td><td>1</td><td>345</td><td>0</td><td>2</td></tr>
+<tr><td>27</td><td>3</td><td>6</td><td>0</td><td>5</td><td>128</td><td>0</td><td>SPD</td><td>250</td><td>39</td><td>1</td><td>850</td><td>0</td><td>2</td></tr>
+<tr><td>28</td><td>4</td><td>3</td><td>0</td><td>1</td><td>64</td><td>0</td><td>DEF</td><td>23</td><td>6</td><td>3</td><td>3</td><td>128</td><td>0</td></tr>
+<tr><td>29</td><td>4</td><td>3</td><td>0</td><td>2</td><td>96</td><td>0</td><td>DEF</td><td>92</td><td>16</td><td>3</td><td>6</td><td>128</td><td>0</td></tr>
+<tr><td>30</td><td>4</td><td>3</td><td>0</td><td>3</td><td>128</td><td>0</td><td>DEF</td><td>195</td><td>32</td><td>3</td><td>11</td><td>128</td><td>0</td></tr>
+<tr><td>31</td><td>4</td><td>10</td><td>0</td><td>1</td><td>64</td><td>0</td><td>DEF</td><td>39</td><td>8</td><td>3</td><td>4</td><td>128</td><td>0</td></tr>
+<tr><td>32</td><td>4</td><td>10</td><td>0</td><td>3</td><td>96</td><td>0</td><td>DEF</td><td>126</td><td>22</td><td>3</td><td>7</td><td>128</td><td>0</td></tr>
+<tr><td>33</td><td>4</td><td>10</td><td>0</td><td>5</td><td>128</td><td>0</td><td>DEF</td><td>230</td><td>35</td><td>3</td><td>13</td><td>128</td><td>0</td></tr>
+<tr><td>34</td><td>4</td><td>9</td><td>0</td><td>0</td><td>64</td><td>0</td><td>DEF</td><td>64</td><td>11</td><td>3</td><td>5</td><td>128</td><td>0</td></tr>
+<tr><td>35</td><td>4</td><td>9</td><td>0</td><td>1</td><td>96</td><td>0</td><td>DEF</td><td>165</td><td>29</td><td>3</td><td>9</td><td>128</td><td>0</td></tr>
+<tr><td>36</td><td>4</td><td>9</td><td>0</td><td>5</td><td>128</td><td>0</td><td>DEF</td><td>270</td><td>39</td><td>3</td><td>15</td><td>128</td><td>0</td></tr>
+<tr><td>37</td><td>5</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>38</td><td>0</td><td>12</td><td>1</td><td>1</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>39</td><td>0</td><td>12</td><td>2</td><td>2</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>40</td><td>0</td><td>12</td><td>3</td><td>3</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>41</td><td>0</td><td>12</td><td>4</td><td>4</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>42</td><td>0</td><td>12</td><td>5</td><td>5</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>43</td><td>0</td><td>12</td><td>6</td><td>6</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>44</td><td>0</td><td>12</td><td>7</td><td>7</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>45</td><td>0</td><td>12</td><td>8</td><td>8</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>46</td><td>0</td><td>12</td><td>9</td><td>9</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>47</td><td>0</td><td>12</td><td>10</td><td>10</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>48</td><td>6</td><td>12</td><td>11</td><td>0</td><td>0</td><td>0</td><td>(none)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>-->
+				<tr><th>ID</th><th>Behavior</th><th>Graphic</th><th>Color</th><th>???</th><th>???</th><th>Stat Type</th><th>Stat Req.</th><th>Oxygen Lost</th><th>Defeat Bonus</th><th>XP</th><th>Oxygen Gain</th></tr>
+				</table>
+				<div style="height:4vh;">
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+
+<!-- Mirrored from laytonloztew.neocities.org/mrprospector by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:58:13 GMT -->
+</html>

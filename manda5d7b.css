@@ -1,0 +1,157 @@
+.infoPin, .infoEffect {
+	position:absolute;
+	visibility: hidden;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pin {
+	cursor:pointer;
+	margin-left: -16px;
+}
+
+.pingraphic {
+	position:absolute;
+	margin-left:-118px;
+	margin-top:-58px;
+}
+
+.pintext {
+	position:absolute;
+	margin-left:-112px;
+	margin-top:0px;
+	width:200px;
+	font-size:11px;
+}
+
+.pinname {
+	margin-left:30px;
+	margin-bottom:24px;
+	margin-top:64px;
+	font-size:12px;
+}
+
+/* KEYWORDS */
+/* Tooltip container */
+.pinkeyword {
+	position: relative;
+	color:#808080;
+	opacity: 0.8;
+}
+
+.pinkeyword:hover {
+	color:#B4515B;
+	transition: all 1s;
+	opacity: 1;
+	font-weight:bold;
+}
+/* Tooltip text */
+.pinkeyword .keywordtext {
+	visibility: hidden;
+	width: 120px;
+	font-family: Verdana;
+	font-size: 10px;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+	margin-top: 4px;
+	font-weight: normal;
+	font-style: italic;
+	
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+	
+	opacity: 0;
+	transition: opacity 1s;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.pinkeyword:hover .keywordtext {
+	visibility: visible;
+	opacity: 0.9;
+}
+.pinkeyword .keywordtext::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.mandaEffect, .mandaEffectDefault {
+	position:absolute;
+	
+	margin-left:-23px;
+	margin-top:330px;
+}
+
+.mandaEffect {
+	visibility:hidden;
+}
+
+.effect, .effectNone {
+	margin-left: -8px;
+	margin-right: 4px;
+	margin-top: 10px;
+}
+
+.effect {
+	cursor:pointer;
+	animation: glow 1s infinite alternate;
+	opacity: 1;
+}
+
+.slotBox {
+	position:absolute;
+	cursor:pointer;
+	margin-left:-91px;
+	margin-top:41px;
+	animation: glow 1s infinite alternate;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.slotlist {
+	position:absolute;
+	margin-left:40px;
+	width:100%;
+	height:220px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	visibility:hidden;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@keyframes glow {
+	from {
+		box-shadow: 0 0 2px -2px #7F7F7F;
+	}
+	to {
+		box-shadow: 0 0 2px 2px #7F7F7F;
+	}
+}
+
+.effgraphic {
+	position:absolute;
+	margin-left:-117px;
+	margin-top:-58px;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from laytonloztew.neocities.org/projects by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:37 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="LaytonLoztew">
+		<meta name="description" content="Home of LaytonLoztew">
+		<meta name="keywords" content="laytonloztew, manda no yume, everlast reverie, yume nikki, yoru no honki dance">
+		<title>Grektech's Land</title>
+		<link rel="icon" href="images/icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="stylefb79.css?ver=24.10.25.0"/>
+		<script src='screenshotsa79d.js?ver=22.06.26.0'></script>
+		<style>
+		
+h2 {
+color:gray;
+color:rgb(200,200,200);
+}
+		.game-list {
+	float:left;
+	width:350px;
+	height:800px;
+	margin-top:26px;
+	overflow-y:scroll;
+}
+
+ul {
+padding-inline-start: 4px;
+padding-inline-end: 6px;
+line-height:1.6;
+}
+
+ul li:not(:last-child) {
+   margin-bottom: 12px;
+}
+
+.inline-block {
+border-radius:7px 7px 0 0;
+}
+
+
+.trinket {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  height:96px;
+  margin-top:8px;
+  float:left;
+  margin-left:2px;
+  opacity:1;
+}
+
+.trinket-s {  
+  height:46px;
+}
+
+.inline-block {
+cursor: pointer;
+}
+
+.inline-block:hover .trinket-div .trinket {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  opacity:1;
+}
+
+.inline-block-comm {
+     display:inline-block;
+	 border-radius:0 7px 7px 0;
+     position: relative;
+     background: black;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,40) solid;
+	 vertical-align:middle;
+	 font-size:11px;
+}
+ .inline-block:hover-comm {
+     background: rgb(30, 30, 30);
+     background: rgba(30, 30, 30, 0.5);
+	 border:1px gray solid;
+}
+
+.inline-block-icons {
+     display:inline-block;
+	 border-radius:0 7px 7px 0;
+     position: relative;
+     background: black;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,40) solid;
+	 vertical-align:middle;
+	 font-size:11px;
+}
+
+.trinket-div {  
+	position: relative;
+	bottom:6px;
+	width:48px;
+	float:left;
+	margin-right:10px;
+}
+
+.ach-game {
+font-size:12px;
+color:rgb(200,200,200);
+width:65%;
+height:100px;
+}
+
+.ach-game-comm {
+font-size:12px;
+color:rgb(150,150,150);
+border-top: none;
+width:65%;
+border-radius:0 0 0 0;
+}
+
+.ach-game-icons {
+font-size:12px;
+color:rgb(150,150,150);
+border-top: none;
+width:65%;
+border-radius:0 0 0 0;
+}
+
+
+.ach-icon {
+font-size:12px;
+color:rgb(200,200,200);
+height:100px;
+width:97px;
+border-radius:0 0 0 0;
+}
+
+.ach-icon-s {
+font-size:12px;
+color:rgb(200,200,200);
+height:50px;
+width:47px;
+border-radius:0 0 0 0;
+}
+
+/* width */
+.game-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.game-list::-webkit-scrollbar-track {
+  background: #0E0F22;
+}
+
+/* Handle */
+.game-list::-webkit-scrollbar-thumb {
+  background: #2A2C49;
+}
+
+/* Handle on hover */
+.game-list::-webkit-scrollbar-thumb:hover {
+  background: #383A60;
+}
+
+.system-icon {
+right:0;position:absolute;height:48px;top:0;
+}
+
+.game-name {
+font-size:15px;
+font-weight:bold;
+}
+
+.icon-tag {position:absolute;left:105px;bottom:0px;font-size:10px;color:gray;}
+
+.genre-tag {
+     display:inline-block;
+     position: relative;
+     background: black;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,40) solid;
+	 vertical-align:middle;
+	 font-size:12px;
+	 color:white;
+	 color:#A8A8A8;
+	 margin-bottom:2px;
+	 text-shadow:1px 1px 1px black;
+}
+.genre-tag:hover {
+     background: rgb(30, 30, 30);
+     background: rgba(30, 30, 30, 0.5);
+	 border:1px gray solid;
+}
+
+.genre-cover {
+     height:18px;
+     vertical-align:middle;
+	 float:left;
+	 border-width:0 3px 0 0;
+	 border-color:transparent;
+	 border-style:solid;
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform 250ms;
+  margin-right:2px;
+}
+.genre-cover:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
+}
+
+.icon-cover {
+     height:8px;
+     vertical-align:middle;
+	 float:left;
+	 border-width:0 3px 0 0;
+	 border-color:transparent;
+	 border-style:solid;
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform 250ms;
+  margin-right:2px;
+}
+
+.fav-tag {
+     display:inline-block;
+     position: relative;
+     background: black;
+     background: rgba(30, 30, 60, 1);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,70) solid;
+	 vertical-align:middle;
+	 font-size:12px;
+	 color:white;
+	 color:#A8A8A8;
+	 margin-bottom:2px;
+	 text-shadow:1px 1px 1px black;
+}
+.fav-tag:hover {
+     background: rgb(30, 30, 60);
+     background: rgba(30, 30, 60, 0.5);
+	 border:1px gray solid;
+}
+.fav-cover {
+     height:18px;
+     vertical-align:middle;
+	 float:left;
+	 border-width:0 3px 0 0;
+	 border-color:transparent;
+	 border-style:solid;
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform 250ms;
+  margin-right:2px;
+}
+.fav-cover:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
+}
+
+.game-screenshot {
+box-shadow: 1px 1px 3px black;
+width: 140px;
+margin-top:12px;
+margin-bottom:12px;
+}
+
+.spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
+  color: black; 
+  background-color: black;
+}
+
+.spoiler:hover, .spoiler:hover a {
+  color: rgb(150,150,100);
+}
+
+.ach-game-comm p {padding:10px;}
+
+.set-table {max-width:200px;padding:10px}
+
+hr {border-color: gray; background-color: gray;}
+
+.ach-icon-block {
+     position: relative;
+}
+.ach-icon-block:hover {
+}
+
+/* Tooltip text */
+.ach-icon-block .keywordtext {
+    pointer-events: none;
+    visibility: hidden;
+    width: 120px;
+    font-size: 10px;
+    bottom: 300%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-top: 4px;
+    font-family: Verdana;
+	font-style: italic;
+	background-color: black;
+    color: #fff;
+    text-align: center;
+	padding: 3px 3px 3px 3px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+	box-shadow: 1px 1px #000;
+	border:1px rgb(40,40,40) solid;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+ .ach-icon-block:hover .keywordtext {
+     visibility: visible;
+     opacity: 0.9;
+}
+ ach-icon-block .keywordtext::after {
+     content: " ";
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: black transparent transparent transparent;
+}
+
+.ach-game-icons input {
+  display:none;  
+}
+
+.ach-game-icons input + .smalldesc {
+  max-height:140px;
+  overflow:hidden;
+  transition:all .3s ease;
+}
+
+.ach-game-comm input {
+  display:none;  
+}
+
+.ach-game-comm input + .smalldesc {
+  max-height:140px;
+  overflow:hidden;
+  transition:all .3s ease;
+}
+
+label {
+  display: inline-block;
+  background: rgba(20,20,20,0.5);
+  color: #fff;
+  border-radius: 0px;
+  text-decoration:none;
+  cursor:pointer;
+  width:95%;
+  padding: 5px 0 5px 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+label:hover {
+  text-decoration:none;  
+  background-color: rgba(40,40,40,1);
+}
+
+.icon_button {
+width:100%;
+}
+		</style>
+	</head>
+	<body>
+		<link rel="preload" href="images/background.png" as="image">
+		<div class="wrapper">
+			<!-- LEFT SIDEBAR -->
+			<div class="sidenav">
+				<div class="skipnav"><a href="#main">Skip to content</a></div>
+				<div style="height:0.4vh;"></div>
+				<div style="height:85%;margin-top:10px;">
+					<img src="images/art/laytonloztew.png" style="width:100px;height:127px;opacity:0.4;" draggable="false"/>
+					GrekTech
+					<div style="height:2.5vh;">
+					</div>
+					<div class="nav-active">
+					Home</div>
+					<a href="projects.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_proj.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Ancient </div></a>
+					<a href="memcard.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_memcard.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Ancinet Coin Card</div></a>
+					<a href="ynhd.html"><div class="nav-button">
+						<div class="navicon-div" style="bottom:3px;">
+							<img class="navicon" src="images/memcard/navicon_ynhd.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					<span style="bottom:100px;">Solana endless</span></div></a>
+
+				</div>
+
+			</div>
+			<div id="main">
+				<div style="height:1vh;">
+				</div>
+				<div class="content-block">
+					<div class="inline-navblock">
+						<a class="navlink" href="index.html">Home</a>
+					</div>
+					> 
+					<div class="inline-navblock">
+						<a class="navlink">Ancient</a>
+					</div>
+				</div>
+				<div style="height:3vh;">
+				</div>
+				
+				<!-- MODAL -->
+	<div id="modal01" class="w3-modal no-select">
+		<div class="w3-modal-content w3-animate-zoom">
+
+			<img id="img01" style="vertical-align:middle;" onclick="hideModal()">
+
+			<div id="imagecontrols" style="vertical-align:middle;display:inline-block;width:32px;height:475px;">
+				<img id="exitmodalicon" style="width:32px;" src="images/other/cancel.png" onclick="hideModal()">
+				<a id="imglink" href="#"><img style="width:32px;" src="images/other/resize.png"></a>
+			</div>
+
+			<div id="infodiv" style="width:100%;margin:auto;">
+				<p>
+				<span id="modaltext"></span><br/>
+				<span id="modaltext2"></span><br/>
+				<img id="img02" style="width:24px;height:28px" src="images/other/blank.png"><br/>
+				<span id="modaltext3"></span>
+				</p>
+			</div>
+		</div>
+	</div>
+				
+				<div id="sec_games" class="ynhd-section  content-block">
+				<h2>GREK TECH MEMECOIN</h2>
+				<div class="icon_hover"><a href="manda.html"><img src="images/mny/mny_bg_s.png" alt="Manda no Yume Navigation Link" /></a></div>
+				<div class="icon_hover"><a href="everlast.html"><img src="images/everlast/ever_bg_s.png" alt="Everlast Reverie Navigation Link" /></a></div>
+				</div>
+				
+				
+				<div id="sec_gameinfo" class="ynhd-section content-block">
+				<h2> Info</h2>
+				<p>Unlocks and other useful information I've extracted from games while working on RetroAchievements</p>
+				<ul>
+				<li><a href="harvestmoonawl.html">Harvest Moon: A Wonderful Life</a> - Cooking Recipes</li>
+				<li><a href="mrprospector.html">Mr Prospector: Horiate-kun</a> - Chest Loot</li>
+				<li><a href="hanabifantast.html">Hanabi Fantast</a> - Drawing Fireworks</li>
+				<li><a href="https://www.youtube.com/watch?v=GvpJLhVV-hA">Kyoro-chan no Purikura Daisakusen</a> - Secret Frames (Video)</li>
+				<li><a href="https://retroachievements.org/viewtopic.php?t=28939">Rakugaki Showtime</a> - Rank Conditions (RA Forum Thread)</li>
+				<li><a href="https://retroachievements.org/viewtopic.php?t=24859">Tail of the Sun</a> - Ending Requirements (RA Forum Thread)</li>
+				</ul>
+				</div>
+
+				<div id="sec_achset" class="ynhd-section content-block">
+				<h2><a href="mqreader.html">Magician's Quest Save File Reader</a></h2>
+				<p>A save file reader for <a target="_blank" class="inline-block-noimg">Magician's Quest: Mysterious Times</a> on the Nintendo DS. Was useful when making the achievement set, I've been meaning to make a save file editor as well.</p>
+				
+				<table class="table-desktopicons">
+				<tr>
+				<td><div class="tooltip">
+				<a href="mqreader.html"><div class="desktop-icon-div">
+					<img src="images/desktop/mq.png" class="desktop-icon-img"/>
+					<br/>/mqreader
+				</div></a>
+				<span class="tooltiptext">My Magician's Quest save file reader!</span>
+				</div></td>
+				<td><div class="tooltip">
+				<a href="mqbrooms.html"><div class="desktop-icon-div">
+					<img src="images/desktop/mqbroom.png" class="desktop-icon-img"/>
+					<br/>/mqbrooms
+				</div></a>
+				<span class="tooltiptext">My Magician's Quest DLC Unlocker!</span>
+				</div></td>
+				</tr>
+				</table>
+				</div>
+				
+				<div id="sec_achset" class="ynhd-section content-block">
+				<h2><a href="https://www.romhacking.net/translations/6969/" target="_blank">Gekibo: Gekisha Boy Translation</a></h2>
+				<p>I wasn't satisfied with the existing English translation for <a target="_blank" class="inline-block-noimg">Gekibo: Gekisha Boy</a> on the PC Engine/Turbografx-16 while making the achievement set, so I made my own. It gives more accurate hints and accurately matches the original game's message box sizes</p>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+
+<!-- Mirrored from laytonloztew.neocities.org/projects by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:43 GMT -->
+</html>

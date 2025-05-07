@@ -1,0 +1,3973 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from laytonloztew.neocities.org/ynhd by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:57 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GrekTech</title>
+		<link rel="icon" href="images/icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="styleddce.css?ver=24.05.01.0"/>
+		<link rel="stylesheet" type="text/css" href="3dbox14a0.css?ver=22.09.13.0"/>
+		<script src='screenshotsa79d.js?ver=22.06.26.0'></script>
+		<style>
+			.owned {color:green;font-size:11px;}
+			.missing {color:red;font-size:11px;}
+			.partial {color:orange;font-size:11px;}
+		</style>
+		<script>
+			function searchTrack() {
+				var input, filter, table, tr, i, txtValue;
+				input = document.getElementById("trackInput");
+				filter = input.value.toUpperCase();
+				var total_num_shown = 0;
+			
+				var tables = document.getElementsByTagName("table");
+				for (var t = 0; t < tables.length; t++) {
+					table = tables[t];
+					tr = table.getElementsByTagName("tr");
+			
+					var show_section = false;
+					var is_new_section = false;
+					var num_shown;
+					var num_in_section = 0;
+					var show_cell = false;
+			
+					num_shown = tr.length-1;
+			
+					// Loop through all table rows, and hide those who don't match the search query
+					for (i = tr.length-1; i >= 0; i--) {
+			
+						cells = tr[i].getElementsByTagName("td");
+			
+						num_cell = cells[0]
+						name_cell = cells[1]
+			
+						// Album name cell
+						if (i == 0) {
+							tr[i].style.display = "";
+							break;
+						}
+			
+						// if name cell exists
+						if (name_cell) {
+							num_in_section += 1;
+							if (is_new_section) {
+								show_section = is_new_section = false;
+							}
+			
+							// if match found
+							txtValue = name_cell.textContent || name_cell.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								show_cell = true;
+								show_section = true;
+								total_num_shown += 1;
+							} else {
+								show_cell = false;
+								num_shown -= 1;
+							}
+						} else {
+							is_new_section = true;
+							num_shown -= 1;
+			
+							// is info block
+							if (num_cell) {
+								show_cell = true;
+							} else { // is a header
+								show_cell = (num_in_section == 0 || show_section);
+							}
+						}
+			
+						tr[i].style.opacity = (show_cell ? "1" : "0.1");
+					}
+			
+					if (num_shown <= 0) {
+						table.style.display = "none";
+						//table.closest('.ynhd-section').style.display = "none";
+					} else {
+						table.style.display = "";
+						//table.closest('.ynhd-section').style.display = "";
+					}
+				}
+			
+				if (filter == "" || filter == null) {
+					document.getElementById("search_result").textContent="";
+				} else {
+					document.getElementById("search_result").textContent="Found " + total_num_shown + " result" + ( (total_num_shown == 1) ? "" : "s") + ".";
+				}
+			}
+			
+			function clearSearch() {
+				input = document.getElementById("trackInput");
+				input.value = "";
+				searchTrack();
+			}
+		</script>
+	</head>
+	<body>
+		<link rel="preload" href="images/background.png" as="image">
+		<div class="wrapper">
+			<!-- LEFT SIDEBAR -->
+			<div class="sidenav">
+				<div class="skipnav"><a href="#main">Skip to content</a></div>
+				<div style="height:0.4vh;"></div>
+				<div style="height:85%;margin-top:10px;">
+					<img src="images/art/laytonloztew.png" style="width:100px;height:127px;opacity:0.4;"/>
+					Grektech
+					<div style="height:2.5vh;">
+					</div>
+					<a href="index.html"><div class="nav-button">
+					Home</div></a>
+					<a href="projects.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_proj.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Projects</div></a>
+					<a href="memcard.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_memcard.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Memory Card</div></a>
+					<div class="nav-active">
+						<div class="navicon-div" style="bottom:3px;">
+							<img class="navicon" src="images/memcard/navicon_ynhd.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					<span style="bottom:100px;">Solana endless</span></div>
+
+				</div>
+
+			</div>
+			<div id="main">
+				<div style="height:1vh;"></div>
+				<div class="content-block">
+					<div class="inline-navblock">
+						<a class="navlink" href="index.html">Home</a>
+					</div>
+					> 
+					<div class="inline-navblock">
+						<a class="navlink">Yoru no Honki Dance</a>
+					</div>
+				</div>
+				<div style="height:3vh;">
+				</div>
+				<!-- Title/Info -->
+				<div class="ynhd-section content-block">
+					<img src="images/ynhd/collection_bg2.png" alt="Yoru no Honki Dance Collection Navigation Link" style="z-index:1;position:absolute;pointer-events:none" />
+					<div class="content-block navlink-big" style="width:480px;background: url('images/ynhd/collection_bg.png') no-repeat;"></div>
+					<p>夜の本気ダンス (Yoru no Honki Dance) is a 4-member rock band formed in Kyoto, Japan in 2008.</p>
+					<p>I discovered the band in 2016 through an iTunes recommendation of <a href="#alb_danc" class="inline-block">🎵 Crazy Dancer</a>. In early 2019 I imported a copy of <a href="#alb_danc" class="inline-block"><img class="inline-track-cover" src="images/ynhd/cover/danceable_front.webp" />Danceable</a>, and began a complete collection.</p>
+					<p>At this point I'm missing two known things: <a href="#alb_self" class="inline-block"><img class="inline-track-cover" src="images/ynhd/cover/selftitled_pic.jpg" />夜の本気ダンス</a> and <a href="#alb_routetracks" class="inline-block">🎶 Missing ROUTE MASTER tracks</a>.</p>
+				</div>
+				<div class="ynhd-section content-block">
+					<img src="images/ynhd/pics/ynhd_2.webp" style="height:100px;"/>
+					<img src="images/ynhd/pics/ynhd_4.webp" style="height:100px;"/>
+					<img src="images/ynhd/pics/ynhd_5.webp" style="height:100px;"/>
+					<img src="images/ynhd/pics/ynhd_6.webp" style="height:100px;"/>
+					<img src="images/ynhd/pics/ynhd_7.webp" style="height:100px;"/>
+					<img src="images/ynhd/pics/danceable.webp" style="height:100px;"/>
+
+				
+					<div style="margin:auto;width:50%;">
+						<a class="content-box" href="ynhd/collection.html">/collection</a>
+					</div>
+				</div>
+				
+				<div class="ynhd-section content-block" style="background: rgba(10, 10, 10, 0.5);">
+					<div style="display:flex;">
+						<div style="padding:10px">
+							<a class="icon_hover" href="#alb_dip"><img class="ynhd_cover_icon" src="images/ynhd/cover/dip_front.jpg" /></a>
+							<a class="icon_hover" href="#alb_arma"><img class="ynhd_cover_icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+							<a class="icon_hover" href="#alb_phys"><img class="ynhd_cover_icon" src="images/ynhd/cover/physical_front.webp" /></a>
+							<a class="icon_hover" href="#alb_feti"><img class="ynhd_cover_icon" src="images/ynhd/cover/fetis_front.webp" /></a>
+							<a class="icon_hover" href="#alb_magi"><img class="ynhd_cover_icon" src="images/ynhd/cover/magicalfeelin_front.webp" /></a>
+							<a class="icon_hover" href="#alb_inte"><img class="ynhd_cover_icon" src="images/ynhd/cover/intelligence_front.webp" /></a>
+							<a class="icon_hover" href="#alb_take"><img class="ynhd_cover_icon" src="images/ynhd/cover/takemyhand_front.webp" /></a>
+							<a class="icon_hover" href="#alb_shin"><img class="ynhd_cover_icon" src="images/ynhd/cover/shiny_front.webp" /></a>
+							<a class="icon_hover" href="#alb_with"><img class="ynhd_cover_icon" src="images/ynhd/cover/withoutyou_front.webp" /></a>
+							<a class="icon_hover" href="#alb_danc"><img class="ynhd_cover_icon" src="images/ynhd/cover/danceable_front.webp" /></a>
+							<a class="icon_hover" href="#alb_bymy"><img class="ynhd_cover_icon" src="images/ynhd/cover/bymyside_front.webp" /></a>
+							<a class="icon_hover" href="#alb_time"><img class="ynhd_cover_icon" src="images/ynhd/cover/dancetime_front.webp" /></a>
+							<a class="icon_hover" href="#alb_step"><img class="ynhd_cover_icon" src="images/ynhd/cover/dancestep_front.webp" /></a>
+							<a class="icon_hover" href="#alb_bitc"><img class="ynhd_cover_icon" src="images/ynhd/cover/b%21tch_front.webp" /></a>
+							<a class="icon_hover" href="#alb_youn"><img class="ynhd_cover_icon" src="images/ynhd/cover/youngadult_front.webp" /></a>
+							<a class="icon_hover" href="#alb_bob"><img class="ynhd_cover_icon" src="images/ynhd/cover/bob_front.webp" /></a>
+							<a class="icon_hover" href="#alb_war"><img class="ynhd_cover_icon" src="images/ynhd/cover/war_front.webp" /></a>
+							<a class="icon_hover" href="#alb_self"><img class="ynhd_cover_icon" src="images/ynhd/cover/selftitled_pic.jpg" /></a>
+							<br />
+							<a class="icon_hover" href="#alb_kott"><img class="ynhd_cover_icon" src="images/ynhd/cover/livedvd_front2.webp" /></a>
+							<a class="icon_hover" href="#alb_party"><img class="ynhd_cover_icon" src="images/ynhd/cover/yorunohonkiparty_front.webp" /></a>
+						</div>
+						<div style="padding:10px">
+							<a class="icon_hover" href="#alb_iwasborn"><img class="ynhd_cover_icon" src="images/ynhd/cover/iwasborntribute_front.webp" /></a>
+							<a class="icon_hover" href="#alb_akgtribute"><img class="ynhd_cover_icon" src="images/ynhd/cover/akgtribute_front.webp" /></a>
+							<a class="icon_hover" href="#alb_alaumidoss"><img class="ynhd_cover_icon" src="images/ynhd/cover/alaumidoss_front.webp" /></a>
+							<br />
+							<a class="icon_hover" href="#alb_rockthebest"><img class="ynhd_cover_icon" src="images/ynhd/cover/rockthebest_front.webp" /></a>
+							<a class="icon_hover" href="#alb_warikan"><img class="ynhd_cover_icon" src="images/ynhd/cover/warikan_front.webp" /></a>
+							<a class="icon_hover" href="#alb_japannext"><img class="ynhd_cover_icon" src="images/ynhd/cover/japannext_front.webp" /></a>
+							<a class="icon_hover" href="#alb_dseldom"><img class="ynhd_cover_icon" src="images/ynhd/cover/dseldom_front.webp" /></a>
+							<a class="icon_hover" href="#alb_tsu"><img class="ynhd_cover_icon" src="images/ynhd/cover/tsu_front.webp" /></a>
+							<a class="icon_hover" href="#alb_musichere"><img class="ynhd_cover_icon" src="images/ynhd/cover/musichere_front.webp" /></a>
+							<a class="icon_hover" href="#alb_minamiwheel2013"><img class="ynhd_cover_icon" src="images/ynhd/cover/minamiwheel2013_front.webp" /></a>
+							<a class="icon_hover" href="#alb_musicisnthere"><img class="ynhd_cover_icon" src="images/ynhd/cover/musicisnthere_front.webp" /></a>
+							<a class="icon_hover" href="#alb_onion"><img class="ynhd_cover_icon" src="images/ynhd/cover/onion_front.webp" /></a>
+							<a class="icon_hover" href="#alb_5threv"><img class="ynhd_cover_icon" src="images/ynhd/cover/5thmusicrevolution_front.webp" /></a>
+							<a class="icon_hover" href="#alb_kyotomojo3"><img class="ynhd_cover_icon" src="images/ynhd/cover/kyotomojo3_front.webp" /></a>
+							<a class="icon_hover" href="#alb_kyotomojo1"><img class="ynhd_cover_icon" src="images/ynhd/cover/kyotomojo1_front.webp" /></a>
+						</div>
+					</div>
+				</div>
+				<!-- Search -->
+				<div id="search" class="ynhd-section content-block">
+					<input type="text" id="trackInput" onkeyup="searchTrack()" list="songs" placeholder="Search for track name..">
+					<datalist id="songs">
+						<option value="ピラミッドダンス feat. ケンモチヒデフミ">Pyramid Dance feat. Hidefumi Kenmochi</option>
+						<option value="DYWD?"></option>
+						<option value="Vivid Beat"></option>
+						<option value="GOOD LUCK"></option>
+						<option value="Gold"></option>
+						<option value="虹">Rainbow</option>
+						<option value="ABRAKADABRA"></option>
+						<option value="パセティックガール">Pathetic Girl</option>
+						<option value="Crush me"></option>
+						<option value="審美眼">Shinbigan (Aesthetic Eye)</option>
+						<option value="Wall Flower"></option>
+						<option value="STARLET"></option>
+						<option value="VANDALIZE"></option>
+						<option value="エトランゼ">Étranger (Stranger/Foreign)</option>
+						<option value="Falling Down"></option>
+						<option value="GIVE & TAKE"></option>
+						<option value="SMILE SMILE"></option>
+						<option value="empty boy"></option>
+						<option value="SOMA"></option>
+						<option value="Melting"></option>
+						<option value="insomnia"></option>
+						<option value="Ain't no magic"></option>
+						<option value="Sweet Revolution"></option>
+						<option value="Magical Feelin'"></option>
+						<option value="Movin'"></option>
+						<option value="NAVYBLUE GIRL"></option>
+						<option value="Music For Life"></option>
+						<option value="Take it Back"></option>
+						<option value="MONSTER (Roguelike life)"></option>
+						<option value="Oh Love"></option>
+						<option value="Eternal Sunshine"></option>
+						<option value="Forever Young"></option>
+						<option value="Kiki"></option>
+						<option value="Call out"></option>
+						<option value="Eve"></option>
+						<option value="Bye Bye My Sadness"></option>
+						<option value="TAKE MY HAND"></option>
+						<option value="Can't You See!!!"></option>
+						<option value="Without You"></option>
+						<option value="Heart Beat"></option>
+						<option value="SEA"></option>
+						<option value="SHINY"></option>
+						<option value="BIAS"></option>
+						<option value="Weekender"></option>
+						<option value="LIBERTY"></option>
+						<option value="Ride"></option>
+						<option value="Blush"></option>
+						<option value="THREE"></option>
+						<option value="Oh Yeah"></option>
+						<option value="Crazy Dancer"></option>
+						<option value="By My Side"></option>
+						<option value="LOVE CONNECTION"></option>
+						<option value="Love is always new"></option>
+						<option value="escape with you"></option>
+						<option value="Feel so good"></option>
+						<option value="Logical Heart"></option>
+						<option value="Dance in the rain"></option>
+						<option value="Show down"></option>
+						<option value="Too Young"></option>
+						<option value="WHERE?"></option>
+						<option value="You gotta move"></option>
+						<option value="Only Nineteen"></option>
+						<option value="Gavlillo"></option>
+						<option value="Circle Circle Circle"></option>
+						<option value="Japanese Style"></option>
+						<option value="Stand by you"></option>
+						<option value="Only Seventeen"></option>
+						<option value="Fun Fun Fun"></option>
+						<option value="B!tch"></option>
+						<option value="You & I"></option>
+						<option value="Dookie Man"></option>
+						<option value="愛は終わり">Love is over</option>
+						<option value="Afro"></option>
+						<option value="This is pop"></option>
+						<option value="fuckin' so tired"></option>
+						<option value="Candy tune"></option>
+						<option value="for young"></option>
+						<option value="ロシアのビッグマフ">Russian Big Muff</option>
+						<option value="Bob Dance Bob"></option>
+						<option value="everybody"></option>
+						<option value="戦争">War</option>
+						<option value="夜に本気ダンス">Serious dance at night</option>
+						<option value="AROUND ME DANCE"></option>
+						<option value="N.G.S"></option>
+						<option value="BABY君は悪魔ちゃん">Baby Kimi Wa Akuma Chan</option>
+						<option value="高校生">Senior High School Student</option>
+					</datalist>
+					<input id="clear-button" type="button" onclick="clearSearch()" value="Clear">
+					<p id="search_result"></p>
+					<sub>* May not work in some browsers</sub>
+				</div>
+				<div id="albums" class="ynhd-section content-block">
+					<h2>💽 Albums</h2>
+					
+					<table class="ynhd-track-listing" id="alb_dip">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="14">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/dip_front.jpg');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/dip_obi.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/dip_side.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/dip_cd.webp');"></div>
+									</div>
+									<span title="January 24, 2024">2024</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/dip_front.jpg');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/dip2_obi.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/dip2_side.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/dip_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/dip_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="January 24, 2024">2024</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">dip</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><span class="translation" title="Pyramid Dance feat. Hidefumi Kenmochi">ピラミッドダンス <span class="tracknote">feat. ケンモチヒデフミ</span></span> <a class="track-icon" href="https://www.youtube.com/watch?v=fWNAaMEWMCQ" target="_blank">🎥</a></td>
+						<td>3:24</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>DYWD?</td>
+						<td>3:04</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Vivid Beat</td>
+						<td>4:11</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>GOOD LUCK</td>
+						<td>3:27</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Gold</td>
+						<td>4:02</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><span class="translation" title="Rainbow">虹</span></td>
+						<td>4:04</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>ABRAKADABRA <a class="track-icon" href="https://www.youtube.com/watch?v=nyRwpiW8eWI" target="_blank">🎥</a></td>
+						<td>2:31</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td><span class="translation" title="Pathetic Girl">パセティックガール</span></td>
+						<td>2:45</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Crush me</td>
+						<td>1:30</td>
+					</tr>
+					<tr>
+						<th colspan="3">DVD</th>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="commentary">
+								<p>DVD contains rare live footage and interviews.</p>
+							</div>
+						</td>
+					</tr>
+					
+				</table>
+					
+					
+					<table class="ynhd-track-listing" id="alb_arma">
+						<tr>
+							<th class="ynhd-cd-section" rowspan="60">
+								<div class="album">
+									<div class="scene">
+										<div class="box cd">
+											<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/armadillo_front.webp');"></div>
+											<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+											<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/armadillo_obi.webp');"></div>
+											<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/armadillo_side.webp');"></div>
+											<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/armadillo_cd2.webp');"></div>
+											<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/armadillo_cd.webp');"></div>
+										</div>
+										Limited Edition A
+										<br />
+										<span title="September 28, 2022">2022</span>
+										<br />
+									<span class="owned">✔️Owned</span>
+									</div>
+								</div>
+								<div class="album">
+									<div class="scene">
+										<div class="box cd">
+											<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/armadillo_front.webp');"></div>
+											<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+											<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/armadillo_cd3.webp');"></div>
+											<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/armadillo_cd.webp');"></div>
+										</div>
+										Limited Edition B
+										<br />
+										<span title="September 28, 2022">2022</span>
+										<br />
+										<span class="missing">❌Missing</span>
+									</div>
+								</div>
+				</div>
+				<div class="album">
+				<div class="scene">
+				<div class="box dvd">
+				<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/armadillo_front2.webp');"></div>
+				<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/armadillo_side2.webp');"></div>
+				<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/armadillo_cd4.webp');"></div>
+				<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/armadillo_cd3.webp');"></div>
+				</div>
+				Victor Online Store Limited Edition
+				<br />
+				<span title="September 28, 2022">2022</span>
+				<br />
+				<span class="owned">✔️Owned</span>
+				</div>
+				</div>
+				</th>
+				<th colspan="3" class="album_title">armadillo</th>
+				</tr>
+				<tr>
+				<th colspan="3">CD</th>
+				</tr>
+				<tr>
+				<th class="table-tracknum"></th>
+				<th class="table-trackname">Name</th>
+				<th>Length</th>
+				</tr>
+				<tr>
+				<td>1</td>
+				<td><span class="translation" title="Shinbigan">審美眼</span> <a class="track-icon" href="https://www.youtube.com/watch?v=9ZP5IIRHaGI" target="_blank">🎥</a></td>
+				<td>3:04</td>
+				</tr>
+				<tr>
+				<td>2</td>
+				<td>Wall Flower <a class="track-icon" href="https://www.youtube.com/watch?v=c1U69hYNZQE" target="_blank">🎥</a></td>
+				<td>3:56</td>
+				</tr>
+				<tr>
+				<td>3</td>
+				<td>STARLET <a class="track-icon" href="https://www.youtube.com/watch?v=imEcUf5W9pM" target="_blank">🎥</a></td>
+				<td>3:42</td>
+				</tr>
+				<tr>
+				<td>4</td>
+				<td>VANDALIZE</td>
+				<td>3:41</td>
+				</tr>
+				<tr>
+				<td>5</td>
+				<td><span class="translation" title="Étranger">エトランゼ</span></td>
+				<td>3:18</td>
+				</tr>
+				<tr>
+				<td>6</td>
+				<td>Falling Down</td>
+				<td>3:06</td>
+				</tr>
+				<tr class="live">
+				<th colspan="3">DVD / Blu-ray - 'TANZ' 2021 Live at Nakano Sun Plaza Hall</th>
+				</tr>
+				<tr class="live">
+				<th class="table-tracknum"></th>
+				<th colspan="2">Name</th>
+				</tr>
+				<tr class="live">
+				<td>1</td>
+				<td colspan="2">Sweet Revolution <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>2</td>
+				<td colspan="2">Can't You See!!! <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>3</td>
+				<td colspan="2">Ain't no magic <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>4</td>
+				<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>5</td>
+				<td colspan="2">NAVYBLUE GIRL <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>6</td>
+				<td colspan="2">BIAS <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>7</td>
+				<td colspan="2">By My Side <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>8</td>
+				<td colspan="2">Movin' <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>9</td>
+				<td colspan="2">SOMA <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>10</td>
+				<td colspan="2">Melting <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>11</td>
+				<td colspan="2">empty boy <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>12</td>
+				<td colspan="2">Eternal Sunshine <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>13</td>
+				<td colspan="2">Magical Feelin' <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>14</td>
+				<td colspan="2">Call out <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>15</td>
+				<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>16</td>
+				<td colspan="2">GIVE & TAKE <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>17</td>
+				<td colspan="2">SMILE SMILE <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>18</td>
+				<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>19</td>
+				<td colspan="2">TAKE MY HAND <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<th colspan="3">Blu-ray - 'PHYSICAL GRAFFITI' 2021 Live at USEN STUDIO COAST</th>
+				</tr>
+				<tr class="live">
+				<th class="table-tracknum"></th>
+				<th colspan="2">Name</th>
+				</tr>
+				<tr class="live">
+				<td>1</td>
+				<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>2</td>
+				<td colspan="2">SHINY <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>3</td>
+				<td colspan="2">for young <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>4</td>
+				<td colspan="2">empty boy <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>5</td>
+				<td colspan="2">SOMA <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>6</td>
+				<td colspan="2">Melting <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>7</td>
+				<td colspan="2">insomnia <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>8</td>
+				<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>9</td>
+				<td colspan="2">BIAS <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>10</td>
+				<td colspan="2">GIVE & TAKE <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>11</td>
+				<td colspan="2">Movin' <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>12</td>
+				<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>13</td>
+				<td colspan="2">SMILE SMILE <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>14</td>
+				<td colspan="2">Magical Feelin' <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>15</td>
+				<td colspan="2">Forever Young <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>16</td>
+				<td colspan="2">TAKE MY HAND <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<th colspan="3">Blu-ray - 'High Scene Boogie 2' 2020 Live at Victor Studio</th>
+				</tr>
+				<tr class="live">
+				<th class="table-tracknum"></th>
+				<th colspan="2">Name</th>
+				</tr>
+				<tr class="live">
+				<td>1</td>
+				<td colspan="2">Call out <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>2</td>
+				<td colspan="2">Can't You See!!! <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>3</td>
+				<td colspan="2">Circle Circle Circle <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>4</td>
+				<td colspan="2">Take it back <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>5</td>
+				<td colspan="2">Weekender <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>6</td>
+				<td colspan="2">By My Side <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>7</td>
+				<td colspan="2">B!tch <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>8</td>
+				<td colspan="2">SMILE SMILE <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>9</td>
+				<td colspan="2">Eternal Sunshine <span class="tracknote">(Live)</span></td>
+				</tr>
+				<tr class="live">
+				<td>10</td>
+				<td colspan="2"><span class="translation" title="Russian Big Muff">ロシアのビッグマフ</span> <span class="tracknote">(Live)</span></td>
+				</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_phys">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="33">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/physical_cd.webp');"></div>
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/physical_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+									</div>
+									<span title="January 27, 2021">2021</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/physical_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/physical2_obi.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/physical2_side.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/physical_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/physical_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="January 27, 2021">2021</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cdflat">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/physical_front.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/record.png');"></div>
+									</div>
+									Vinyl 12"
+									<br />
+									<span title="July 17, 2021">2021</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">PHYSICAL</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>GIVE & TAKE <a class="track-icon" href="https://www.youtube.com/watch?v=t5HXGsiNe5U" target="_blank">🎥</a></td>
+						<td>3:22</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>SMILE SMILE <a class="track-icon" href="https://www.youtube.com/watch?v=IhVvvuG07vk" target="_blank">🎥</a></td>
+						<td>4:15</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>empty boy <a class="track-icon" href="https://www.youtube.com/watch?v=f22M7P2_Dr0" target="_blank">🎥</a></td>
+						<td>4:06</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>SOMA</td>
+						<td>3:37</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Melting</td>
+						<td>3:33</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>insomnia</td>
+						<td>3:34</td>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2020 Live at LINE CUBE SHIBUYA</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="2">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="2">Ain't no magic <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="2">Without You <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="2">Sweet Revolution <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="2">LOVE CONNECTION <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="2">Oh Love <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="2">for young <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td colspan="2">SHINY <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td colspan="2">NAVYBLUE GIRL <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td colspan="2">Take it back <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>11</td>
+						<td colspan="2">Movin' <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>12</td>
+						<td colspan="2">Dance in the rain <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>13</td>
+						<td colspan="2">You & I <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>14</td>
+						<td colspan="2">Eternal Sunshine <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>15</td>
+						<td colspan="2">Fun Fun Fun <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>16</td>
+						<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>17</td>
+						<td colspan="2">Japanese Style <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>18</td>
+						<td colspan="2">TAKE MY HAND <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>19</td>
+						<td colspan="2"><span class="translation" title="Serious dance at night">夜に本気ダンス</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>20</td>
+						<td colspan="2">SMILE SMILE  <span class="tracknote">(early version)</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>21</td>
+						<td colspan="2">Magical Feelin' <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>22</td>
+						<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_feti">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="30">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/fetis_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/fetis_obi.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/fetis_side.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/fetis_cd.webp');"></div>
+									</div>
+									<span title="June 5, 2019">2019</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/fetis2_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/fetis2_obi.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/fetis2_side.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/fetis_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/fetis_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="June 5, 2019">2019</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">Fetish</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Ain't no magic</td>
+						<td>3:53</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Sweet Revolution <a class="track-icon" href="https://www.youtube.com/watch?v=gPwWjdopt9Q" target="_blank">🎥</a></td>
+						<td>3:38</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Magical Feelin' <a class="track-icon" href="https://www.youtube.com/watch?v=HkaCCZa_Ob8" target="_blank">🎥</a></td>
+						<td>4:06</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Movin' <span class="tracknote">feat. Creepy Nuts</span> <a class="track-icon" href="https://www.youtube.com/watch?v=Qagr5zjvpjo" target="_blank">🎥</a></td>
+						<td>3:26</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>NAVYBLUE GIRL</td>
+						<td>4:45</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Music For Life</td>
+						<td>4:08</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Take it Back <a class="track-icon" href="https://www.youtube.com/watch?v=T7VgHEikuJ4" target="_blank">🎥</a></td>
+						<td>3:41</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>MONSTER (Roguelike life)</td>
+						<td>2:43</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Oh Love</td>
+						<td>3:20</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Eternal Sunshine</td>
+						<td>5:10</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Forever Young</td>
+						<td>3:53</td>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2019 Live at KBSホール</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="2">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="2">Magical Feelin' <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="2">Can't You See!!! <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="2">Bob Dance Bob <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="2">Afro <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="2">Japanese Style <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td colspan="2">B!tch <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td colspan="2">BIAS <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td colspan="2">Weekender <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>11</td>
+						<td colspan="2">Eve <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>12</td>
+						<td colspan="2">Fun Fun Fun <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>13</td>
+						<td colspan="2">TAKE MY HAND <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>14</td>
+						<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_magi">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="12">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/magicalfeelin_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/magicalfeelin_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/magicalfeelin_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/magicalfeelin_cd.webp');"></div>
+									</div>
+									<span title="August 8, 2018">2018</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/magicalfeelin_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/magicalfeelin_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/magicalfeelin_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/magicalfeelin_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="August 8, 2018">2018</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">Magical Feelin'</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Magical Feelin' <a class="track-icon" href="https://www.youtube.com/watch?v=HkaCCZa_Ob8" target="_blank">🎥</a></td>
+						<td>4:06</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Music For Life</td>
+						<td>4:08</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Kiki</td>
+						<td>4:43</td>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Magical Feelin'</td>
+						<td>4:06</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Music For Life</td>
+						<td>4:08</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Kiki</td>
+						<td>4:43</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Crazy Dancer  <span class="tracknote">(POLYSICS 午後の本気TOISU Mix)</span></td>
+						<td>3:25</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_inte">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="27">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/intelligence_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/intelligence_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/intelligence_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/intelligence_cd.webp');"></div>
+									</div>
+									<span title="October 11, 2017">2017</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/intelligence_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/intelligence2_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/intelligence2_obi.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/intelligence_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/intelligence_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="October 11, 2017">2017</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">INTELLIGENCE</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Call out <a class="track-icon" href="https://www.youtube.com/watch?v=82wXuiQDNhU" target="_blank">🎥</a></td>
+						<td>2:18</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Eve</td>
+						<td>4:56</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Bye Bye My Sadness</td>
+						<td>3:42</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>TAKE MY HAND <a class="track-icon" href="https://www.youtube.com/watch?v=c9mY1alrifY" target="_blank">🎥</a></td>
+						<td>3:36</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Can't You See!!!</td>
+						<td>3:22</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Without You <a class="track-icon" href="https://www.youtube.com/watch?v=4g5D46_MLIo" target="_blank">🎥</a></td>
+						<td>3:42</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Heart Beat</td>
+						<td>4:55</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>SEA</td>
+						<td>4:37</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>SHINY <a class="track-icon" href="https://www.youtube.com/watch?v=6idlVhWIWAE" target="_blank">🎥</a></td>
+						<td>3:58</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>BIAS</td>
+						<td>3:46</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Weekender</td>
+						<td>4:39</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>LIBERTY</td>
+						<td>3:39</td>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2017 Live at EX THEATER ROPPONGI</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="2">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="2">Ride <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="2">Japanese Style <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="2">B!tch <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="2">You gotta move <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td colspan="2">Logical Heart <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td colspan="2">escape with you <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td colspan="2">Dance in the rain <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_take">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="11">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/takemyhand_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/takemyhand_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/takemyhand_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/takemyhand_cd.webp');"></div>
+									</div>
+									<br />
+									<span title="August 9, 2017">2017</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">TAKE MY HAND</th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>TAKE MY HAND <a class="track-icon" href="https://www.youtube.com/watch?v=c9mY1alrifY" target="_blank">🎥</a></td>
+						<td>3:37</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>This is pop  <span class="tracknote">(new mix)</span></td>
+						<td>3:28</td>
+						<td>B</td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td>Japanese Style <span class="tracknote">(Live)</span></td>
+						<td>3:23</td>
+						<td></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td>fuckin' so tired <span class="tracknote">(Live)</span></td>
+						<td>3:06</td>
+						<td></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td>Only Nineteen <span class="tracknote">(Live)</span></td>
+						<td>2:34</td>
+						<td></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td>B!tch <span class="tracknote">(Live)</span></td>
+						<td>3:43</td>
+						<td></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td>You gotta move <span class="tracknote">(Live)</span></td>
+						<td>4:28</td>
+						<td></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td>Logical Heart <span class="tracknote">(Live)</span></td>
+						<td>2:18</td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_shin">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="9">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/shiny_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/shiny_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/shiny_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/shiny_cd.webp');"></div>
+									</div>
+									<br />
+									<span title="April 26, 2017">2017</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/shiny_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/shiny2_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/shiny2_obi.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/shiny_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/shiny_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="April 26, 2017">2017</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">SHINY</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>SHINY <a class="track-icon" href="https://www.youtube.com/watch?v=6idlVhWIWAE" target="_blank">🎥</a></td>
+						<td>3:58</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Ride</td>
+						<td>3:56</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Blush</td>
+						<td>3:26</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>THREE</td>
+						<td>4:34</td>
+					</tr>
+					<tr>
+						<th colspan="3">DVD</th>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_with">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="17">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/withoutyou_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/withoutyou_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/withoutyou_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/withoutyou_cd.webp');"></div>
+									</div>
+									<span title="December 7, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/withoutyou_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/withoutyou2_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/withoutyou2_obi.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/withoutyou_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/withoutyou_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="December 7, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">Without You / LIBERTY</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Without You <a class="track-icon" href="https://www.youtube.com/watch?v=4g5D46_MLIo" target="_blank">🎥</a></td>
+						<td>3:43</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>LIBERTY</td>
+						<td>3:40</td>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2016 Live at EBISU LIQUIDROOM</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="2">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="2">Only Seventeen <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="2"><span class="translation" title="Serious dance at night">夜に本気ダンス</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="2"><span class="translation" title="Russian Big Muff">ロシアのビッグマフ</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="2">Only Nineteen <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td colspan="2">B!tch <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td colspan="2">you gotta move <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td colspan="2">escape with you <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td colspan="2"><span class="translation" title="War">戦争</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_danc">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="27">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/danceable_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/danceable_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/danceable_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/danceable_cd.webp');"></div>
+									</div>
+									<span title="March 9, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/danceable_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/danceable2_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/danceable2_obi.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/danceable_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/danceable_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="March 9, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">DANCEABLE</th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Oh Yeah</td>
+						<td>3:01</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Crazy Dancer <a class="track-icon" href="https://www.youtube.com/watch?v=XnkPpSKv20c" target="_blank">🎥</a></td>
+						<td>3:10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>By My Side <a class="track-icon" href="https://www.youtube.com/watch?v=JHFZeM5z0K4" target="_blank">🎥</a></td>
+						<td>4:18</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>LOVE CONNECTION</td>
+						<td>3:13</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Love is always new</td>
+						<td>3:34</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>escape with you</td>
+						<td>3:59</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Feel so good <a class="track-icon" href="https://www.youtube.com/watch?v=tj9ZahGGu58" target="_blank">🎥</a></td>
+						<td>3:30</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Logical Heart</td>
+						<td>3:30</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Dance in the rain</td>
+						<td>5:08</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Show down <a class="track-icon" href="https://www.youtube.com/watch?v=BKHABGS8WNc" target="_blank">🎥</a></td>
+						<td>3:34</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Candy Tune <span class="tracknote">(Acoustic)</span> <span class="tracknote">[Bonus Track]</span></td>
+						<td>4:02</td>
+						<td>B</td>
+					</tr>
+					<tr class="live">
+						<th colspan="4">DVD - 2015 Live at 梅田Shangri-La</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="3">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="3">WHERE? <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="3">Afro <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="3">Too Young <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="3">Japanese Style <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="3">B!tch <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="3">By My Side <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td colspan="3">You & I <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td colspan="3">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td colspan="3"><span class="translation" title="War">戦争</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td colspan="3">Only Seventeen <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="commentary">
+								<p>Track 11 is titled <a href="#alb_danc" class="inline-block">🎵 ボーナストラック <span class="translate">[Bonus Track]</span></a>, is not included in digital releases.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_bymy">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="13">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/bymyside_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/bymyside_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/bymyside_obi.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/bymyside_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/bymyside_cd.webp');"></div>
+									</div>
+									<span title="July 8, 2015">2015</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">By My Side</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>By My Side <a class="track-icon" href="https://www.youtube.com/watch?v=JHFZeM5z0K4" target="_blank">🎥</a></td>
+						<td>4:20</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Show down <a class="track-icon" href="https://www.youtube.com/watch?v=BKHABGS8WNc" target="_blank">🎥</a></td>
+						<td>3:28</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Too Young</td>
+						<td>2:45</td>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2015 Live at SHIMOKITAZAWA SHELTER</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="2">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="2">LOVE CONNECTION <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="2">Fun Fun Fun <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="2"><span class="translation" title="War">戦争</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_time">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="13">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/dancetime_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/dancetime_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/dancetime_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/dancetime_cd.webp');"></div>
+									</div>
+									<span title="November 5, 2014">2014</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">DANCE TIME</th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>WHERE? <a class="track-icon" href="https://www.youtube.com/watch?v=5S9657-zJYs" target="_blank">🎥</a></td>
+						<td>2:57</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>You gotta move</td>
+						<td>2:44</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>fuckin' so tired</td>
+						<td>4:07</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Only Nineteen</td>
+						<td>2:29</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Gavlillo</td>
+						<td>3:37</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Circle Circle Circle</td>
+						<td>3:50</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Japanese Style</td>
+						<td>4:44</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Stand by you</td>
+						<td>4:31</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Bob Dance Bob</td>
+						<td>4:27</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Only Seventeen</td>
+						<td>4:21</td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_step">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="9">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/dancestep_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/dancestep_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/dancestep_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/dancestep_cd.webp');"></div>
+									</div>
+									<span title="March 5, 2014">2014</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">DANCE STEP</th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Fun Fun Fun</td>
+						<td>3:22</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>B!tch <a class="track-icon" href="https://www.youtube.com/watch?v=abdto8e3EV4" target="_blank">🎥</a></td>
+						<td>3:23</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><span class="translation" title="War">戦争</span></td>
+						<td>3:22</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>You & I</td>
+						<td>3:16</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Dookie Man</td>
+						<td>2:15</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><span class="translation" title="Love is over">愛は終わり</span></td>
+						<td>3:58</td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_bitc">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/b%21tch_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/b%21tch_cd.webp');"></div>
+									</div>
+									<span title="February 5, 2014">2014</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">B!tch</th>
+					</tr>
+					<tr>
+						<th colspan="4">CD ACW-002</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>B!tch <a class="track-icon" href="https://www.youtube.com/watch?v=abdto8e3EV4" target="_blank">🎥</a></td>
+						<td>3:26</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>LOVE CONNECTION</td>
+						<td>3:04</td>
+						<td>A</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_youn">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="10">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/youngadult4_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/youngadult_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/youngadult_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/youngadult_cd.webp');"></div>
+									</div>
+									<span title="February 9, 2013">2013</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/youngadult2_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/youngadult2_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/youngadult2_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/youngadult_cd.webp');"></div>
+									</div>
+									Reissue
+									<br />
+									<span title="March 30, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title"><span class="translation" title="Young Adult">ヤングアダルト</span></th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Afro</td>
+						<td>3:14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>This is pop</td>
+						<td>3:24</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>fuckin' so tired</td>
+						<td>4:07</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Candy tune</td>
+						<td>3:32</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>for young</td>
+						<td>3:28</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><span class="translation" title="Russian Big Muff">ロシアのビッグマフ</span></td>
+						<td>2:41</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="commentary">
+								<p>There are slight cover variations on some releases of the original album where the cropping and title position differ. A copy that has one of the below covers likely has the other one included as well. </p>
+								<img style="width:100px;" src="images/ynhd/cover/youngadult_front.webp"/>
+								<img style="width:100px;" src="images/ynhd/cover/youngadult3_front.webp"/>
+								<p>The left one is similar to the remaster's booklet, except for a few characteristics of the original (layout, font, etc.), and numerous mispellings in song 5's lyrics. Right one is about identical to the original aside from the cropping on the cover. My understanding is the left cover was used in later releases of the original release but had mistakes, so was supplemented with the right cover.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_bob">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="15">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/bob_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/white_cd.webp');"></div>
+									</div>
+									<span title="April 2, 2012">2012</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/bob_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/white_cd.webp');"></div>
+									</div>
+									First Press Limited Edition
+									<br />
+									<span title="April 28, 2012">2012</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title"><span class="translation" title="Bob Dance Bob">ボブダンスボブ</span></th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><span class="translation" title="Bob Dance Bob">ボブダンスボブ</span></td>
+						<td>5:00</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><span class="translation" title="B!tch">Bitch</span> <a class="track-icon" href="https://www.youtube.com/watch?v=abdto8e3EV4" target="_blank">🎥</a></td>
+						<td>3:40</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><span class="translation" title="Bob Dance Bob Men's Edition">ボブダンスボブ 男子版</span></td>
+						<td>4:59</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><span class="translation" title="Bob Dance Bob Women's Edition">ボブダンスボブ 女子版</span></td>
+						<td>4:59</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><span class="translation" title="Bob Dance Bob">ボブダンスボブ</span></td>
+						<td>5:00</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><span class="translation" title="B!tch">Bitch</span></td>
+						<td>3:40</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>everybody</td>
+						<td>2:38</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><span class="translation" title="Bob Dance Bob Men's Edition">ボブダンスボブ 男子版</span></td>
+						<td>4:59</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><span class="translation" title="Bob Dance Bob Women's Edition">ボブダンスボブ 女子版</span></td>
+						<td>4:59</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="commentary">
+								<p>First Press Limited Edition containing exclusive track <a href="#alb_bob" class="inline-block">🎵 everybody</a></p>
+								<p>Limited to 50 copies.<a href="https://twitter.com/honkidance/status/192650210600693761" target="_blank"><sup>1</sup></a></p>
+								<p>This is the only copy I've seen pop up anywhere, possibly rarest item in collection?</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_war">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/war_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/white_cd.webp');"></div>
+									</div>
+									<span title="Spring 2011">2011</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title"><span class="translation" title="War">戦争</span></th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><span class="translation" title="War">戦争</span></td>
+						<td>3:25</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><span class="translation" title="Serious dance at night">夜に本気ダンス</span></td>
+						<td>3:18</td>
+						<td>B</td>
+					</tr>
+				</table>
+				<h2 id="live">🎤 Live</h2>
+				<table class="ynhd-track-listing" id="alb_kott">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="45">
+							<div class="album">
+								<div class="scene">
+									<div class="box dvd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/livedvd_front2.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/livedvd_side.webp');"></div>
+										<div class="box__face box__face--cd0" style="background-image: url('images/ynhd/cd/kotteri_cd.webp');"></div>
+									</div>
+									<span title="March 28, 2018">2018</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+							<div class="album">
+								<div class="scene">
+									<div class="box dvd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/livedvd_front2.webp');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/livedvd_side.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/kotteri_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/kotteri_cd.webp');"></div>
+									</div>
+									Limited Edition
+									<br />
+									<span title="March 28, 2018">2018</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">Kotteri ! intelli ! One Man Show ! 2018 Live at STUDIO COAST</th>
+					</tr>
+					<tr class="live">
+						<th colspan="3">CD</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td>Call out <span class="tracknote">(Live)</span></td>
+						<td>3:25</td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td>Eve <span class="tracknote">(Live)</span></td>
+						<td>5:03</td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td>SHINY <span class="tracknote">(Live)</span></td>
+						<td>4:22</td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td>LOVE CONNECTION <span class="tracknote">(Live)</span></td>
+						<td>3:15</td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td>Can't You See!!! <span class="tracknote">(Live)</span></td>
+						<td>3:43</td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td>Japanese Style <span class="tracknote">(Live)</span></td>
+						<td>6:04</td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td>fuckin' so tired <span class="tracknote">(Live)</span></td>
+						<td>3:40</td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td>You gotta move <span class="tracknote">(Live)</span></td>
+						<td>3:03</td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td>B!tch <span class="tracknote">(Live)</span></td>
+						<td>3:41</td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td>N.G.S <span class="tracknote">(Live)</span></td>
+						<td>3:10</td>
+					</tr>
+					<tr class="live">
+						<td>11</td>
+						<td>SEA <span class="tracknote">(Live)</span></td>
+						<td>4:45</td>
+					</tr>
+					<tr class="live">
+						<td>12</td>
+						<td>By My Side <span class="tracknote">(Live)</span></td>
+						<td>4:24</td>
+					</tr>
+					<tr class="live">
+						<td>13</td>
+						<td>BIAS <span class="tracknote">(Live)</span></td>
+						<td>4:46</td>
+					</tr>
+					<tr class="live">
+						<td>14</td>
+						<td>Weekender <span class="tracknote">(Live)</span></td>
+						<td>5:04</td>
+					</tr>
+					<tr class="live">
+						<td>15</td>
+						<td>WHERE? <span class="tracknote">(Live)</span></td>
+						<td>3:18</td>
+					</tr>
+					<tr class="live">
+						<td>16</td>
+						<td>Feel so good <span class="tracknote">(Live)</span></td>
+						<td>4:43</td>
+					</tr>
+					<tr class="live">
+						<td>17</td>
+						<td>TAKE MY HAND <span class="tracknote">(Live)</span></td>
+						<td>4:14</td>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2018 Live at STUDIO COAST</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th colspan="2">Name</th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="2">Call out <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="2">Eve <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="2">SHINY <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="2">LOVE CONNECTION <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="2">Can't You See!!! <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="2">Japanese Style <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>7</td>
+						<td colspan="2">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>8</td>
+						<td colspan="2">You gotta move <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>9</td>
+						<td colspan="2">B!tch <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>10</td>
+						<td colspan="2">N.G.S <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>11</td>
+						<td colspan="2">SEA <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>12</td>
+						<td colspan="2">Heart Beat <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>13</td>
+						<td colspan="2">Candy tune <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>14</td>
+						<td colspan="2">Dance in the rain <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>15</td>
+						<td colspan="2">By My Side <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>16</td>
+						<td colspan="2">BIAS <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>17</td>
+						<td colspan="2">Weekender <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>18</td>
+						<td colspan="2">WHERE? <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>19</td>
+						<td colspan="2">Feel so good <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>20</td>
+						<td colspan="2">TAKE MY HAND <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>21</td>
+						<td colspan="2">Crazy Dancer <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>22</td>
+						<td colspan="2"><span class="translation" title="War">戦争</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>CD is missing 5 tracks from DVD: <a href="#alb_kott" class="inline-block">🎵 Heart Beat</a>, <a href="#alb_kott" class="inline-block">🎵 Candy tune</a>, <a href="#alb_kott" class="inline-block">🎵 Dance in the rain</a>, <a href="#alb_kott" class="inline-block">🎵 Crazy Dancer</a>, <a href="#alb_kott" class="inline-block">🎵 <span class="translation" title="War">戦争</span></a></p>
+								<p>Digital/Streaming releases are missing these as well.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_party">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="10">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/yorunohonkiparty_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/white_cd.webp');"></div>
+									</div>
+									<span title="November 2, 2013">2013</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">YORUNO HONKI PARTY</th>
+					</tr>
+					<tr class="live">
+						<th colspan="3">DVD - 2013 Live at 心斎橋 LIVE HOUSE Pangea</th>
+					</tr>
+					<tr class="live">
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th></th>
+					</tr>
+					<tr class="live">
+						<td>1</td>
+						<td colspan="3"><span class="translation" title="B!tch">Bitch</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>2</td>
+						<td colspan="3">Japanese Style <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>3</td>
+						<td colspan="3">Candy tune <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>4</td>
+						<td colspan="3">for young <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>5</td>
+						<td colspan="3">fuckin' so tired <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr class="live">
+						<td>6</td>
+						<td colspan="3"><span class="translation" title="War">戦争</span> <span class="tracknote">(Live)</span></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>2013/05/11 [Sat] OPEN 17:30 / START 18:00 心斎橋 LIVE HOUSE Pangea</p>
+								<p>Given out on 11/2/2013 @ MOJO</p>
+								<p>Limited to 50 copies.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<h2 id="covers">🎶 Covers / Collaborations</h2>
+				<table class="ynhd-track-listing" id="alb_iwasborn">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/iwasborntribute_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--back" style="background-image: url('');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('');"></div>
+									</div>
+									<span title="October 13, 2021">2021</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">I was born 10 years ago. TRIBUTE</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td><span class="translation" title="Baby Kimi Wa Akuma Chan">BABY君は悪魔ちゃん</span> - 夜の本気ダンス</td>
+						<td>4:02</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_akgtribute">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/akgtribute_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/akgtribute_cd.webp');"></div>
+									</div>
+									<span title="March 29, 2017">2017</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">AKG Tribute</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>N.G.S - 夜の本気ダンス</td>
+						<td>3:10</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_alaumidoss">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/alaumidoss_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/alaumidoss_cd.webp');"></div>
+									</div>
+									<span title="October 23, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">ALA-UMI-DOSS</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>AROUND ME DANCE</td>
+						<td>3:49</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>Original song by 夜の本気ダンス, フレデリック <span class="translate">[Frederic]</span>, and ドラマチックアラスカ <span class="translate">[Dramatic Alaska]</span>.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<h2 id="compilations">Compilations</h2>
+				<table class="ynhd-track-listing" id="alb_rockthebest">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/rockthebest_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/rockthebest_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/rockthebest_obi.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/rockthebest_cd.webp');"></div>
+									</div>
+									<span title="July 27, 2016">2016</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">ROCK THE BEST</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>Show down - 夜の本気ダンス</td>
+						<td>1:13</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>Mix CD with crossfades between tracks. First 1:13 of <a href="#alb_danc" class="inline-block">🎵 Show down</a></p>
+								<sup><a href="https://natalie.mu/music/news/189766" target="_blank">1</a></sup>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_warikan">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/warikan_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/rockthebest_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/warikan_obi.webp');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/warikan_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/warikan_cd.webp');"></div>
+									</div>
+									<span title="November 25, 2015">2015</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">Warikan</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td><span class="translation" title="War">戦争</span> - 夜の本気ダンス</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<sup><a href="https://natalie.mu/music/news/167141" target="_blank">1</a></sup>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_japannext">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/japannext_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/japannext_cd.webp');"></div>
+									</div>
+									<span title="July 30, 2015">2015</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">JAPAN's NEXT 2015</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>B!tch - 夜の本気ダンス</td>
+						<td>B</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_dseldom">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/dseldom_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/dseldom_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/dseldom_obi.webp');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/dseldom_cd.webp');"></div>
+									</div>
+									<span title="November 26, 2014">2014</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">D√SELDOM Vol.2</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>WHERE? - 夜の本気ダンス</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<sup><a href="https://natalie.mu/music/news/130689" target="_blank">1</a></sup>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_tsu">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/tsu_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/tsu_cd.webp');"></div>
+									</div>
+									<span title="July 23, 2014">2014</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">ツタロックdig 1</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>B!tch - 夜の本気ダンス</td>
+						<td>B</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_musichere">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/musichere_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd2" style="background-image: url('images/ynhd/cd/musichere_cd2.webp');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/musichere_cd.webp');"></div>
+									</div>
+									<span title="2013">2013</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title"><span class="translation" title="Music Here 5">ここにある音楽5</span></th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Afro - 夜の本気ダンス</td>
+						<td>3:16</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_minamiwheel2013">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/minamiwheel2013_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+									</div>
+									<span title="October 2013">2013</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">Minami Wheel 2013</th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Japanese Style - 夜の本気ダンス</td>
+						<td>4:39</td>
+						<td>A</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_musicisnthere">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/musicisnthere_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+									</div>
+									<span title="July 6, 2013">2013</span>
+									<br />
+									<span class="partial" title="Missing CD">❌Partial</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title"><span class="translation" title="Music that isn't there">あそこにない音楽</span></th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Japanese Style - 夜の本気ダンス</td>
+						<td>?</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_onion">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/onion_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--obiside" style="background-image: url('images/ynhd/side/onion_side.webp');"></div>
+										<div class="box__face box__face--obi" style="background-image: url('images/ynhd/side/onion_obi.webp');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/onion_cd.webp');"></div>
+									</div>
+									<span title="June 12, 2013">2013</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">onion night! COMPILATION</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>fuckin' so tired - 夜の本気ダンス</td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_5threv">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="4">
+							<div class="album">
+								<div class="scene">
+									<div class="box cdflat">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/5thmusicrevolution_front.webp');"></div>
+									</div>
+									<span title="2012">2012</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title">The 5th Music Revolution JAPAN FINAL</th>
+					</tr>
+					<tr>
+						<th colspan="4">Digital</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Japanese Style - 夜の本気ダンス</td>
+						<td>4:41</td>
+						<td>A</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_kyotomojo3">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="6">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/kyotomojo3_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/kyotomojo_cd.webp');"></div>
+									</div>
+									<span title="July 6, 2011">2011</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title"><span class="translation" title="Battleship Mojo 3">戦艦モージョ3</span></th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td><span class="translation" title="War">戦争</span> - 夜の本気ダンス</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td><span class="translation" title="Serious dance at night">夜に本気ダンス</span> - 夜の本気ダンス</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>Limited to 1000 copies.<sup><a href="https://mixi.jp/view_bbs.pl?comm_id=5644489&amp;id=63671527" target="_blank">1</a></sup> <sup><a href="https://twitter.com/TOWER_Kyoto/status/88791401382424576" target="_blank">2</a></sup></p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<h2 id="other">Other</h2>
+				<table class="ynhd-track-listing" id="alb_bonusdvd">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="3">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/liveextra_cd.webp');"></div>
+									</div>
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th class="album_title"><span class="translation" title="Yoru-dan 'Serious' Special DVD">夜ダン"本気"スペシャルDVD</span></th>
+					</tr>
+					<tr>
+						<th>DVD</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="commentary">
+								<p>Pre-order bonus</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_bitcrmx">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/b%21tchrmx_cd.webp');"></div>
+									</div>
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">B!tch-Bxxxach-RMX</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>B!tch-Bxxxach-RMX</td>
+						<td>3:15</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p><a href="#alb_time" class="inline-block"><img class="inline-track-cover" src="images/ynhd/cover/dancetime_front.webp" />DANCE TIME</a> Tower Records purchase bonus containing <i>B!tch-Bxxxach-RMX</i> by 68 (MONICA URANGLASS)<sup><a href="https://twitter.com/honkidance/status/440798455900819457" target="_blank">1</a></sup></p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_wherermx">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/wherermx_cd.webp');"></div>
+									</div>
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">WHERE?-vegetables in season RMX</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>WHERE?-vegetables in season RMX</td>
+						<td>3:32</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p><i>WHERE?-vegetables in season RMX</i> by 68 (MONICA URANGLASS)</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_wheremvdvd">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="3">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/wheremv_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/white_cd.webp');"></div>
+									</div>
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th class="album_title">WHERE? Village Vanguard limited DVD</th>
+					</tr>
+					<tr>
+						<th>DVD</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="commentary">
+								<p>Village Vanguard purchase bonus containing <a href="https://www.youtube.com/watch?v=5S9657-zJYs" target="_blank" class="inline-block">🎥 WHERE? MV</a>.</p>
+								<p>Quality is comparable to Youtube upload.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_bitcmvdvd">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="3">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/unknown_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+									</div>
+									<span class="missing">❌Missing</span>
+								</div>
+							</div>
+						</th>
+						<th class="album_title">B!tch Village Vanguard limited DVD</th>
+					</tr>
+					<tr>
+						<th>DVD</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="commentary">
+								<p>Village Vanguard purchase bonus.<sup><a href="https://twitter.com/honkidance/status/440798455900819457" target="_blank">1</a></sup></p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_wheresampler">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="5">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/where_cd.webp');"></div>
+									</div>
+									<span title="2014">2014</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="3" class="album_title">WHERE? Special sampler</th>
+					</tr>
+					<tr>
+						<th colspan="3">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>WHERE?</td>
+						<td>2:58</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>Distributed at live venue prior to release of <a href="#alb_time" class="inline-block"><img class="inline-track-cover" src="images/ynhd/cover/dancetime_front.webp" />DANCE TIME</a>. Recording is identical.
+									<sup><a href="https://natalie.mu/music/news/127516" target="_blank">1</a></sup>
+								</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_self">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="9">
+							<div class="album" style="margin-top:30px;">
+								<img src="images/ynhd/cover/selftitled_pic.jpg" style="width:150px" />
+								<br />
+								<span title="August 24, 2009">2009</span>
+								<br />
+								<span class="missing">❌Missing</span>
+							</div>
+						</th>
+						<th colspan="4" class="album_title"><span class="translation" title="Serious Dance at Night">夜の本気ダンス</span></th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><span class="translation" title="Strawberry Strawberry">ストロベリー苺</span></td>
+						<td><span class="tracknote">(Unknown)</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><span class="translation" title="Serious dance at night">夜に本気ダンス</span></td>
+						<td><span class="tracknote">(Unknown)</span></td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>ツインタワーかぶれ</td>
+						<td><span class="tracknote">(Unknown)</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>ダメ人間09</td>
+						<td><span class="tracknote">(Unknown)</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><span class="translation" title="Strawberry Strawberry">ストロベリー苺</span> <span class="tracknote">(最後テンション上がるVer.)</span></td>
+						<td><span class="tracknote">(Unknown)</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="commentary">
+								<p>Unknown if or when this was distributed.</p>
+								<p>last.fm pages of tracks, showing scrobbles:
+									<sup><a href="https://www.last.fm/music/夜の本気ダンス/_/ストロベリー苺" target="_blank">1</a></sup>
+									<sup><a href="https://www.last.fm/music/夜の本気ダンス/_/ツインタワーかぶれ" target="_blank">3</a></sup>
+									<sup><a href="https://www.last.fm/music/夜の本気ダンス/_/ダメ人間09" target="_blank">4</a></sup>
+									<sup><a href="https://www.last.fm/music/夜の本気ダンス/_/ストロベリー苺(最後テンション上がるVer.)" target="_blank">5</a></sup>
+								</p>
+								<p>Only reference known is following tweet: <a href="https://twitter.com/suppiiyy/status/332507970237759489" target="_blank">Twitter</a></p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<h2>ROUTE MASTER</h2>
+				<table class="ynhd-track-listing" id="alb_kyotomojo1">
+					<tr>
+						<th class="ynhd-cd-section" rowspan="6">
+							<div class="album">
+								<div class="scene">
+									<div class="box cd">
+										<div class="box__face box__face--front" style="background-image: url('images/ynhd/cover/kyotomojo1_front.webp');"></div>
+										<div class="box__face box__face--casefront" style="background-image: url('images/ynhd/cd_case_front.png');"></div>
+										<div class="box__face box__face--caseback" style="background-image: url('images/ynhd/cd_case_back.png');"></div>
+										<div class="box__face box__face--left" style="background-image: url('images/ynhd/cd_case_side.jpg');"></div>
+										<div class="box__face box__face--cd" style="background-image: url('images/ynhd/cd/kyotomojo1_cd.webp');"></div>
+									</div>
+									<span title="June 9, 2010">2010</span>
+									<br />
+									<span class="owned">✔️Owned</span>
+								</div>
+							</div>
+						</th>
+						<th colspan="4" class="album_title"><span class="translation" title="Battleship Mojo">戦艦モージョ</span></th>
+					</tr>
+					<tr>
+						<th colspan="4">CD</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+						<th>Ver</th>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td><span class="translation" title="War">戦争</span> - ROUTE MASTER</td>
+						<td>3:34</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td><span class="translation" title="Senior High School Student">高校生</span> - ROUTE MASTER</td>
+						<td>3:38</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="commentary">
+								<p>Limited to 1000 copies.</p>
+								<p>Distributed at Tower Records Kyoto store</p>
+								<p><i>ROUTE MASTER</i> is the previous band of lead singer 米田貴紀, who heavily influenced 夜の本気ダンス after joining. While technically a different band, I'm including it in the collection because of the shared track <a href="#alb_war" class="inline-block">🎵 <span class="translation" title="War">戦争</span></a> and general similarities.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<table class="ynhd-track-listing" id="alb_routetracks">
+					<tr>
+						<th colspan="4" class="album_title">Missing ROUTE MASTER tracks</th>
+					</tr>
+					<tr>
+						<th colspan="3">Digital</th>
+					</tr>
+					<tr>
+						<th class="table-tracknum"></th>
+						<th class="table-trackname">Name</th>
+						<th>Length</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>OL - ROUTE MASTER</td>
+						<td>4:23</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>B.P.M - ROUTE MASTER</td>
+						<td>3:20</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>ティブティブ - ROUTE MASTER</td>
+						<td>2:25</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>B.P.M(LIVE at 新宿JAM) - ROUTE MASTER</td>
+						<td>3:38</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>OL ~ 戦争(LIVE at 新宿JAM) - ROUTE MASTER</td>
+						<td>7:59</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>高校生(LIVE at 新宿JAM) - ROUTE MASTER</td>
+						<td>3:32</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>ティブティブ(LIVE at 新宿JAM) - ROUTE MASTER</td>
+						<td>3:07</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div class="commentary">
+								<p>These tracks were previously hosted on the band's <a href="https://myspace.com/routemasterband/music/songs">Myspace profile</a>. While seemingly still available, they cannot be played due to a botched server migration in 2019 that led to <a href="https://www.rollingstone.com/music/music-news/myspace-lost-music-809455/">Myspace losing all music uploaded to the site prior to 2015</a>.</p>
+								<p>A low quality recording of <a href="#alb_routetracks" class="inline-block">🎵 OL</a> can be heard in <a href="http://fm797eventart2.seesaa.net/article/128697653.html">this interview</a>.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="livetable" class="ynhd-section content-block">
+				<h2>📋 Live Recording Table</h2>
+				<div class="ynhd-section content-block commentary" style="width:90%;">
+					<p>A table listing every track and their appearances on every released live recording, usually included in limited editions of albums.</p>
+					<p>Recordings are only included if they have been released on DVD/Blu-ray, or as tracks on an album.</p>
+					<p>✔ = track is present<br/>~ = track is partially present</p>
+				</div>
+				<table class="ynhd-track-listing ynhd-livetrack-listing" style="width:100px">
+					<tr>
+						<th></th>
+						<th></th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_party"><img class="marq-icon" src="images/ynhd/cover/yorunohonkiparty_front.webp" /></a>
+								<span class="tooltiptext">YORUNO HONKI PARTY - 2013 Live at 心斎橋 LIVE HOUSE Pangea</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_bymy"><img class="marq-icon" src="images/ynhd/cover/bymyside_front.webp" /></a>
+								<span class="tooltiptext">By My Side - 2015 Live at SHIMOKITAZAWA SHELTER</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_danc"><img class="marq-icon" src="images/ynhd/cover/danceable_front.webp" /></a>
+								<span class="tooltiptext">DANCEABLE - 2015 Live at 梅田Shangri-La</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_with"><img class="marq-icon" src="images/ynhd/cover/withoutyou_front.webp" /></a>
+								<span class="tooltiptext">Without You / LIBERTY - 2016 Live at EBISU LIQUIDROOM</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_take"><img class="marq-icon" src="images/ynhd/cover/takemyhand_front.webp" /></a>
+								<span class="tooltiptext">TAKE MY HAND</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_inte"><img class="marq-icon" src="images/ynhd/cover/intelligence_front.webp" /></a>
+								<span class="tooltiptext">INTELLIGENCE - 2017 Live at EX THEATER ROPPONGI</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_kott"><img class="marq-icon" src="images/ynhd/cover/livedvd_front.webp" /></a>
+								<span class="tooltiptext">Kotteri ! intelli ! One Man Show ! 2018 Live at STUDIO COAST</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_feti"><img class="marq-icon" src="images/ynhd/cover/fetis_front.webp" /></a>
+								<span class="tooltiptext">Fetish - 2019 Live at KBSホール</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_phys"><img class="marq-icon" src="images/ynhd/cover/physical_front.webp" /></a>
+								<span class="tooltiptext">PHYSICAL - 2020 Live at LINE CUBE SHIBUYA</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_arma"><img class="marq-icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+								<span class="tooltiptext">armadillo - 'TANZ' 2021 Live at Nakano Sun Plaza Hall</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_arma"><img class="marq-icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+								<span class="tooltiptext">armadillo - 'PHYSICAL GRAFFITI' 2021 Live at USEN STUDIO COAST</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_arma"><img class="marq-icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+								<span class="tooltiptext">armadillo - 'High Scene Boogie 2' 2020 Live at Victor Studio</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_dip"><img class="marq-icon" src="images/ynhd/cover/dip_front.jpg" /></a>
+								<span class="tooltiptext">dip - 十五夜 -HISTORY OF YNHD-</span>
+							</div>
+						</th>
+					</tr>
+<tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td><span class="translation" title="Pyramid Dance">ピラミッドダンス</span></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>DYWD?</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>Vivid Beat</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>GOOD LUCK</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>Gold</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>虹</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>ABRAKADABRA</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td><span class="translation" title="Pyramid Dance">パセティックガール</span></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dip_front.jpg" /></td>
+<td>Crush me</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/armadillo_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">審美眼</span></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/armadillo_front.webp" /></td>
+<td>Wall Flower</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>~</td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/armadillo_front.webp" /></td>
+<td>STARLET</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/armadillo_front.webp" /></td>
+<td>VANDALIZE</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/armadillo_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">エトランゼ</span></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/armadillo_front.webp" /></td>
+<td>Falling Down</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/iwasborntribute_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">BABY君は悪魔ちゃん</span></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/physical_front.webp" /></td>
+<td>GIVE & TAKE</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/physical_front.webp" /></td>
+<td>SMILE SMILE</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/physical_front.webp" /></td>
+<td>empty boy</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/physical_front.webp" /></td>
+<td>SOMA</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/physical_front.webp" /></td>
+<td>Melting</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/physical_front.webp" /></td>
+<td>insomnia</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Ain't no magic</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Sweet Revolution</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Magical Feelin'</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Movin'</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>NAVYBLUE GIRL</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Music For Life</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Take it back</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td>✔</td><td>~</td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>MONSTER</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Oh Love</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Eternal Sunshine</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td>✔</td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/fetis_front.webp" /></td>
+<td>Forever Young</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/magicalfeelin_front.webp" /></td>
+<td>Kiki</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Call out</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Eve</td>
+<td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Bye Bye My Sadness</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>TAKE MY HAND</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Can't You See!!!</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td>✔</td><td></td><td>✔</td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Without You</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Heart Beat</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>SEA</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>SHINY</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>BIAS</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>Weekender</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td><td>✔</td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/intelligence_front.webp" /></td>
+<td>LIBERTY</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/shiny_front.webp" /></td>
+<td>Ride</td>
+<td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/shiny_front.webp" /></td>
+<td>Blush</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/shiny_front.webp" /></td>
+<td>THREE</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/akgtribute_front.webp" /></td>
+<td>N.G.S</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/alaumidoss_front.webp" /></td>
+<td>AROUND ME DANCE</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Oh Yeah</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Crazy Dancer</td>
+<td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>By My Side</td>
+<td></td><td></td><td>✔</td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td>✔</td><td></td><td>✔</td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>LOVE CONNECTION</td>
+<td></td><td>✔</td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td>~</td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Love is always new</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>escape with you</td>
+<td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Feel so good</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Logical Heart</td>
+<td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Dance in the rain</td>
+<td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/danceable_front.webp" /></td>
+<td>Show down</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/bymyside_front.webp" /></td>
+<td>Too Young</td>
+<td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>WHERE?</td>
+<td></td><td>✔</td><td>✔</td><td></td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>You gotta move</td>
+<td></td><td></td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>fuckin' so tired</td>
+<td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Only Nineteen</td>
+<td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Gavlillo</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Circle Circle Circle</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Japanese Style</td>
+<td>✔</td><td></td><td>✔</td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Stand by you</td>
+<td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Bob Dance Bob</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancetime_front.webp" /></td>
+<td>Only Seventeen</td>
+<td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancestep_front.webp" /></td>
+<td>Fun Fun Fun</td>
+<td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancestep_front.webp" /></td>
+<td>B!tch</td>
+<td>✔</td><td></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td>✔</td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancestep_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">戦争</span></td>
+<td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/dancestep_front.webp" /></td>
+<td>You & I</td>
+<td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dancestep_front.webp" /></td>
+<td>Dookie Man</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/dancestep_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">愛は終わり</span></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/youngadult_front.webp" /></td>
+<td>Afro</td>
+<td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/youngadult_front.webp" /></td>
+<td>This is pop</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>~</td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/youngadult_front.webp" /></td>
+<td>Candy tune</td>
+<td>✔</td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/youngadult_front.webp" /></td>
+<td>for young</td>
+<td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/youngadult_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">ロシアのビッグマフ</span></td>
+<td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>~</td>
+</tr><tr class="missing">
+<td><img class="livetable-icon" src="images/ynhd/cover/bob_front.webp" /></td>
+<td>everybody</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td><img class="livetable-icon" src="images/ynhd/cover/war_front.webp" /></td>
+<td><span class="translation" title="Pyramid Dance">夜に本気ダンス</span></td>
+<td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td>
+</tr>
+					<tr>
+						<th></th>
+						<th></th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_party"><img class="marq-icon" src="images/ynhd/cover/yorunohonkiparty_front.webp" /></a>
+								<span class="tooltiptext">YORUNO HONKI PARTY - 2013 Live at 心斎橋 LIVE HOUSE Pangea</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_bymy"><img class="marq-icon" src="images/ynhd/cover/bymyside_front.webp" /></a>
+								<span class="tooltiptext">By My Side - 2015 Live at SHIMOKITAZAWA SHELTER</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_danc"><img class="marq-icon" src="images/ynhd/cover/danceable_front.webp" /></a>
+								<span class="tooltiptext">DANCEABLE - 2015 Live at 梅田Shangri-La</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_with"><img class="marq-icon" src="images/ynhd/cover/withoutyou_front.webp" /></a>
+								<span class="tooltiptext">Without You / LIBERTY - 2016 Live at EBISU LIQUIDROOM</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_take"><img class="marq-icon" src="images/ynhd/cover/takemyhand_front.webp" /></a>
+								<span class="tooltiptext">TAKE MY HAND</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_inte"><img class="marq-icon" src="images/ynhd/cover/intelligence_front.webp" /></a>
+								<span class="tooltiptext">INTELLIGENCE - 2017 Live at EX THEATER ROPPONGI</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_kott"><img class="marq-icon" src="images/ynhd/cover/livedvd_front.webp" /></a>
+								<span class="tooltiptext">Kotteri ! intelli ! One Man Show ! 2018 Live at STUDIO COAST</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_feti"><img class="marq-icon" src="images/ynhd/cover/fetis_front.webp" /></a>
+								<span class="tooltiptext">Fetish - 2019 Live at KBSホール</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_phys"><img class="marq-icon" src="images/ynhd/cover/physical_front.webp" /></a>
+								<span class="tooltiptext">PHYSICAL - 2020 Live at LINE CUBE SHIBUYA</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_arma"><img class="marq-icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+								<span class="tooltiptext">armadillo - 'TANZ' 2021 Live at Nakano Sun Plaza Hall</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_arma"><img class="marq-icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+								<span class="tooltiptext">armadillo - 'PHYSICAL GRAFFITI' 2021 Live at USEN STUDIO COAST</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_arma"><img class="marq-icon" src="images/ynhd/cover/armadillo_front.webp" /></a>
+								<span class="tooltiptext">armadillo - 'High Scene Boogie 2' 2020 Live at Victor Studio</span>
+							</div>
+						</th>
+						<th>
+							<div class="tooltip">
+								<a href="#alb_dip"><img class="marq-icon" src="images/ynhd/cover/dip_front.jpg" /></a>
+								<span class="tooltiptext">dip - 十五夜 -HISTORY OF YNHD-</span>
+							</div>
+						</th>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="changelog" class="ynhd-section content-block">
+				<h2>Changelog</h2>
+				<div style="overflow:scroll;overflow-x:hidden;height:200px;">
+				<i>8/25/24</i> - Added owned/missing text
+				<br/>
+				<i>5/1/24</i> - Added <span class="cl-name">dip - 十五夜 -HISTORY OF YNHD-</span> to live recording table
+				</div>
+			</div>
+		</div>
+	</body>
+
+<!-- Mirrored from laytonloztew.neocities.org/ynhd by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:55:51 GMT -->
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from laytonloztew.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:19 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="LaytonLoztew">
+		<meta name="description" content="Home of LaytonLoztew">
+		<meta name="keywords" content="laytonloztew, manda no yume, everlast reverie, yume nikki, yoru no honki dance">
+		<title>GrekTech's Land</title>
+		<link rel="icon" href="images/icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="style62d3.css?ver=23.04.19.0"/>
+		<script src='stars31b1.js?ver=24.12.23.0'></script>
+		<script>
+		
+		window.onload=function(){
+		initShootingStars();
+		songoftheday();
+		gameoftheday();
+		}
+		
+		function gameoftheday() {
+			msg = ["Crypt Worlds"
+,"Insaniquarium!"
+,"We Were Here"
+,"Paper Mario"
+,"Welcome House"
+,"Vindictus"
+,"LSD Dream Emulator"
+,"Satisfactory"
+,"Dark Tales: From the Lost Soul"
+,"Hypnospace Outlaw"
+,"Magic Pengel"
+,"Polaroid Pete"
+,"The Ship"
+,"Me & My Katamari"
+,"Magician's Quest: Mysterious Times"
+,"Minecraft"
+,"Hotline Miami"
+,"Planet Dob"
+,"Sonic Adventure 2"
+,"Aquanaut's Holiday"
+,"Super Mario 64"
+,"Pokemon Snap"
+,"B3313"
+,"Dreaming Sarah"
+,"Jet Set Radio"
+,"Paper Mario: TTYD"
+,"Screencheat"
+,"Super Mario RPG"
+,"Yakuza 4"
+,"Yakuza 0"
+,"Doshin the Giant"
+,"🪦Project Powder"
+,"Pokemon Snap"
+,"Segare Ijiri"
+,"Puppet Zoo Pilomy"
+,"Robbit mon Dieu"
+,"Harvest Moon: A Wonderful Life"
+,"Dr. Mario 64"
+,"Paranoia Scape"
+,"Lethal League Blaze"
+,"Glover"
+,"Super Mario Sunshine"
+,"Chulip"
+,"Frogger"
+,"Gekibo: Gekisha Boy"
+,"Terraria"
+,"Stetch Panic"
+,"We Were Here Too"
+,"Gregory Horror Show"
+,"Kyoro-chan no Purikura Daisakusen"
+,"Welcome House 2"
+,"Dr. Slump"
+,"🪦Nosgoth"
+,"Oh No!"
+,"Lovely Planet"
+,"Slime Rancher"
+,"Yume Nikki"
+,"We Were Here Forever"
+,"Combat Arms"
+,"Tetsuya Komuro: Gaball Screen"
+,"Poinie's Poin"
+,"Deep Rock Galactic"
+,"Yakuza"
+,"Yakuza 3"
+,"Maplestory"
+,"Yakuza 6"
+,"Pocket MuuMuu"
+,"Sleeping Dogs"
+,"Jumping Flash! 2"
+,"Penko Park"
+,"Mario & Luigi: Superstar Saga"
+,"Yakuza 2"
+,"~GERMS~ Nerawareta Machi"
+,"Stardew Valley"
+,"Floating Runner"
+,"Under the Skin"
+,"Jumping Flash!"
+,"We Were Here Together"
+,"Super Mario 64 DS"
+,"Tail of the Sun"
+,"Kirby Air Ride"
+,"Risk of Rain 2"
+]
+
+		var daysSinceEpoch = Math.floor(new Date().getTime() / (24 * 60 * 60 * 1000));
+		var index = daysSinceEpoch % msg.length;
+		var gameElement = document.getElementById('gameoftheday');
+		gameElement.textContent = msg[index];
+		}
+		
+		function songoftheday() {
+			msg = ["Take it Back"
+,"Candy tune"
+,"Crazy Dancer"
+,"Feel so good"
+,"SEA"
+,"Circle Circle Circle"
+,"insomnia"
+,"By My Side"
+,"This is pop"
+,"Forever Young"
+,"虹"
+,"Only Nineteen"
+,"Oh Yeah"
+,"GIVE & TAKE"
+,"Can't You See!!!"
+,"LIBERTY"
+,"審美眼"
+,"WHERE?"
+,"Call out"
+,"THREE"
+,"DYWD?"
+,"Sweet Revolution"
+,"Kiki"
+,"SOMA"
+,"Only Seventeen"
+,"Logical Heart"
+,"everybody"
+,"Eve"
+,"Melting"
+,"Without You"
+,"Fun Fun Fun"
+,"Gold"
+,"STARLET"
+,"パセティックガール"
+,"TAKE MY HAND"
+,"Afro"
+,"empty boy"
+,"ABRAKADABRA"
+,"Magical Feelin'"
+,"Bob Dance Bob"
+,"Falling Down"
+,"Ride"
+,"BIAS"
+,"Wall Flower"
+,"Love is always new"
+,"ロシアのビッグマフ"
+,"Japanese Style"
+,"Music For Life"
+,"Ain't no magic"
+,"夜に本気ダンス"
+,"Crush me"
+,"escape with you"
+,"SHINY"
+,"Vivid Beat"
+,"You & I"
+,"VANDALIZE"
+,"戦争 [War]"
+,"Weekender"
+,"Movin'"
+,"for young"
+,"ピラミッドダンス"
+,"NAVYBLUE GIRL"
+,"Show down"
+,"LOVE CONNECTION"
+,"You gotta move"
+,"Blush"
+,"エトランゼ"
+,"MONSTER (Roguelike life)"
+,"GOOD LUCK"
+,"SMILE SMILE"
+,"ENISHI"]
+			
+			var daysSinceEpoch = Math.floor(new Date().getTime() / (24 * 60 * 60 * 1000));
+			var index = daysSinceEpoch % msg.length;
+			var songElement = document.getElementById('songoftheday');
+			songElement.textContent = msg[index];
+		}
+		
+		function copy(id){
+		text = "<a href=\"https://laytonloztew.neocities.org/\" target=\"_blank\"><img src=\"https://laytonloztew.neocities.org/images/badges/button_layton" + id + ".png\"></a>";
+		var inp =document.createElement('input');
+document.body.appendChild(inp)
+inp.value = text
+inp.select();
+document.execCommand('copy',false);
+inp.remove();
+var copyElement = document.getElementById('copytext' + id);
+copyElement.textContent = "copied!";
+}
+
+function copytext(id){
+var copyElement = document.getElementById('copytext' + id);
+copyElement.textContent = "click to copy code!";
+}
+
+		</script>
+		<style>
+			.rw-sentence{
+			margin: 0;
+			text-align: left;
+			text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+			}
+			.rw-sentence span{
+			color: #444;
+			font-size: 200%;
+			font-weight: normal;
+			}
+			.rw-words{
+			display: inline;
+			text-indent: 10px;
+			}
+			.rw-words-1 span{
+			position: absolute;
+			opacity: 0;
+			overflow: hidden;
+			color: #6b969d;
+			-webkit-animation: rotateWord 18s linear infinite 0s;
+			-ms-animation: rotateWord 18s linear infinite 0s;
+			animation: rotateWord 18s linear infinite 0s;
+			}
+			.rw-words-1 span:nth-child(2) { 
+			-webkit-animation-delay: 3s; 
+			-ms-animation-delay: 3s; 
+			animation-delay: 3s; 
+			color: #6b969d;
+			}
+			.rw-words-1 span:nth-child(3) { 
+			-webkit-animation-delay: 6s; 
+			-ms-animation-delay: 6s; 
+			animation-delay: 6s; 
+			color: #6b969d;	
+			}
+			.rw-words-1 span:nth-child(4) { 
+			-webkit-animation-delay: 9s; 
+			-ms-animation-delay: 9s; 
+			animation-delay: 9s; 
+			color: #6b969d;
+			}
+			.rw-words-1 span:nth-child(5) { 
+			-webkit-animation-delay: 12s; 
+			-ms-animation-delay: 12s; 
+			animation-delay: 12s; 
+			color: #6b969d;
+			}
+			.rw-words-1 span:nth-child(6) { 
+			-webkit-animation-delay: 15s; 
+			-ms-animation-delay: 15s; 
+			animation-delay: 15s; 
+			color: #6b969d;
+			}
+			.rw-words-1 span:nth-child(7) { 
+			-webkit-animation-delay: 18s; 
+			-ms-animation-delay: 18s; 
+			animation-delay: 18s; 
+			color: #6b969d;
+			}
+			@-webkit-keyframes rotateWord {
+			0% { opacity: 0; }
+			2% { opacity: 0; -webkit-transform: translateY(-60px); }
+			5% { opacity: 1; -webkit-transform: translateY(-29px);}
+			17% { opacity: 1; -webkit-transform: translateY(-29px); }
+			20% { opacity: 0; -webkit-transform: translateY(0px); }
+			80% { opacity: 0; }
+			100% { opacity: 0; }
+			}
+			@-ms-keyframes rotateWord {
+			0% { opacity: 0; }
+			2% { opacity: 0; -ms-transform: translateY(-60px); }
+			5% { opacity: 1; -ms-transform: translateY(-29px);}
+			17% { opacity: 1; -ms-transform: translateY(-29px); }
+			20% { opacity: 0; -ms-transform: translateY(0px); }
+			80% { opacity: 0; }
+			100% { opacity: 0; }
+			}
+			@keyframes rotateWord {
+			0% { opacity: 0; }
+			2% { opacity: 0; -webkit-transform: translateY(-60px); transform: translateY(-60px); }
+			5% { opacity: 1; -webkit-transform: translateY(-29px); transform: translateY(-29px);}
+			17% { opacity: 1; -webkit-transform: translateY(-29px); transform: translateY(-29px); }
+			20% { opacity: 0; -webkit-transform: translateY(0px); transform: translateY(0px); }
+			80% { opacity: 0; }
+			100% { opacity: 0; }
+			}
+			
+			/* HOVERING ICONS */
+ .site_icon_hover {
+     display: inline;
+}
+ .site_icon_hover img {
+     margin-top: 5px;
+     margin-left: 3px;
+     margin-right: 3px;
+     opacity: 0.5;
+     top: 0;
+	 filter: brightness(100) grayscale(100);
+}
+ .site_icon_hover:hover img {
+     position: relative;
+     transition: opacity 1s;
+     transition: top 0.5s ease 0s;
+     top: -3px;
+     opacity: 1;
+	 filter: none;
+}
+
+ .desktop_icon_hover {
+     display: inline;
+}
+ .desktop_icon_hover img {
+     margin-top: 5px;
+     margin-left: 3px;
+     margin-right: 3px;
+     opacity: 0.5;
+     top: 0;
+}
+ .desktop_icon_hover:hover img {
+     position: relative;
+     transition: opacity 1s;
+     transition: top 0.5s ease 0s;
+     top: -3px;
+     opacity: 1;
+	 filter: none;
+}
+
+.navlink-big {
+box-shadow:none;
+}
+
+.content-block {
+border-radius: 0px;
+display: inline-block;
+position: relative;
+background: rgba(0, 0, 0, 0);
+padding:7px;
+margin-bottom:20px;
+width:530px;
+height:280px;
+margin-left:-18px;
+left:18px;
+box-shadow:none;
+}
+
+.ava {
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.system-icon {height:24px;vertical-align:middle;}
+
+.flex-achset-year {
+font-weight:bold;
+background-color:black;
+width:500px;
+margin:auto;
+background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0) 100%);
+}
+
+.dailytable td {
+width:150px;
+background-color: rgba(0,0,0,0.3);
+border-radius:6px;
+}
+
+.dailytable-header {
+color:rgba(80,80,80,1);
+font-style: italic;
+}
+
+#site_x:hover img {
+-webkit-transform: scaleY(-1);
+transform: scaleY(-1);
+}
+</style>
+	</head>
+	<body>
+		<link rel="preload" href="images/background.png" as="image">
+		<div class="wrapper">
+			<!-- LEFT SIDEBAR -->
+			<div class="sidenav">
+				<div class="skipnav"><a href="#main">Skip to content</a></div>
+				<div style="height:0.4vh;"></div>
+				<div style="height:85%;margin-top:10px;">
+					<img src="images/art/laytonloztew.png" style="width:100px;height:127px;opacity:0.4;" draggable="false"/>
+					GrekTech
+					<div style="height:2.5vh;">
+					</div>
+					<div class="nav-active">
+					Home</div>
+					<a href="projects.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_proj.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Ancient </div></a>
+					<a href="memcard.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_memcard.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Ancinet Coin Card</div></a>
+					<a href="ynhd.html"><div class="nav-button">
+						<div class="navicon-div" style="bottom:3px;">
+							<img class="navicon" src="images/memcard/navicon_ynhd.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					<span style="bottom:100px;">Solana endless</span></div></a>
+				</div>
+
+			</div>
+			<div id="main" style="height:99vh">
+				<div style="height:6vh;">
+				</div>
+				<img src="images/section_bg_about.png" style="position:absolute;opacity:0.8;z-index:-3" draggable="false"/>
+				<div id="sec-about" class="content-block" style="height:200px">
+					<p style="margin-top:20px"> <span style="color:lightgray">GrekTech</span> or <span style="color:lightgray">Grek</span></p>
+					<p><span style="color:lightgray">RetroAchievements Development</span>, <br/><span style="color:lightgray">εἰμὶ λίαν ἐνθουσιώδης διὰ τοῦτο,</span>, <br/><span style="color:lightgray"> μέλλομεν ἀποστελεῖν αὐτό.</span><br/><span style="color:rgba(60,60,60,0.4)">ILL</span></p>
+					<br/>
+					
+					
+					<div class="tooltip">
+						<div class="site_icon_hover">
+							<a href="https://bsky.app/profile/laytonloztew.bsky.social" target="_blank"><img src="images/sites/bsky.png" style="width:32px;height:32px;"/></a>
+						</div>
+						<span class="tooltiptext">Telegram</span>
+					</div>
+					
+					<div class="tooltip">
+						<div class="site_icon_hover" id="site_x">
+							<a href="https://twitter.com/laytonloztew" target="_blank"><img src="images/sites/twitter.png" style="width:32px;height:32px;"/></a>
+						</div>
+						<span class="tooltiptext">Twitter</span>
+					</div>
+					
+					<div class="tooltip">
+						<div class="site_icon_hover">
+							<a href="https://laytonloztew.itch.io/" target="_blank"><img src="images/sites/itch.png" style="width:32px;height:32px;"/></a>
+						</div>
+						<span class="tooltiptext">BUY</span>
+					</div>
+					
+				</div>
+				<img src="images/art/manda_head.png" class="ava" alt="" style="position:absolute;margin-left:-520px;width:170px;z-index:-2;margin-top:70px" draggable="false"/>
+				<img src="images/art/layton_head.png" class="ava" alt="" style="position:absolute;margin-left:-132px;width:160px;margin-top:23px;z-index:-2" draggable="false"/>
+				<div class="flex-achset-year" style="width:400px;"><i>of the Eclipse...</i></div>
+				<div style="margin-left:126px;width:550px;">
+					<table class="dailytable" style="margin:auto">
+					<tr>
+					<td> <span class="dailytable-header">PUMPFUN BASED</span><br/>
+					<td><span class="dailytable-header">COMMUNITY LISTENER</span><br/>
+					</tr>
+					</table>
+					</div>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="shootingstar" alt="" src="images/stars/shootingstars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				<img class="star" alt="" src="images/stars/stars.png"/>
+				
+				<div style="height:4vh;">
+				</div>
+				
+				<br />
+				<div class="flex-achset-year" style="width:400px"><i>Pages</i></div>
+				<table class="table-desktopicons">
+				<tr>
+				<td><div class="tooltip">
+				<a href="ra.html"><div class="desktop-icon-div">
+					<img src="images/desktop/ra.png" class="desktop-icon-img"/>
+					<br/>/ra
+				</div></a>
+				<span class="tooltiptext">My RetroAchievements work!</span>
+				</div></td>
+				<td>
+				<div class="tooltip">
+				<a href="ynhd.html"><div class="desktop-icon-div">
+					<img src="images/desktop/ynhd.png" class="desktop-icon-img" />
+					<br/>/ynhd
+				</div></a>
+				<span class="tooltiptext">My Yoru no Honki Dance collection!</span>
+				</div>
+				</td>
+				<td><div class="tooltip">
+				<a href="manda.html"><div class="desktop-icon-div">
+					<img src="images/desktop/manda.png" class="desktop-icon-img"/>
+					<br/>/manda
+				</div></a>
+				<span class="tooltiptext">Manda no Yume<br/>my Yume Nikki Fangame</span>
+				</div></td>
+				<td><div class="tooltip">
+				<a href="everlast.html"><div class="desktop-icon-div">
+					<img src="images/desktop/everlast.png" class="desktop-icon-img"/>
+					<br/>/everlast
+				</div></a>
+				<span class="tooltiptext">Everlast Reverie<br/>my unreleased Yume Nikki Fangame</span>
+				</div></td>
+				<td><div class="tooltip">
+				<a href="mqreader.html"><div class="desktop-icon-div">
+					<img src="images/desktop/mq.png" class="desktop-icon-img"/>
+					<br/>/mqreader
+				</div></a>
+				<span class="tooltiptext">My Magician's Quest save file reader!</span>
+				</div></td>
+				<td><div class="tooltip">
+				<a href="mqbrooms.html"><div class="desktop-icon-div">
+					<img src="images/desktop/mqbroom.png" class="desktop-icon-img"/>
+					<br/>/mqbrooms
+				</div></a>
+				<span class="tooltiptext">My Magician's Quest DLC Unlocker!</span>
+				</div></td>
+				</tr>
+				</table>
+				
+
+				<span class="tooltiptext">CONTRACT ADDRESS HERE (UPDATED ONCE WE HIT 10KMCAP)</span>
+				</div></td>
+				</tr>
+				</table>
+				
+				
+
+				
+
+			</div>
+		</div>
+	</body>
+
+<!-- Mirrored from laytonloztew.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:35 GMT -->
+</html>

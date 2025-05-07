@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from laytonloztew.neocities.org/memcard by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:43 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="LaytonLoztew">
+		<meta name="description" content="Home of LaytonLoztew">
+		<meta name="keywords" content="laytonloztew, manda no yume, everlast reverie, yume nikki, yoru no honki dance, retroachievements">
+		<title>Layton's Land</title>
+		<link rel="icon" href="images/icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="styleddce.css?ver=24.05.01.0"/>
+		<script src='screenshotsa79d.js?ver=22.06.26.0'></script>
+		<style>
+		
+		body {
+	/* Background */
+	background-color:#141414;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	/* Font */
+	color: gray;
+	font-family: Courier New;
+	font-size: 12px;
+
+	/* Text */
+	overflow: auto;
+	text-align:center;
+	height:90vh;
+    overflow: auto; /* fallback */
+    overflow: overlay;
+}
+
+.nav-button:hover {
+    background-color:rgb(50, 52, 51);
+}
+
+.nav-active {
+    background-color:#242726;
+}
+
+
+
+
+
+		
+h2 {
+color:gray;
+color:rgb(200,200,200);
+}
+
+ul {
+padding-inline-start: 4px;
+padding-inline-end: 6px;
+line-height:1.6;
+}
+
+ul li:not(:last-child) {
+   margin-bottom: 12px;
+}
+
+.inline-block {
+border-radius:0px 7px 0 0;
+}
+
+
+.trinket {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  height:96px;
+  margin-top:8px;
+  float:left;
+  margin-left:2px;
+  opacity:1;
+}
+
+.trinket-s {  
+  height:38px;
+}
+
+.inline-block {
+cursor: pointer;
+}
+
+.inline-block:hover .trinket-div .trinket {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  opacity:1;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+}
+
+.inline-block-comm {
+     display:inline-block;
+	 border-radius:0 7px 7px 0;
+     position: relative;
+     background: black;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,40) solid;
+	 vertical-align:middle;
+	 font-size:11px;
+}
+ .inline-block:hover-comm {
+     background: rgb(30, 30, 30);
+     background: rgba(30, 30, 30, 0.5);
+	 border:1px gray solid;
+}
+
+.inline-block-icons {
+     display:inline-block;
+	 border-radius:0 7px 7px 0;
+     position: relative;
+     background: black;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,40) solid;
+	 vertical-align:middle;
+	 font-size:11px;
+}
+
+.trinket-div {  
+	position: relative;
+	bottom:6px;
+	width:48px;
+	float:left;
+	margin-right:10px;
+}
+
+.ach-game {
+font-size:12px;
+color:rgb(200,200,200);
+width:85%;
+height:100px;
+}
+
+.ach-game-comm {
+font-size:12px;
+color:rgb(150,150,150);
+border-top: none;
+width:85%;
+border-radius:0 0 0 0;
+}
+
+.ach-game-icons {
+font-size:12px;
+color:rgb(150,150,150);
+border-top: none;
+width:85%;
+border-radius:0 0 0 0;
+}
+
+.ach-icon {
+font-size:12px;
+color:rgb(200,200,200);
+height:100px;
+width:97px;
+border-radius:0 0 0 0;
+}
+
+.ach-icon-s {
+font-size:12px;
+color:rgb(200,200,200);
+height:42px;
+width:38px;
+border-radius:0 0 0 0;
+}
+
+.system-icon {
+right:0;position:absolute;height:48px;top:0;
+}
+
+.game-name {
+font-size:15px;
+font-weight:bold;
+}
+
+.icon-tag {position:absolute;left:105px;bottom:0px;font-size:10px;color:gray;}
+
+.genre-tag {
+     display:inline-block;
+     position: relative;
+     background: black;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,40) solid;
+	 vertical-align:middle;
+	 font-size:12px;
+	 color:white;
+	 color:#A8A8A8;
+	 margin-bottom:2px;
+	 text-shadow:1px 1px 1px black;
+}
+.genre-tag:hover {
+     background: rgb(30, 30, 30);
+     background: rgba(30, 30, 30, 0.5);
+	 border:1px gray solid;
+}
+
+.genre-cover {
+     height:18px;
+     vertical-align:middle;
+	 float:left;
+	 border-width:0 3px 0 0;
+	 border-color:transparent;
+	 border-style:solid;
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform 250ms;
+  margin-right:2px;
+}
+.genre-cover:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
+}
+
+.set_attr {
+	height:18px;
+    vertical-align:middle;
+	border-width:0 3px 0 0;
+	border-color:transparent;
+	border-style:solid;
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+	transition: transform 250ms;
+	margin-right:2px;
+}
+
+.icon-cover {
+     height:8px;
+     vertical-align:middle;
+	 float:left;
+	 border-width:0 3px 0 0;
+	 border-color:transparent;
+	 border-style:solid;
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform 250ms;
+  margin-right:2px;
+}
+
+.fav-tag {
+     display:inline-block;
+     position: relative;
+     background: black;
+     background: rgba(30, 30, 60, 1);
+     padding: 0 3px 0 0;
+     box-shadow: 1px 1px #000;
+	 border:1px rgb(40,40,70) solid;
+	 vertical-align:middle;
+	 font-size:12px;
+	 color:white;
+	 color:#A8A8A8;
+	 margin-bottom:2px;
+	 text-shadow:1px 1px 1px black;
+}
+.fav-tag:hover {
+     background: rgb(30, 30, 60);
+     background: rgba(30, 30, 60, 0.5);
+	 border:1px gray solid;
+}
+.fav-cover {
+     height:18px;
+     vertical-align:middle;
+	 float:left;
+	 border-width:0 3px 0 0;
+	 border-color:transparent;
+	 border-style:solid;
+	 -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform 250ms;
+  margin-right:2px;
+}
+.fav-cover:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
+}
+
+.game-screenshot {
+box-shadow: 1px 1px 3px black;
+width: 140px;
+margin-top:12px;
+margin-bottom:12px;
+}
+
+.spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
+  color: black; 
+  background-color: black;
+}
+
+.spoiler:hover, .spoiler:hover a {
+  color: rgb(150,150,100);
+}
+
+.ach-game-comm p {padding:10px;}
+
+.set-table {max-width:200px;padding:10px}
+
+hr {border-color: gray; background-color: gray;}
+
+.ach-icon-block {
+     position: relative;
+}
+.ach-icon-block:hover {
+}
+
+/* Tooltip text */
+.ach-icon-block .keywordtext {
+    pointer-events: none;
+    visibility: hidden;
+    width: 120px;
+    font-size: 10px;
+    bottom: 300%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-top: 4px;
+    font-family: Verdana;
+	font-style: italic;
+	background-color: black;
+    color: #fff;
+    text-align: center;
+	padding: 3px 3px 3px 3px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+	box-shadow: 1px 1px #000;
+	border:1px rgb(40,40,40) solid;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+ .ach-icon-block:hover .keywordtext {
+     visibility: visible;
+     opacity: 1;
+}
+.ach-icon-block:focus .keywordtext {
+     visibility: visible;
+     opacity: 1;
+}
+ ach-icon-block .keywordtext::after {
+     content: " ";
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: black transparent transparent transparent;
+}
+
+.ach-game-icons input {
+  display:none;  
+}
+
+.ach-game-icons input + .smalldesc {
+  max-height:140px;
+  overflow:hidden;
+  transition:all .3s ease;
+}
+
+.ach-game-comm input {
+  display:none;  
+}
+
+.ach-game-comm input + .smalldesc {
+  max-height:140px;
+  overflow:hidden;
+  transition:all .3s ease;
+}
+
+label {
+  display: inline-block;
+  background: rgba(20,20,20,0.5);
+  color: #fff;
+  border-radius: 0px;
+  text-decoration:none;
+  cursor:pointer;
+  width:95%;
+  padding: 5px 0 5px 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+label:hover {
+  text-decoration:none;  
+  background-color: rgba(40,40,40,1);
+}
+
+.icon_button {
+width:100%;
+}
+
+.achset_table {
+margin-left:20px;
+margin-bottom:20px;}
+
+.achset_table th {
+width:52px;
+border:1px solid black;
+background-color:black;
+}
+
+.ach-game-info {margin-top:12px;}
+		</style>
+	</head>
+	<body>
+		<link rel="preload" href="images/background.png" as="image">
+		<div class="wrapper">
+			<!-- LEFT SIDEBAR -->
+			<div class="sidenav">
+				<div class="skipnav"><a href="#main">Skip to content</a></div>
+				<div style="height:0.4vh;"></div>
+				<div style="height:85%;margin-top:10px;">
+					<img src="images/art/laytonloztew.png" style="width:100px;height:127px;opacity:0.4;" draggable="false"/>
+					GrekTech
+					<div style="height:2.5vh;">
+					</div>
+					<div class="nav-active">
+					Home</div>
+					<a href="projects.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_proj.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Ancient </div></a>
+					<a href="memcard.html"><div class="nav-button">
+						<div class="navicon-div">
+							<img class="navicon" src="images/memcard/navicon_memcard.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					Ancinet Coin Card</div></a>
+					<a href="ynhd.html"><div class="nav-button">
+						<div class="navicon-div" style="bottom:3px;">
+							<img class="navicon" src="images/memcard/navicon_ynhd.png"/>
+							<img src="images/memcard/shadow.png" />
+						</div>
+					<span style="bottom:100px;">Solana endless</span></div></a>
+				</div>
+
+			</div>
+			<div id="main">
+				<div style="height:1vh;">
+				</div>
+				<div class="content-block">
+					<div class="inline-navblock">
+						<a class="navlink" href="index.html">Home</a>
+					</div>
+					> 
+					<div class="inline-navblock">
+						<a class="navlink">Memory Card</a>
+					</div>
+				</div>
+				<div style="height:3vh;">
+				</div>
+				
+				<!-- MODAL -->
+	<div id="modal01" class="w3-modal no-select">
+		<div class="w3-modal-content w3-animate-zoom">
+
+			<img id="img01" style="vertical-align:middle;" onclick="hideModal()">
+
+			<div id="imagecontrols" style="vertical-align:middle;display:inline-block;width:32px;height:475px;">
+				<img id="exitmodalicon" style="width:32px;" src="images/other/cancel.png" onclick="hideModal()">
+				<a id="imglink" href="#"><img style="width:32px;" src="images/other/resize.png"></a>
+			</div>
+
+			<div id="infodiv" style="width:100%;margin:auto;">
+				<p>
+				<span id="modaltext"></span><br/>
+				<span id="modaltext2"></span><br/>
+				<img id="img02" style="width:24px;height:28px" src="images/other/blank.png"><br/>
+				<span id="modaltext3"></span>
+				</p>
+			</div>
+		</div>
+	</div>
+				<div id="sec_achset" class="ynhd-section content-block">
+				<img src="images/memcard/logo.png"/>
+				<p>What games are on my memory card? Take a look</p>
+				
+				<table class="achset_table" style="margin-left:230px">
+				<tr>
+				<td><a href="#penkopark" class="ach-icon-block"><div class="inline-block ach-icon-s"><div class="trinket-div"><img class="trinket trinket-s" src="images/memcard/trinket/penkopark.png"/></div></div><span class="keywordtext"><img src="images/memcard/covers/penkopark.webp" width="120px" /><br/>Penko Park</span></a></td>
+				<td><a href="#stretchpanic" class="ach-icon-block"><div class="inline-block ach-icon-s"><div class="trinket-div"><img class="trinket trinket-s" src="images/memcard/trinket/stretchpanic.png"/></div></div><span class="keywordtext"><img src="images/memcard/covers/stretchpanic.webp" width="120px" /><br/>Stretch Panic / Freak Out</span></a></td>
+				<td><a href="#undertheskin" class="ach-icon-block"><div class="inline-block ach-icon-s"><div class="trinket-div"><img class="trinket trinket-s" src="images/memcard/trinket/undertheskin.png"/></div></div><span class="keywordtext"><img src="images/memcard/covers/undertheskin.webp" width="120px" /><br/>Under the Skin</span></a></td>
+				<td><a href="#yumenikki" class="ach-icon-block"><div class="inline-block ach-icon-s"><div class="trinket-div"><img class="trinket trinket-s" src="images/memcard/trinket/yumenikki.png"/></div></div><span class="keywordtext"><img src="images/memcard/covers/yumenikki.jpg" width="120px" /><br/>Yume Nikki</span></a></td>
+				<td><a href="#lovelyplanet" class="ach-icon-block"><div class="inline-block ach-icon-s"><div class="trinket-div"><img class="trinket trinket-s" src="images/memcard/trinket/lovelyplanet.png"/></div></div><span class="keywordtext"><img src="images/memcard/covers/lovelyplanet.jpg" width="120px" /><br/>Lovely Planet</span></a></td>
+				<td><a href="#wewerehere" class="ach-icon-block"><div class="inline-block ach-icon-s"><div class="trinket-div"><img class="trinket trinket-s" src="images/memcard/trinket/wewerehere.png"/></div></div><span class="keywordtext"><img src="images/memcard/covers/wewerehere.jpg" width="120px" /><br/>We Were Here</span></a></td>
+				
+				</tr>
+				<tr>
+				
+				</tr>
+				<tr>
+				
+				</tr>
+				<tr>
+				
+				</tr>
+				<tr>
+				
+				</tr>
+				</table>
+				<ul>
+				<li id="penkopark">
+					<div class="inline-block ach-game">
+						<div class="trinket-div">
+							<img class="trinket" src="images/memcard/covers/penkopark.webp"/>
+						</div>
+					<div class="ach-game-info"><span class="game-name">Penko Park</span><br/>October 23, 2020<img class="system-icon" src="images/ach/system/pc.png"/></div></div>
+					<div class="inline-block-comm ach-game-comm">
+					<p>Inspired by Pokemon Snap, Penko Park takes on a creepier tone than the cult classic. Rather than coming across as a knock-off, it presents as its own take on the formula. You take photos of creatures in an on-rail ride through various themed parks, but here photos are graded immediately as they are taken with a simpler rating system based on proximity. Instead of maximizing scores for each creature, they instead have multiple expressions/poses that you'll want to get 3-star pictures of.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/penkopark_screen1.webp"
+									data-name="Penko Park"
+									data-year=""
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/penkopark_screen1.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/penkopark_screen2.webp"
+									data-name="Penko Park"
+									data-year=""
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/penkopark_screen2.webp"
+									>
+								<p>There are upgrades that you obtain through leveling up - receiving xp for every type of photo taken - but the upgrades are a linear path even though you get to 'choose' the upgrade each time. It would be more interesting to pick the upgrade I receive each time, though it would need to allow for any upgrade path to be viable. Along with familiar upgrades like a flute to play music or a ball to pester creatures with, there is a grapple hand you can use to pick up artifacts, and an upgrade that allows you to enter a spirit realm upon touching spirit markers throughout the level, allowing for some new photos.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/penkopark_screen3.webp"
+									data-name="Penko Park"
+									data-year=""
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/penkopark_screen3.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/penkopark_screen4.webp"
+									data-name="Penko Park"
+									data-year=""
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/penkopark_screen4.webp"
+									>
+									<p>While I still prefer Pokemon Snap overall, Penko Park is a good game in its own right and boasts a more casual experience, with maybe more appeal for completionists. While completing it I wrote a 100% Completion Guide, which was a lot of work but is useful in getting some elusive pics.</p>
+					</div>
+				</li>
+				
+				<li id="stretchpanic">
+					<div class="inline-block ach-game">
+						<div class="trinket-div">
+							<img class="trinket" src="images/memcard/covers/stretchpanic.webp"/>
+						</div>
+					<div class="ach-game-info"><span class="game-name">Stretch Panic / Freak Out</span><br/>ひっぱリンダ<br/>July 27, 2001<img class="system-icon" src="images/ach/system/ps2.png"/></div></div>
+					<div class="inline-block-comm ach-game-comm">
+					<p>A strange 3D game consisting of boss fights, with the primary gimmick of a scarf that can stretch anything. Each boss has a weakness you can exploit to deal heavy damage. To fight bosses you must collect points by entering EX levels and defeating busty women. Aside from simply defeating every boss, you will want to exorcise each boss by performing a special move using both sticks.</p>
+							<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/stretchpanic_screen1.webp"
+								data-name="Stretch Panic"
+								data-year="2001"
+								data-msg=""
+								data-taken=""
+								data-full="images/memcard/screenshots/stretchpanic_screen1.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/stretchpanic_screen2.webp"
+								data-name="Stretch Panic"
+								data-year="2001"
+								data-msg=""
+								data-taken=""
+								data-full="images/memcard/screenshots/stretchpanic_screen2.webp"
+								>
+							<p>While coming across as more of a tech demo than a fully-fledged experience, it does a great job on the main attraction - the boss battles - while forgoing traditional levels/platforming in-between.</p>
+							<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/stretchpanic_screen3.webp"
+								data-name="Stretch Panic"
+								data-year="2001"
+								data-msg=""
+								data-taken=""
+								data-full="images/memcard/screenshots/stretchpanic_screen3.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/stretchpanic_screen4.webp"
+								data-name="Stretch Panic"
+								data-year="2001"
+								data-msg=""
+								data-taken=""
+								data-full="images/memcard/screenshots/stretchpanic_screen4.webp"
+								>
+					</div>
+				</li>
+				
+				<li id="undertheskin">
+					<div class="inline-block ach-game">
+						<div class="trinket-div">
+							<img class="trinket" src="images/memcard/covers/undertheskin.webp"/>
+						</div>
+					<div class="ach-game-info"><span class="game-name">Under the Skin</span><br/>めいわく星人 パニックメーカー<br/>August 5, 2004<img class="system-icon" src="images/ach/system/ps2.png"/></div></div>
+					<div class="inline-block-comm ach-game-comm">
+					<p>As an alien arriving to Earth, you're tasked with playing pranks on humans to prove your mischief skills against rival aliens. "Playing pranks" mainly consists of dealing damage with a variety of weapons, or laying a trap. Humans who have been pranked will form a mob and chase you, which you can either use to your advantage by grouping them up and racking up a bunch of money, or mitigating by disguising as someone else. In your alien form you're vulnerable and will lose money when hit. Each human has specific weapons in their inventory that you acquire when disguising as them, encouraging you to pick and choose your target while avoiding enemies. Each stage has a 'Panic Time' with an associated gimmick, such as containing a boss enemy or an event that requires you to disguise as a certain being to avoid taking damage.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/undertheskin_screen3.webp"
+									data-name="Under the Skin"
+									data-year="2004"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/undertheskin_screen3.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/undertheskin_screen4.webp"
+									data-name="Under the Skin"
+									data-year="2004"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/undertheskin_screen4.webp"
+									>
+								<p>The game can be a bit repetitive overall, you're doing the same thing over again aside from unique weapons/stage gimmicks in each level. As far as multiplayer I'm sure its a neat game to play once or twice, but probably not a main-stay to come back to often.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/undertheskin_screen1.webp"
+									data-name="Under the Skin"
+									data-year="2004"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/undertheskin_screen1.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/undertheskin_screen2.webp"
+									data-name="Under the Skin"
+									data-year="2004"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/undertheskin_screen2.webp"
+									>
+					</div>
+				</li>
+				
+				<li id="yumenikki">
+					<div class="inline-block ach-game">
+						<div class="trinket-div">
+							<img class="trinket" src="images/memcard/covers/yumenikki.jpg"/>
+						</div>
+					<div class="ach-game-info"><span class="game-name">Yume Nikki</span><br/>ゆめにっき<br/>June 26, 2004<img class="system-icon" src="images/ach/system/pc.png"/></div></div>
+					<div class="inline-block-comm ach-game-comm">
+					<p>You play as Madotsuki, a mysterious girl who by sleeping in her bed can explore a surreal world of dreams. Inside the dream world are 'effects', each changing Madotsuki's appearance and giving her special abilities such as increasing her speed or allowing her to attack dream denizens. All of these effects (except one) can be acquired in any order. Upon collecting all of the effects, an ending can be triggered.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/yumenikki_screen1.webp"
+									data-name="Yume Nikki"
+									data-year="2004"
+									data-msg="Bedroom"
+									data-taken=""
+									data-full="images/memcard/screenshots/yumenikki_screen1.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/yumenikki_screen2.webp"
+									data-name="Yume Nikki"
+									data-year="2004"
+									data-msg="Nexus"
+									data-taken=""
+									data-full="images/memcard/screenshots/yumenikki_screen2.webp"
+									>
+								<p>Despite the mystery surrounding the author (who is known to us only by alias), the game has accrued a decent cult following over the years. You have probably seen characters from this game elsewhere. Other works have cited Yume Nikki as inspiration, such as Dreaming Sarah and Crypt Worlds. A common comparison is LSD: Dream Emulator, an older PlayStation game with a similar premise.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/yumenikki_screen3.webp"
+									data-name="Yume Nikki"
+									data-year="2004"
+									data-msg="Block World"
+									data-taken=""
+									data-full="images/memcard/screenshots/yumenikki_screen3.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/yumenikki_screen4.webp"
+									data-name="Yume Nikki"
+									data-year="2004"
+									data-msg="Snow World"
+									data-taken=""
+									data-full="images/memcard/screenshots/yumenikki_screen4.webp"
+									>
+								<p>I would recommend exploring the game blind, then looking at a walkthrough or outside source to assist in finding the remaining effects. As ideal as it would be to complete the game completely blind, the dream world is vast and some effects can be difficult to find.</p>
+					</div>
+				</li>
+				
+				<li id="lovelyplanet">
+					<div class="inline-block ach-game">
+						<div class="trinket-div">
+							<img class="trinket" src="images/memcard/covers/lovelyplanet.jpg"/>
+						</div>
+					<div class="ach-game-info"><span class="game-name">Lovely Planet</span><br/>July 31, 2014<img class="system-icon" src="images/ach/system/pc.png"/></div></div>
+					<div class="inline-block-comm ach-game-comm">
+					<p>First-person shooter speedrun, clear the red enemies and reach the end of the level. Has a 3 star system for completing, completing within a time, and 100% accuracy. Challenging in later levels, especially if going for 3 stars, but will vary depending on FPS game experience. May be slightly too challenging for those who haven't played FPS games religiously.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/lovelyplanet_screen1.webp"
+									data-name="Lovely Planet"
+									data-year="2014"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/lovelyplanet_screen1.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/lovelyplanet_screen2.webp"
+									data-name="Lovely Planet"
+									data-year="2014"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/lovelyplanet_screen2.webp"
+									>
+								<p>Fairly one-note in its cutesy environment and aesthetic, but does have new enemies/obstacles in the later levels.</p>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/lovelyplanet_screen3.webp"
+									data-name="Lovely Planet"
+									data-year="2014"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/lovelyplanet_screen3.webp"
+									>
+								<img onclick="onClick(this)" class="screenshot game-screenshot" src="images/memcard/screenshots/lovelyplanet_screen4.webp"
+									data-name="Lovely Planet"
+									data-year="2014"
+									data-msg=""
+									data-taken=""
+									data-full="images/memcard/screenshots/lovelyplanet_screen4.webp"
+									>
+					</div>
+				</li>
+				
+				<li id="wewerehere">
+					<div class="inline-block ach-game">
+						<div class="trinket-div">
+							<img class="trinket" src="images/memcard/covers/wewerehere.jpg"/>
+						</div>
+					<div class="ach-game-info"><span class="game-name">We Were Here</span><br/>February 3, 2017<img class="system-icon" src="images/ach/system/pc.png"/></div></div>
+					<div class="inline-block-comm ach-game-comm">
+					<p>You and a partner must escape an abandoned castle by solving puzzles - but you're both separated and can only communicate via a walkie-talkie. This one is free but shorter than the sequels, and may be a bit buggier as well.</p>
+<p>Lacks replay value by nature, but can be played through again by switching sides for a different perspective. Would recommend finding a good friend to play with instead of rolling the dice on a random, but its an option.</p>
+<p>Gives an accurate impression of the sequels, worth trying first.</p>
+					</div>
+				</li>
+				
+				<br />
+				More Soon...
+				
+				</ul>
+				</div>
+				
+				
+				
+				<div id="changelog" class="ynhd-section content-block">
+				<h2>Changelog</h2>
+				<div style="overflow:scroll;overflow-x:hidden;height:200px;text-align:left;">
+				<i>10/25/24</i> - New Page
+				<br/>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+<!-- Mirrored from laytonloztew.neocities.org/memcard by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:54:57 GMT -->
+</html>

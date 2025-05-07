@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from laytonloztew.neocities.org/ynhd/collection by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:58:33 GMT -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Layton's Land</title>
+		<link rel="icon" href="https://laytonloztew.neocities.org/images/icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="https://laytonloztew.neocities.org/style.css?ver=23.03.19.0"/>
+		<script src='https://laytonloztew.neocities.org/screenshots.js?ver=23.03.12.0'></script>
+		<style>
+			#main {
+			margin-left: 20px; /* Same as the width of the sidebar */
+			margin-right: 60px;
+			padding: 0px 10px;
+			}
+		</style>
+	</head>
+	<body onload="init()" style="line-height:1.6">
+		<link rel="preload" href="https://laytonloztew.neocities.org/images/background.png" as="image">
+		<div class="wrapper">
+			<div id="main">
+				<div style="height:1vh;"></div>
+				<div class="content-block">
+					<div class="inline-navblock"><a class="navlink" href="https://laytonloztew.neocities.org/index.html">Home</a></div>
+					> 
+					<div class="inline-navblock"><a class="navlink" href="https://laytonloztew.neocities.org/ynhd.html">Yoru no Honki Dance</a></div>
+					> 
+					<div class="inline-navblock"><a class="navlink">Collection</a></div>
+				</div>
+				<!-- MODAL -->
+				<div id="modal01" class="w3-modal no-select">
+					<div class="w3-modal-content w3-animate-zoom">
+						<img id="img01" style="vertical-align:middle;" onclick="hideModal()">
+						<div id="imagecontrols" style="vertical-align:middle;display:inline-block;width:32px;height:475px;">
+							<img id="exitmodalicon" style="width:32px;" src="https://laytonloztew.neocities.org/images/other/cancel.png" onclick="hideModal()">
+							<a id="imglink" href="#"><img style="width:32px;" src="https://laytonloztew.neocities.org/images/other/resize.png"></a>
+						</div>
+						<div id="infodiv" style="width:100%;margin:auto;">
+							<p>
+								<span id="modaltext"></span><br/>
+								<span id="modaltext2"></span><br/>
+								<img id="img02" style="width:24px;height:28px" src="https://laytonloztew.neocities.org/images/other/blank.png"><br/>
+								<span id="modaltext3"></span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div style="height:3vh;"></div>
+				<!-- Title/Info -->
+				<div class="content-block" style="clear: left;padding:10px;margin-bottom:25px;">
+					<img src="https://laytonloztew.neocities.org/images/ynhd/collection_bg2.png" alt="Yoru no Honki Dance Collection Navigation Link" style="z-index:1;position:absolute;pointer-events:none" />
+					<div class="content-block navlink-big" style="width:480px;background: url('https://laytonloztew.neocities.org/images/ynhd/collection_bg.png') no-repeat;"></div>
+					<p>Pictures of my 夜の本気ダンス collection.</p>
+				</div>
+				<div style="height:2vh;">
+				</div>
+				<div class="no-select" style="margin-left:3px;margin-right:-40px;">
+					<div class="row">
+						<!-- LEFT COLUMN -->
+						<div class="column">
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/ynhd_2.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="Framed flyers, PHYSICAL record"
+								data-taken=""
+								data-full="../images/ynhd/pics/ynhd_2.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/ynhd_4.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="Various items"
+								data-taken=""
+								data-full="../images/ynhd/pics/ynhd_4.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/fetish.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2019"
+								data-msg="Fetish"
+								data-taken=""
+								data-full="../images/ynhd/pics/fetish.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/physical.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2021"
+								data-msg="PHYSICAL, handprint"
+								data-taken=""
+								data-full="../images/ynhd/pics/physical.webp"
+								>
+						</div>
+						<!-- MIDDLE COLUMN -->
+						<div class="column">
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/ynhd_6.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="Various items"
+								data-taken=""
+								data-full="../images/ynhd/pics/ynhd_6.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/ynhd_1.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="Albums"
+								data-taken=""
+								data-full="../images/ynhd/pics/ynhd_1.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/armadillo.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="armadillo limited edition, autograph"
+								data-taken=""
+								data-full="../images/ynhd/pics/armadillo.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/bobdancebob.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2021"
+								data-msg="War, Bob Dance Bob"
+								data-taken=""
+								data-full="../images/ynhd/pics/bobdancebob.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/collection1.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2021"
+								data-msg="Albums"
+								data-taken=""
+								data-full="../images/ynhd/pics/collection1.webp"
+								>
+						</div>
+						<!-- RIGHT COLUMN -->
+						<div class="column">
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/ynhd_7.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="armadillo limited editions, autographs"
+								data-taken=""
+								data-full="../images/ynhd/pics/ynhd_7.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/ynhd_5.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="DANCE STEP poster"
+								data-taken=""
+								data-full="../images/ynhd/pics/ynhd_5.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/physical_record.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2021"
+								data-msg="PHYSICAL record"
+								data-taken=""
+								data-full="../images/ynhd/pics/physical_record.webp"
+								>
+							<img onclick="onClick(this)" class="screenshot" src="https://laytonloztew.neocities.org/images/ynhd/pics/danceable.webp"
+								data-name="Yoru no Honki Dance Collection"
+								data-year="2022"
+								data-msg="DANCEABLE-related items"
+								data-taken=""
+								data-full="../images/ynhd/pics/danceable.webp"
+								>
+						</div>
+					</div>
+				</div>
+				<div style="height:5vh;">
+				</div>
+			</div>
+		</div>
+	</body>
+
+<!-- Mirrored from laytonloztew.neocities.org/ynhd/collection by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 13:58:33 GMT -->
+</html>
